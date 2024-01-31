@@ -11,20 +11,23 @@ import { varFade, MotionViewport } from 'src/components/animate';
 // ----------------------------------------------------------------------
 
 const FEATURE_HIGHLIGHTS = [
-  { title: '5 Prebuilt Websites', icon: 'carbon:application-web' },
-  { title: '60+ Demo Page', icon: 'carbon:stacked-scrolling-2' },
+  { title: 'AI chatbot/assistant', icon: 'eos-icons:ai' },
+  { title: 'Lead Management', icon: 'material-symbols:leaderboard' },
+  { title: 'Message Management', icon: 'ic:baseline-whatsapp' },  
+  { title: 'Funnel System', icon: 'fluent:data-funnel-20-filled' },
+  { title: 'Landing Page Builder', icon: 'foundation:page-multiple' },
+  { title: 'Social Media Management', icon: 'foundation:social-facebook' },
+  { title: 'Affilate System', icon: 'mdi:human-capacity-increase' },
   { title: 'Easy to Customize', icon: 'carbon:settings-adjust' },
-  { title: 'Color Presets', icon: 'carbon:color-switch' },
   { title: 'Dark Mode', icon: 'carbon:asleep' },
-  { title: 'Awesome Animation', icon: 'carbon:boolean' },
-  { title: 'Google Fonts', icon: 'carbon:text-font' },
-  { title: 'Figma Design', icon: 'ph:figma-logo' },
+  // { title: 'Google Fonts', icon: 'carbon:text-font' },
+  // { title: 'Figma Design', icon: 'ph:figma-logo' },
   { title: 'Fully Responsive', icon: 'carbon:devices' },
-  { title: 'Mega Menu', icon: 'carbon:list-dropdown' },
-  { title: 'Clean Markup', icon: 'carbon:script' },
+  { title: 'Cross Platform', icon: 'fluent:phone-laptop-16-regular' },
+  { title: 'Ever-Evolving', icon: 'fluent:text-change-previous-20-regular' },
   { title: 'Free Updates', icon: 'carbon:update-now' },
   { title: 'Fast Support', icon: 'carbon:headset' },
-  { title: 'Well Documented', icon: 'carbon:notebook' },
+  // { title: 'Well Documented', icon: 'carbon:notebook' },
 ];
 
 // ----------------------------------------------------------------------
@@ -61,7 +64,7 @@ export default function HomeFeatureHighlights() {
 
           <m.div variants={varFade().inUp}>
             <Typography sx={{ color: 'text.secondary' }}>
-              {`Let's see what makes our theme super powerful and user-friendly!`}
+              {`Let's see what makes our DJC system super powerful and user-friendly!`}
             </Typography>
           </m.div>
         </Grid>

@@ -16,30 +16,31 @@ import PricingHome from '../../pricing/home/pricing-home';
 import HomeFeatureHighlights from '../home-feature-highlights';
 import HomeFlexibleComponents from '../home-flexible-components';
 
+
 // ----------------------------------------------------------------------
 
 export default function HomeView() {
   const { scrollYProgress } = useScroll();
-
+  
   return (
     <>
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
 
-      <HomeNewStart />
+      {/* <HomeNewStart />
 
-      <HomeFlexibleComponents />
+      <HomeFlexibleComponents /> */}
 
       <HomeFeatureHighlights />
 
-      <HomeForDesigner />
+      {/* <HomeForDesigner /> */}
 
       <PricingHome plans={_pricingHome} />
 
       <HomeFAQs />
 
-      <HomeCombination />
+      {/* <HomeCombination /> */}
 
       <HomeAdvertisement />
     </>

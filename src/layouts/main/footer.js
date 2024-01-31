@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { Box } from '@mui/material';
 import Link from '@mui/material/Link';
 import Masonry from '@mui/lab/Masonry';
 import Stack from '@mui/material/Stack';
@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import { alpha, styled } from '@mui/material/styles';
 import InputAdornment from '@mui/material/InputAdornment';
 import Button, { buttonClasses } from '@mui/material/Button';
+
 
 import { usePathname } from 'src/routes/hooks';
 import { RouterLink } from 'src/routes/components';
@@ -62,6 +63,26 @@ export default function Footer() {
       <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
         © 2023. All rights reserved
       </Typography>
+
+      <Box>
+        <Stack direction="row" justifyContent="center" spacing={2}>
+          <Link href="/termsandservices" style={{ textDecoration: 'none' }}>
+            <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
+            Terms of Services
+            </Typography>
+          </Link>
+          <Link href="/privacypolicy" style={{ textDecoration: 'none' }}>
+            <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
+            Privacy Policy
+            </Typography>
+          </Link>
+          <Link href="/refundpolicy" style={{ textDecoration: 'none' }}>
+            <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
+            Refund Policy
+            </Typography>
+          </Link>       
+        </Stack>
+      </Box>
     </Container>
   );
 
@@ -188,8 +209,8 @@ export default function Footer() {
       </Container>
     </>
   );
-
-  return <footer>{isHome ? simpleFooter : mainFooter}</footer>;
+  return <footer>{simpleFooter}</footer>;
+  // return <footer>{isHome ? simpleFooter : mainFooter}</footer>;
 }
 
 // ----------------------------------------------------------------------

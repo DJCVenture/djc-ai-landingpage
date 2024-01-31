@@ -10,12 +10,7 @@ export const pageLinks = [
     items: [
       { title: 'Landing', path: paths.marketing.root },
       { title: 'Services', path: paths.marketing.services },
-      { title: 'Case Studies', path: paths.marketing.caseStudies },
-      { title: 'Case Study', path: paths.marketing.caseStudy },
-      { title: 'Blog Posts', path: paths.marketing.posts },
-      { title: 'Blog Post', path: paths.marketing.post },
-      { title: 'About', path: paths.marketing.about },
-      { title: 'Contact', path: paths.marketing.contact },
+      { title: 'Case Studies', path: paths.marketing.caseStudies },   
     ],
   },
   {
@@ -109,11 +104,13 @@ export const pageLinks = [
 
 export const navConfig = [
   { title: 'Home', path: '/' },
+  // { title: 'Pricing', path: '/' },
+  // { title: 'Terms and Condition', path: '/',children: [pageLinks[0]] },
   // { title: 'Components', path: paths.components.root },
-  {
-    title: 'Pages',
-    path: paths.pages,
-    children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
-  },
+  // {
+  //   title: 'Pages',
+  //   path: paths.pages,
+  //   children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
+  // },
   // { title: 'Docs', path: paths.docs },
 ];

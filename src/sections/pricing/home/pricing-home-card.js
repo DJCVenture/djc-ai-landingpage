@@ -16,9 +16,9 @@ import Iconify from 'src/components/iconify';
 // ----------------------------------------------------------------------
 
 export default function PricingHomeCard({ plan }) {
-  const standardLicense = plan.license === 'Standard';
+  const personalPlan = plan.license === 'Professional Plan - Personal';
 
-  const plusLicense = plan.license === 'Plus';
+  const companyPlan = plan.license === 'Professional Plan - Company';
 
   const extendedLicense = plan.license === 'Extended';
 
@@ -27,35 +27,81 @@ export default function PricingHomeCard({ plan }) {
       sx={{
         p: 5,
         boxShadow: (theme) => theme.customShadows.z8,
-        ...(plusLicense && {
+        ...(plan.price === '299.00' && {
           py: 10,
           boxShadow: (theme) => theme.customShadows.z24,
         }),
       }}
     >
-      {plusLicense && (
-        <Label color="info" sx={{ position: 'absolute', top: 40, left: 40 }}>
-          POPULAR
+      {plan.price === '299.00' && (
+        <Label
+          color="info"
+          sx={{
+            position: 'absolute',
+            top: 30,
+            left: 85,
+            '@media (max-width:600px)': {
+              // This corresponds to the 'xs' breakpoint
+              left: 120, // Adjust this value as needed
+            },
+          }}
+        >
+         MOST POPULAR
+        </Label>
+      )}
+
+{plan.price === '239.20' && (
+        <Label
+          color="error"
+          sx={{
+            position: 'absolute',
+            top: 20,
+            left: 100,
+            '@media (max-width:600px)': {
+              // This corresponds to the 'xs' breakpoint
+              left: 130, // Adjust this value as needed
+            },
+          }}
+        >
+          BEST VALUE!
         </Label>
       )}
 
       <Stack spacing={5}>
         <Stack direction="row" justifyContent="space-between">
-          <Typography variant="h5" component="div" sx={{ textTransform: 'uppercase' }}>
-            {plan.license}
-          </Typography>
-
-          <Stack direction="row" spacing={0.5}>
-            <Typography variant="h4" component="span">
-              $
-            </Typography>
-            <Typography variant="h3" component="span">
-              {plan.price}
+          <Stack direction="column" justifyContent="center" alignItems="center">
+            {' '}
+            {/* Add alignItems="center" */}
+            <Stack direction="row" spacing={0.5}>
+              <Typography variant="h3" component="span">
+                RM
+              </Typography>
+              <Typography variant="h2" component="span">
+                {plan.price}
+              </Typography>
+            </Stack>
+            <Typography variant="caption" component="span">
+                per month
+              </Typography>
+            <Typography
+              variant="subtitle2"
+              component="div"
+              sx={{
+                textTransform: 'uppercase',
+                pt:3,
+                display: 'flex', // Add display flex
+                justifyContent: 'center', // Horizontally center the content
+                alignItems: 'center', // Vertically center the content
+                textAlign: 'center', // Ensure text is centered
+                mb: 1,
+              }}
+            >
+              {plan.license}
             </Typography>
           </Stack>
         </Stack>
 
-        {standardLicense ? (
+        {/* {personalPlan ? (
           <Box
             component="img"
             alt={plan.icons[0]}
@@ -74,7 +120,7 @@ export default function PricingHomeCard({ plan }) {
               />
             ))}
           </Stack>
-        )}
+        )} */}
 
         <Stack spacing={2.5}>
           {plan.commons.map((option) => (
@@ -116,26 +162,14 @@ export default function PricingHomeCard({ plan }) {
           <Button
             size="large"
             fullWidth
-            variant={standardLicense ? 'outlined' : 'contained'}
-            color={extendedLicense ? 'primary' : 'inherit'}
+            variant={plan.price === '299.00' ?'contained': 'outlined'}
+            color={plan.price === '299.00' ? 'inherit':'primary' }
             target="_blank"
             rel="noopener"
             href={paths.zoneStore}
           >
             Choose Package
           </Button>
-
-          <Link
-            color="text.secondary"
-            target="_blank"
-            rel="noopener"
-            variant="body2"
-            href={paths.license}
-            sx={{ display: 'flex', alignItems: 'center' }}
-          >
-            Read license
-            <Iconify icon="carbon:chevron-right" width={16} sx={{ ml: 1 }} />
-          </Link>
         </Stack>
       </Stack>
     </Card>

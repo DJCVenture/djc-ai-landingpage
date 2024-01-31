@@ -23,10 +23,10 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Zone UI Kit',
+  title: 'DJC SYSTEM',
   description:
-    'The ZONE is built on top of MUI, a powerful library that provides flexible, customizable, and easy-to-use components.',
-  keywords: 'react,material,kit,application,dashboard,admin,template',
+    'With powerful AI capabilities, DJC System empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
+  keywords: 'whatsapp,ai,chatbot,ai assistant,ai chatbot,lead management,lead.',
   manifest: '/manifest.json',
   icons: [
     { rel: 'icon', url: '/favicon/favicon.ico' },

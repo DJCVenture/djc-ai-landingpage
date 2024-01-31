@@ -12,6 +12,50 @@ import PricingHomeCard from './pricing-home-card';
 // ----------------------------------------------------------------------
 
 export default function PricingHome({ plans }) {
+
+  const allPlans = [
+    {
+      license: 'Professional Plan- Personal (Monthly)',
+      price: '199.00',
+      icons: [],
+      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      options: [
+        { title: '* Add up to 5 team members', disabled: true },
+        { title: '* Upload files', disabled: true },       
+      ],
+    },
+    {
+      license: 'Professional Plan- Company (Monthly)',
+      price: '299.00',
+      icons: [],
+      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      options: [
+        { title: '* Add up to 5 team members', disabled: false },
+        { title: '* Upload files', disabled: false },       
+      ],
+    },  
+    {
+      license: 'Professional Plan- Personal (Yearly)',
+      price: '159.20',
+      icons: [],
+      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      options: [
+        { title: '* Add up to 5 team members', disabled: true },
+        { title: '* Upload files', disabled: true },       
+      ],
+    },   
+    {
+      license: 'Professional Plan- Company (Yearly)',
+      price: '239.20',
+      icons: [],
+      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      options: [
+        { title: '* Add up to 5 team members', disabled: false },
+        { title: '* Upload files', disabled: false },       
+      ],
+    },    
+  ];
+
   return (
     <Container
       component={MotionViewport}
@@ -48,18 +92,23 @@ export default function PricingHome({ plans }) {
 
       <Box
         sx={{
-          gap: 4,
+          gap: 3,
           display: 'grid',
           alignItems: 'center',
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',
-            md: 'repeat(3, 1fr)',
+            md: 'repeat(4, 1fr)',
           },
         }}
       >
-        {plans.map((plan) => (
-          <m.div key={plan.license} variants={varFade().inUp}>
-            <PricingHomeCard plan={plan} />
+        {allPlans.map((plan,index) => (
+          <m.div 
+          key={plan.license + index} 
+          variants={varFade().inUp}
+          whileHover={{ scale: 1.05 }} // Scale up the card on hover
+          style={{ display: 'flex' }} // Ensure the card scales within its container
+        >
+            <PricingHomeCard plan={plan}  />
           </m.div>
         ))}
       </Box>
