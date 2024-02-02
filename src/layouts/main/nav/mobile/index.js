@@ -63,11 +63,11 @@ export default function NavMobile({ data }) {
               fullWidth
               variant="contained"
               color="inherit"
-              href={paths.zoneStore}
+              href="https://djcsystem.com/sign-up"
               target="_blank"
               rel="noopener"
             >
-              Buy Now
+              Sign Up
             </Button>
           </Stack>
         </Scrollbar>

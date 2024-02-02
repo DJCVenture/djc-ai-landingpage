@@ -84,7 +84,7 @@ export default function HomeHero() {
               }}
             />
           </Grid>
-              <Button
+              {/* <Button
                 color="inherit"
                 size="large"
                 variant="contained"
@@ -94,7 +94,7 @@ export default function HomeHero() {
                 href={paths.figmaPreview}
               >
                 See Demo
-              </Button>
+              </Button> */}
 
               {/* <Stack spacing={3}>
                 <Typography variant="overline" sx={{ opacity: 0.48 }}>

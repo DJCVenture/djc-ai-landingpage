@@ -1,5 +1,6 @@
+'use client';
 import PropTypes from 'prop-types';
-
+import { m } from 'framer-motion';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -7,7 +8,7 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material/styles';
-
+import BaseOptions from 'src/components/settings/drawer/base-options';
 import { paths } from 'src/routes/paths';
 
 import { useOffSetTop } from 'src/hooks/use-off-set-top';
@@ -24,6 +25,8 @@ import { HEADER } from '../config-layout';
 import { navConfig } from './config-navigation';
 import NavDesktop from './nav/desktop';
 import NavMobile from './nav/mobile';
+import { useSettingsContext } from 'src/components/settings';
+import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
@@ -33,7 +36,7 @@ export default function Header({ headerOnDark }) {
   const offset = useOffSetTop();
 
   const mdUp = useResponsive('up', 'md');
-
+  const settings = useSettingsContext();
   const renderContent = (
     <>
       <Box sx={{ lineHeight: 0, position: 'relative' }}>
@@ -57,9 +60,35 @@ export default function Header({ headerOnDark }) {
 
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
-          <Searchbar />
-
-          <SettingsButton />
+          {/* <Searchbar /> */}
+          <Box
+            component={m.div}
+            animate={{
+              rotate: [0, settings.open ? 0 : 360],
+            }}
+            transition={{
+              duration: 12,
+              ease: 'linear',
+              repeat: Infinity,
+            }}
+            sx={{
+              '&:hover': {
+                cursor: 'pointer', // Change cursor to indicate clickable area
+              },
+            }}
+          >
+            <Iconify
+              width={28}
+              icon={settings.themeMode === 'dark' ? 'carbon:asleep-filled' : 'ph:sun-bold'}
+              onClick={() =>
+                settings.onUpdate('themeMode', settings.themeMode === 'dark' ? 'light' : 'dark')
+              }
+              style={{
+                color: settings.themeMode === 'dark' ? 'yellow' : 'red', // Make asleep-filled icon yellow
+              }}
+            />
+          </Box>
+          {/* <SettingsButton /> */}
         </Stack>
 
         <Button
