@@ -61,6 +61,7 @@ export default function Header({ headerOnDark }) {
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
           {/* <Searchbar /> */}
+      
           <Box
             component={m.div}
             animate={{
@@ -77,6 +78,7 @@ export default function Header({ headerOnDark }) {
               },
             }}
           >
+            
             <Iconify
               width={28}
               icon={settings.themeMode === 'dark' ? 'carbon:asleep-filled' : 'ph:sun-bold'}
