@@ -64,11 +64,26 @@ export default function HomeHero() {
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-                With powerful AI capabilities, DJC System empowers your
-                businesses to harness the full potential of automation and data analytics,
-                transforming the way you connect with customers and accelerate your success.
+                With powerful AI capabilities, DJC System empowers your businesses to harness the
+                full potential of automation and data analytics, transforming the way you connect
+                with customers and accelerate your success.
               </Typography>
-
+              <Grid xs={12} md={7}>
+            <Image
+              visibleByDefault
+              disabledEffect
+              alt="home hero"
+              src="/assets/images/home/home_hero.png"
+              sx={{
+                width: 'auto', // Adjusts width automatically based on the height or specific value
+                height: 'auto', // Adjusts height automatically based on the width or specific value
+                maxWidth: '120%', // Increase size by setting maxWidth greater than 100%
+                maxHeight: '120%', // Increase size by setting maxHeight greater than 100%
+                transform: 'scale(1.2)', // Alternatively, use scale to enlarge the image by 20%
+                display: { xs: 'block', sm: 'none' }, // Display nothing on xs screens, and block on sm and above
+              }}
+            />
+          </Grid>
               <Button
                 color="inherit"
                 size="large"
@@ -101,12 +116,25 @@ export default function HomeHero() {
           </Grid>
 
           <Grid xs={12} md={7}>
-            <Box ref={containerRef} />
+            <Image
+              visibleByDefault
+              disabledEffect
+              alt="home hero"
+              src="/assets/images/home/home_hero.png"
+              sx={{
+                width: 'auto', // Adjusts width automatically based on the height or specific value
+                height: 'auto', // Adjusts height automatically based on the width or specific value
+                maxWidth: '120%', // Increase size by setting maxWidth greater than 100%
+                maxHeight: '120%', // Increase size by setting maxHeight greater than 100%
+                transform: 'scale(1.2)', // Alternatively, use scale to enlarge the image by 20%
+                display: { xs: 'none', sm: 'block' }, // Display nothing on xs screens, and block on sm and above
+              }}
+            />
           </Grid>
         </Grid>
       </Container>
 
-      {mdUp && (
+      {/* {mdUp && (
         <Box
           sx={{
             maxWidth: 1280,
@@ -123,7 +151,7 @@ export default function HomeHero() {
             src="/assets/images/home/home_hero.png"
           />
         </Box>
-      )}
+      )} */}
     </Box>
   );
 }

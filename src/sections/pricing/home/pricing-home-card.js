@@ -26,11 +26,11 @@ export default function PricingHomeCard({ plan }) {
     <Card
       sx={{
         p: 5,
-        boxShadow: (theme) => theme.customShadows.z8,
-        ...(plan.price === '299.00' && {
-          py: 10,
-          boxShadow: (theme) => theme.customShadows.z24,
-        }),
+        boxShadow: (theme) => theme.customShadows.z20,
+        // ...(plan.price === '299.00' && {
+        //   py: 10,
+        //   boxShadow: (theme) => theme.customShadows.z24,
+        // }),
       }}
     >
       {plan.price === '299.00' && (
@@ -38,7 +38,7 @@ export default function PricingHomeCard({ plan }) {
           color="info"
           sx={{
             position: 'absolute',
-            top: 30,
+            top: 20,
             left: 85,
             '@media (max-width:600px)': {
               // This corresponds to the 'xs' breakpoint
@@ -63,7 +63,7 @@ export default function PricingHomeCard({ plan }) {
             },
           }}
         >
-          BEST VALUE!
+          BEST VALUE !
         </Label>
       )}
 
@@ -159,6 +159,7 @@ export default function PricingHomeCard({ plan }) {
         </Stack>
 
         <Stack alignItems="flex-end" spacing={3}>
+
           <Button
             size="large"
             fullWidth
@@ -166,7 +167,7 @@ export default function PricingHomeCard({ plan }) {
             color={plan.price === '299.00' ? 'inherit':'primary' }
             target="_blank"
             rel="noopener"
-            href={paths.zoneStore}
+            href="https://djcsystem.com/sign-up"
           >
             Choose Package
           </Button>
