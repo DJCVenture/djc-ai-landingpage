@@ -23,8 +23,8 @@ import Iconify from 'src/components/iconify';
 export default function HomeView() {
   const { scrollYProgress } = useScroll();
   const openWhatsApp = () => {
-    const phoneNumber = process.env.NEXT_PUBLIC_PHONE
-    const defaultMessage = 'Hi, i would like to know more.';
+    const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
+    const defaultMessage = 'Hi, i would like to know more about DJC system.';
     const encodedMessage = encodeURIComponent(defaultMessage);
 
     // Append the message to the URL
@@ -34,6 +34,34 @@ export default function HomeView() {
   };
   return (
     <>
+    <Box
+        sx={{
+          position: 'fixed',
+          top: 550,
+          right: 20,
+          zIndex: 9999,
+          '& > :not(style)': { m: 1 },
+          display: { xs: 'block', sm: 'none' }, // Hide on xs screens, show on sm and above
+        }}
+        component={m.div}
+        animate={{
+          y: ['0%', '-10%', '0%'], // Bouncing effect
+        }}
+        transition={{
+          duration: 1, // Adjusted for a quicker bounce effect
+          ease: 'easeInOut', // Changed to easeInOut for a smoother bounce
+          repeat: Infinity,
+          repeatType: 'loop', // Ensure the animation loops
+        }}
+
+        onClick={openWhatsApp}
+      >
+        <Tooltip title="Click here to try!" placement="top">
+          <Fab color="primary" size="medium">
+            <Iconify icon={'eos-icons:ai-operator'} sx={{width:25,height:25}}/>
+          </Fab>
+        </Tooltip>
+      </Box>
       <Box
         sx={{
           position: 'fixed',
@@ -58,7 +86,7 @@ export default function HomeView() {
       >
         <Tooltip title="Click here to try!" placement="top">
           <Fab color="primary" variant="extended">
-            Try our AI Assistant here!
+            Try our AI here!
           </Fab>
         </Tooltip>
       </Box>
