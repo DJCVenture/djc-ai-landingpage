@@ -7,7 +7,7 @@ import { _pricingHome } from 'src/_mock';
 import ScrollProgress from 'src/components/scroll-progress';
 import { m } from 'framer-motion';
 import HomeHero from '../home-heroCN';
-import HomeFAQs from '../home-faqs';
+import HomeFAQs from '../home-faqsCN';
 import HomeNewStart from '../home-new-start';
 import HomeCombination from '../home-combination';
 import HomeForDesigner from '../home-for-designer';

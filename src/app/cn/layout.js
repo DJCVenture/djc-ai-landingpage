@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types';
 
-import MainLayout from 'src/layouts/main';
+import MainLayout from 'src/layouts/mainCN';
 
 // ----------------------------------------------------------------------
 
