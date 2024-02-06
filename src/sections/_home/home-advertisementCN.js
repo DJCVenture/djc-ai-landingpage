@@ -35,12 +35,12 @@ export default function HomeAdvertisement() {
         }}
       >
         <Typography variant="h1" component="h2" sx={{ opacity: 0.48 }}>
-          Start Now
+          现在就开始
         </Typography>
 
         <Typography variant="h1" component="h2" sx={{ mb: 8 }}>
-          Create Your
-          <br /> AI Personal Assistant
+          创建您的
+          <br /> 人工智能个人助理
         </Typography>
 
         <Button

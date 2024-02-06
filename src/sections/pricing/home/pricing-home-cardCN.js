@@ -1,14 +1,10 @@
 import PropTypes from 'prop-types';
 
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
 
 import Label from 'src/components/label';
 import Iconify from 'src/components/iconify';
@@ -101,33 +97,12 @@ export default function PricingHomeCard({ plan }) {
           </Stack>
         </Stack>
 
-        {/* {personalPlan ? (
-          <Box
-            component="img"
-            alt={plan.icons[0]}
-            src={plan.icons[0]}
-            sx={{ width: 20, height: 20 }}
-          />
-        ) : (
-          <Stack direction="row" spacing={1.5}>
-            {plan.icons.map((icon) => (
-              <Box
-                key={icon}
-                component="img"
-                alt={icon}
-                src={icon}
-                sx={{ width: 20, height: 20 }}
-              />
-            ))}
-          </Stack>
-        )} */}
-
         <Stack spacing={2.5}>
           {plan.commons.map((option) => (
             <Stack key={option} spacing={1.5} direction="row" alignItems="center">
               <Iconify
                 icon="carbon:checkmark-outline"
-                sx={{ color: 'primary.main', width: 20, height: 20 }}
+                sx={{ color: '#c3015a', width: 20, height: 20 }}
               />
               <Typography variant="body2">{option}</Typography>
             </Stack>
@@ -149,7 +124,7 @@ export default function PricingHomeCard({ plan }) {
                 icon={option.disabled ? 'carbon:close-outline' : 'carbon:checkmark-outline'}
                 sx={{
                   mr: 2,
-                  color: 'primary.main',
+                  color: '#c3015a',
                   ...(option.disabled && { color: 'currentColor' }),
                 }}
               />
@@ -163,8 +138,8 @@ export default function PricingHomeCard({ plan }) {
           <Button
             size="large"
             fullWidth
-            variant={plan.price === '299.00' ?'contained': 'outlined'}
-            color={plan.price === '299.00' ? 'inherit':'primary' }
+            variant='outlined'
+            sx={{color:'#c3015a'}}
             target="_blank"
             rel="noopener"
             href="https://djcsystem.com/sign-up"

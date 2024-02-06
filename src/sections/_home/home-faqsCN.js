@@ -69,7 +69,7 @@ export default function HomeFAQsCN() {
         <Grid xs={12} md={8}>
           <m.div variants={varFade().in}>
             <Typography variant="h2" sx={{ textAlign: 'center' }}>
-              Frequently Asked Questions
+              常见问题
             </Typography>
           </m.div>
 

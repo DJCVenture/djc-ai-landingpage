@@ -163,8 +163,7 @@ export default function PricingHomeCard({ plan }) {
           <Button
             size="large"
             fullWidth
-            variant={plan.price === '299.00' ?'contained': 'outlined'}
-            
+            variant='outlined'
             target="_blank"
             rel="noopener"
             href="https://djcsystem.com/sign-up"

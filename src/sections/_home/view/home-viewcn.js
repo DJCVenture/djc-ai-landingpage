@@ -13,8 +13,9 @@ import HomeCombination from '../home-combination';
 import HomeForDesigner from '../home-for-designer';
 import HomeAdvertisement from '../home-advertisementCN';
 import PricingHome from '../../pricing/home/pricing-homeCN';
-import HomeFeatureHighlights from '../home-feature-highlights';
+import HomeFeatureHighlights from '../home-feature-highlightsCN';
 import HomeFlexibleComponents from '../home-flexible-components';
+import HomeComparison from '../home-comparisonCN';
 import { Box, Fab, Tooltip } from '@mui/material';
 import Iconify from 'src/components/iconify';
 
@@ -85,7 +86,7 @@ export default function HomeViewCN() {
         onClick={openWhatsApp}
       >
         <Tooltip title="Click here to try!" placement="top">
-          <Fab color="primary" variant="extended">
+          <Fab variant="extended" sx={{backgroundColor:'#c3015a'}}>
           试试我们的人工智能客服！
           </Fab>
         </Tooltip>
@@ -100,15 +101,11 @@ export default function HomeViewCN() {
       <HomeFlexibleComponents /> */}
 
       <HomeFeatureHighlights />
-
+      <HomeComparison />
       {/* <HomeForDesigner /> */}
-
       <PricingHome plans={_pricingHome} />
-
       <HomeFAQs />
-
       {/* <HomeCombination /> */}
-
       <HomeAdvertisement />
     </>
   );

@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Iconify from 'src/components/iconify';
 import { varFade, MotionViewport } from 'src/components/animate';
 import Image from 'next/image';
-import pink from '../../../public/assets/pink.png';
+import pink from '../../../public/assets/chinese pink.png';
 // import bnw from '../../../public/assets/black and white.png';
 
 // ----------------------------------------------------------------------

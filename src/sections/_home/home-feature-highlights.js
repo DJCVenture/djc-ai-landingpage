@@ -13,8 +13,11 @@ import { varFade, MotionViewport } from 'src/components/animate';
 const FEATURE_HIGHLIGHTS = [
   { title: 'AI chatbot/assistant', icon: 'eos-icons:ai' },
   { title: 'Lead Management', icon: 'material-symbols:leaderboard' },
-  { title: 'Message Management', icon: 'ic:baseline-whatsapp' },  
-  { title: 'Funnel System', icon: 'fluent:data-funnel-20-filled' },
+  { title: 'Whatsapp Blasting', icon: 'ic:baseline-whatsapp' },  
+  { title: 'Sales Funnel System', icon: 'fluent:data-funnel-20-filled' },
+  { title: 'Email Marketing', icon: 'material-symbols:stacked-email-outline-sharp' },
+  { title: 'Sales Listings', icon: 'clarity:list-line' },
+  { title: 'Training courses', icon: 'tdesign:course' },
   { title: 'Landing Page Builder', icon: 'foundation:page-multiple' },
   { title: 'Social Media Management', icon: 'foundation:social-facebook' },
   { title: 'Affilate System', icon: 'mdi:human-capacity-increase' },

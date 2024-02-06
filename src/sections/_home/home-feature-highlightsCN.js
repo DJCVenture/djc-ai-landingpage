@@ -7,35 +7,35 @@ import Typography from '@mui/material/Typography';
 
 import Iconify from 'src/components/iconify';
 import { varFade, MotionViewport } from 'src/components/animate';
-import Image from 'next/image';
-import pink from '../../../public/assets/pink.png';
-// import bnw from '../../../public/assets/black and white.png';
 
 // ----------------------------------------------------------------------
 
 const FEATURE_HIGHLIGHTS = [
-  { title: 'AI chatbot/assistant', icon: 'eos-icons:ai' },
-  { title: 'Lead Management', icon: 'material-symbols:leaderboard' },
-  { title: 'Message Management', icon: 'ic:baseline-whatsapp' },
-  { title: 'Funnel System', icon: 'fluent:data-funnel-20-filled' },
-  { title: 'Landing Page Builder', icon: 'foundation:page-multiple' },
-  { title: 'Social Media Management', icon: 'foundation:social-facebook' },
-  { title: 'Affilate System', icon: 'mdi:human-capacity-increase' },
-  { title: 'Easy to Customize', icon: 'carbon:settings-adjust' },
-  { title: 'Dark Mode', icon: 'carbon:asleep' },
+  { title: '人工智能聊天机器人/助手', icon: 'eos-icons:ai' },
+  { title: '客户线索管理', icon: 'material-symbols:leaderboard' },
+  { title: 'WhatsApp群发系统', icon: 'ic:baseline-whatsapp' },
+  { title: '销售漏斗系统', icon: 'fluent:data-funnel-20-filled' },
+  { title: '电子邮件营销', icon: 'material-symbols:stacked-email-outline-sharp' },
+  { title: '销售列表', icon: 'clarity:list-line' },
+  { title: '培训课程', icon: 'tdesign:course' },
+  { title: '登陆页面构建器', icon: 'foundation:page-multiple' },
+  { title: '社交媒体管理', icon: 'foundation:social-facebook' },
+  { title: '联盟系统', icon: 'mdi:human-capacity-increase' },
+  { title: '易于定制', icon: 'carbon:settings-adjust' },
+  { title: '暗黑模式', icon: 'carbon:asleep' },
   // { title: 'Google Fonts', icon: 'carbon:text-font' },
   // { title: 'Figma Design', icon: 'ph:figma-logo' },
-  { title: 'Fully Responsive', icon: 'carbon:devices' },
-  { title: 'Cross Platform', icon: 'fluent:phone-laptop-16-regular' },
-  { title: 'Ever-Evolving', icon: 'fluent:text-change-previous-20-regular' },
-  { title: 'Free Updates', icon: 'carbon:update-now' },
-  { title: 'Fast Support', icon: 'carbon:headset' },
+  { title: '适配各种屏幕尺寸', icon: 'carbon:devices' },
+  { title: '跨平台', icon: 'fluent:phone-laptop-16-regular' },
+  { title: '持续发展', icon: 'fluent:text-change-previous-20-regular' },
+  { title: '免费更新', icon: 'carbon:update-now' },
+  { title: '快速支持', icon: 'carbon:headset' },
   // { title: 'Well Documented', icon: 'carbon:notebook' },
 ];
 
 // ----------------------------------------------------------------------
 
-export default function HomeComparison() {
+export default function HomeFeatureHighlightsCN() {
   return (
     <Container
       component={MotionViewport}
@@ -45,7 +45,7 @@ export default function HomeComparison() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      {/* <Grid container spacing={{ xs: 8, md: 3 }} justifyContent={{ md: 'space-between' }}>
+      <Grid container spacing={{ xs: 8, md: 3 }} justifyContent={{ md: 'space-between' }}>
         <Grid
           xs={12}
           md={4}
@@ -55,19 +55,19 @@ export default function HomeComparison() {
         >
           <m.div variants={varFade().inUp}>
             <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-              Feature Highlights
+            功能亮点
             </Typography>
           </m.div>
 
           <m.div variants={varFade().inUp}>
             <Typography variant="h2" sx={{ my: 3 }}>
-              Have Everything You Need
+            一应俱全，满足您的需求
             </Typography>
           </m.div>
 
           <m.div variants={varFade().inUp}>
             <Typography sx={{ color: 'text.secondary' }}>
-              {`Let's see what makes our DJC system super powerful and user-friendly!`}
+              {`让我们来看看是什么让我们的DJC系统如此强大且用户友好！`}
             </Typography>
           </m.div>
         </Grid>
@@ -97,25 +97,7 @@ export default function HomeComparison() {
             ))}
           </Box>
         </Grid>
-      </Grid> */}
-      <Image 
-      src={pink} 
-      alt="" 
-      layout="responsive" 
-      width={175} 
-      height={100} 
-    />
-    
-    {/* <Image 
-      src={bnw} 
-      alt="" 
-      layout="responsive" 
-      width={175} 
-      height={100} 
-    /> */}
-      {/* <Image src={comparisonImg} alt="" layout="fill" objectFit="cover" /> */}
-      {/* <Image src={bnw} alt="" layout="fill" objectFit="cover" /> */}
-      {/* <Image src={bnw} alt='' width={100%} height={} /> */}
+      </Grid>
     </Container>
   );
 }
