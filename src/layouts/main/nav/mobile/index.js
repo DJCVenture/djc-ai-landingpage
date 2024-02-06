@@ -52,11 +52,11 @@ export default function NavMobile({ data }) {
         <Scrollbar>
           <Logo sx={{ mx: 2.5, my: 3 }} />
 
-          <List component="nav" disablePadding>
+          {/* <List component="nav" disablePadding>
             {data.map((list) => (
               <NavList key={list.title} data={list} />
             ))}
-          </List>
+          </List> */}
 
           <Stack spacing={1.5} sx={{ p: 3 }}>
             <Button
