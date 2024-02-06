@@ -58,7 +58,7 @@ export default function HomeHero() {
             >
               <Typography variant="h1">
                 Empower Your <br /> Business Today with
-                <Box component="span" sx={{ color: 'primary.main' }}>
+                <Box component="span" sx={{ color: '#c3015a' }}>
                   {` DJC`}
                 </Box>
               </Typography>

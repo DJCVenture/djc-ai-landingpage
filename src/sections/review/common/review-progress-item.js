@@ -36,7 +36,7 @@ export default function ReviewProgressItem({ rating, totals, index }) {
           </Stack>
 
           <LinearProgress
-            color="inherit"
+            color="#c3015a"
             variant="determinate"
             value={(rating.number / totals) * 100}
             sx={{

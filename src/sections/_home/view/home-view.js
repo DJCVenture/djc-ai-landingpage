@@ -35,7 +35,7 @@ export default function HomeView() {
   };
   return (
     <>
-    <Box
+      <Box
         sx={{
           position: 'fixed',
           top: 550,
@@ -54,12 +54,11 @@ export default function HomeView() {
           repeat: Infinity,
           repeatType: 'loop', // Ensure the animation loops
         }}
-
         onClick={openWhatsApp}
       >
         <Tooltip title="Click here to try!" placement="top">
           <Fab color="primary" size="medium">
-            <Iconify icon={'eos-icons:ai-operator'} sx={{width:25,height:25}}/>
+            <Iconify icon={'eos-icons:ai-operator'} sx={{ width: 25, height: 25 }} />
           </Fab>
         </Tooltip>
       </Box>
@@ -82,12 +81,11 @@ export default function HomeView() {
           repeat: Infinity,
           repeatType: 'loop', // Ensure the animation loops
         }}
-
         onClick={openWhatsApp}
       >
         <Tooltip title="Click here to try!" placement="top">
-          <Fab color="primary" variant="extended">
-          Try our AI Assistant!
+          <Fab variant="extended" sx={{backgroundColor:"#c3015a"}}>
+            Try our AI Assistant!
           </Fab>
         </Tooltip>
       </Box>

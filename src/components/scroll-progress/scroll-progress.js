@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 // ----------------------------------------------------------------------
 
 export default function ScrollProgress({
-  color = 'primary',
+  color = '#c3015a',
   size = 3,
   scrollYProgress,
   sx,
@@ -30,10 +30,7 @@ export default function ScrollProgress({
         position: 'fixed',
         transformOrigin: '0%',
         bgcolor: 'text.primary',
-        ...(color !== 'inherit' && {
-          background: (theme) =>
-            `linear-gradient(135deg, ${theme.palette[color].light} 0%, ${theme.palette[color].main} 100%)`,
-        }),
+        backgroundColor:'#c3015a',
         ...sx,
       }}
       style={{ scaleX }}

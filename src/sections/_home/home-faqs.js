@@ -40,8 +40,7 @@ const CONTENTS = [
   {
     question: 'How do I get started?',
     answer: `Sign up to either the monthly plan or the annual plan!`,
-  }
- 
+  },
 ];
 
 // ----------------------------------------------------------------------
@@ -140,7 +139,7 @@ export default function HomeFAQs() {
                 size="large"
                 color="inherit"
                 variant="contained"
-                href="mailto:kelvin@djc.ai?subject=[Feedback] from Customer"
+                href="mailto:admin@djc.ai?subject=[Feedback] from Customer"
               >
                 Contact us
               </Button>

@@ -40,8 +40,7 @@ const CONTENTS = [
   {
     question: '我如何开始使用？',
     answer: `注册月度计划或年度计划即可开始！`,
-  }
- 
+  },
 ];
 
 // ----------------------------------------------------------------------
@@ -131,7 +130,7 @@ export default function HomeFAQsCN() {
 
             <m.div variants={varFade().inUp}>
               <Typography sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-              为了收到最准确的意见，请描述您的案例。
+                为了收到最准确的意见，请描述您的案例。
               </Typography>
             </m.div>
 
@@ -140,7 +139,7 @@ export default function HomeFAQsCN() {
                 size="large"
                 color="inherit"
                 variant="contained"
-                href="mailto:kelvin@djc.ai?subject=[Feedback] from Customer"
+                href="mailto:admin@djc.ai?subject=[Feedback] from Customer"
               >
                 联系我们
               </Button>

@@ -58,7 +58,7 @@ export default function HomeHero() {
             >
               <Typography variant="h2">
                 提升您的企业业务 <br /> 今天就选择
-                <Box component="span" sx={{ color: 'primary.main' }}>
+                <Box component="span" sx={{ color: '#c3015a' }}>
                   {` DJC`}
                 </Box>
               </Typography>

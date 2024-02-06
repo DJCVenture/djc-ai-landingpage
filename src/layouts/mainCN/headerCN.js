@@ -53,7 +53,7 @@ export default function Header({ headerOnDark }) {
             display: { xs: 'none', md: 'flex' },
           }}
         >
-          <NavDesktop data={navConfig} />
+          {/* <NavDesktop data={navConfig} /> */}
         </Stack>
 
         <Box sx={{ flexGrow: { xs: 1, md: 'unset' } }} />
@@ -62,17 +62,43 @@ export default function Header({ headerOnDark }) {
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
           {/* <Searchbar /> */}
-          <Link href="/" sx={{ textDecoration: 'none' }}>
-            <Typography variant="button" display="block" gutterBottom>
-              ENG
+          <Box sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <Box component={Link} href="/" sx={{ textDecoration: 'none' }}>
+              <Typography
+                variant="button"
+                display="block"
+                gutterBottom
+                sx={{
+                  textDecoration: 'none',
+                  color: 'text.primary', // Use your theme's primary text color or any specific color
+                  '&:hover, &:visited, &:link, &:active': {
+                    textDecoration: 'none',
+                  },
+                }}
+              >
+                ENG
+              </Typography>
+            </Box>
+            <Typography variant="button" sx={{ mx: 1 }}>
+               
             </Typography>
-          </Link>
-          /
-          <Link href="/cn" sx={{ textDecoration: 'none' }}>
-            <Typography variant="button" display="block" gutterBottom>
-              华语
-            </Typography>
-          </Link>
+            <Box component={Link} href="/cn" sx={{ textDecoration: 'none' }}>
+              <Typography
+                variant="button"
+                display="block"
+                gutterBottom
+                sx={{
+                  textDecoration: 'none',
+                  color: 'text.primary', // Consistently use the primary text color
+                  '&:hover, &:visited, &:link, &:active': {
+                    textDecoration: 'none',
+                  },
+                }}
+              >
+                华语
+              </Typography>
+            </Box>
+          </Box>
           <Box
             component={m.div}
             animate={{

@@ -11,7 +11,7 @@ import HomeFAQs from '../home-faqsCN';
 import HomeNewStart from '../home-new-start';
 import HomeCombination from '../home-combination';
 import HomeForDesigner from '../home-for-designer';
-import HomeAdvertisement from '../home-advertisement';
+import HomeAdvertisement from '../home-advertisementCN';
 import PricingHome from '../../pricing/home/pricing-homeCN';
 import HomeFeatureHighlights from '../home-feature-highlights';
 import HomeFlexibleComponents from '../home-flexible-components';

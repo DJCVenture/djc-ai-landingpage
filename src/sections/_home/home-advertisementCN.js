@@ -51,7 +51,7 @@ export default function HomeAdvertisement() {
           sx={{backgroundColor:'#c3015a'}}
           href="https://djcsystem.com/sign-up"
         >
-          Sign Up Now
+          立即注册
         </Button>
       </Stack>
     </Box>

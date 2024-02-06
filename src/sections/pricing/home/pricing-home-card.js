@@ -127,7 +127,7 @@ export default function PricingHomeCard({ plan }) {
             <Stack key={option} spacing={1.5} direction="row" alignItems="center">
               <Iconify
                 icon="carbon:checkmark-outline"
-                sx={{ color: 'primary.main', width: 20, height: 20 }}
+                sx={{ color: '#c3015a', width: 20, height: 20 }}
               />
               <Typography variant="body2">{option}</Typography>
             </Stack>
@@ -149,7 +149,7 @@ export default function PricingHomeCard({ plan }) {
                 icon={option.disabled ? 'carbon:close-outline' : 'carbon:checkmark-outline'}
                 sx={{
                   mr: 2,
-                  color: 'primary.main',
+                  color: '#c3015a',
                   ...(option.disabled && { color: 'currentColor' }),
                 }}
               />
@@ -164,10 +164,11 @@ export default function PricingHomeCard({ plan }) {
             size="large"
             fullWidth
             variant={plan.price === '299.00' ?'contained': 'outlined'}
-            color={plan.price === '299.00' ? 'inherit':'primary' }
+            
             target="_blank"
             rel="noopener"
             href="https://djcsystem.com/sign-up"
+            sx={{color:'#c3015a'}}
           >
             Choose Package
           </Button>
