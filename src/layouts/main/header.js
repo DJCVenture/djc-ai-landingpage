@@ -10,7 +10,7 @@ import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material/styles';
 import BaseOptions from 'src/components/settings/drawer/base-options';
 import { paths } from 'src/routes/paths';
-
+import Typography from '@mui/material/Typography';
 import { useOffSetTop } from 'src/hooks/use-off-set-top';
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -27,6 +27,7 @@ import NavDesktop from './nav/desktop';
 import NavMobile from './nav/mobile';
 import { useSettingsContext } from 'src/components/settings';
 import Iconify from 'src/components/iconify';
+import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
@@ -61,7 +62,17 @@ export default function Header({ headerOnDark }) {
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
           {/* <Searchbar /> */}
-      
+          <Link href="/" sx={{ textDecoration: 'none' }}>
+            <Typography variant="button" display="block" gutterBottom>
+              ENG
+            </Typography>
+          </Link>
+          /
+          <Link href="/cn" sx={{ textDecoration: 'none' }}>
+            <Typography variant="button" display="block" gutterBottom>
+              华语
+            </Typography>
+          </Link>
           <Box
             component={m.div}
             animate={{
@@ -78,7 +89,6 @@ export default function Header({ headerOnDark }) {
               },
             }}
           >
-            
             <Iconify
               width={28}
               icon={settings.themeMode === 'dark' ? 'carbon:asleep-filled' : 'ph:sun-bold'}

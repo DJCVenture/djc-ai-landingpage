@@ -6,22 +6,21 @@ import { _pricingHome } from 'src/_mock';
 
 import ScrollProgress from 'src/components/scroll-progress';
 import { m } from 'framer-motion';
-import HomeHero from '../home-hero';
+import HomeHero from '../home-heroCN';
 import HomeFAQs from '../home-faqs';
 import HomeNewStart from '../home-new-start';
 import HomeCombination from '../home-combination';
 import HomeForDesigner from '../home-for-designer';
 import HomeAdvertisement from '../home-advertisement';
-import PricingHome from '../../pricing/home/pricing-home';
+import PricingHome from '../../pricing/home/pricing-homeCN';
 import HomeFeatureHighlights from '../home-feature-highlights';
 import HomeFlexibleComponents from '../home-flexible-components';
-import HomeComparison from '../home-comparison';
 import { Box, Fab, Tooltip } from '@mui/material';
 import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
-export default function HomeView() {
+export default function HomeViewCN() {
   const { scrollYProgress } = useScroll();
   const openWhatsApp = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
@@ -87,7 +86,7 @@ export default function HomeView() {
       >
         <Tooltip title="Click here to try!" placement="top">
           <Fab color="primary" variant="extended">
-          Try our AI Assistant!
+          试试我们的人工智能客服！
           </Fab>
         </Tooltip>
       </Box>
@@ -101,8 +100,6 @@ export default function HomeView() {
       <HomeFlexibleComponents /> */}
 
       <HomeFeatureHighlights />
-
-      <HomeComparison />
 
       {/* <HomeForDesigner /> */}
 
