@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
-import sample3 from '../../../public/assets/sample3.png';
+import sample3 from '../../../public/assets/chat1.png';
 import { varFade, MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
@@ -45,15 +45,29 @@ export default function AiChatBot({ plans }) {
           </Typography>
         </m.div>
       </Box>
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Typography sx={{ color: 'text.secondary' }} variant="caption">
+          *Sample Conversation Between AI assistant and Customer
+        </Typography>
+      </Box>
 
-      <Image
-        src={sample3}
-        alt=""
-        layout="responsive"
-        width={175}
-        height={100}
-        style={{ borderRadius: '3%', boxShadow: '8px 8px 18px 0 #e56aaf', marginBottom: '100px' }}
-      />
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Image
+          src={sample3}
+          alt=""
+          width={900}
+          height={600}
+          style={{ boxShadow: '8px 8px 18px 0 #e56aaf', marginBottom: '100px' }}
+        />
+      </Box>
     </Container>
   );
 }

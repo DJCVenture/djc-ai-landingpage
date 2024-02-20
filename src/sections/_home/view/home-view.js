@@ -96,25 +96,12 @@ export default function HomeView() {
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
-
-      {/* <HomeNewStart />
-
-      <HomeFlexibleComponents /> */}
       <HomeAiChatBot />
       <HomeFlowDesign />
-
       <HomeFeatureHighlights />
-
       <HomeComparison />
-
-      {/* <HomeForDesigner /> */}
-
       <PricingHome plans={_pricingHome} />
-
       <HomeFAQs />
-
-      {/* <HomeCombination /> */}
-
       <HomeAdvertisement />
     </>
   );

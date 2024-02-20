@@ -12,7 +12,6 @@ import { varFade, MotionViewport } from 'src/components/animate';
 // ----------------------------------------------------------------------
 
 export default function AiChatBot({ plans }) {
- 
   return (
     <Container
       component={MotionViewport}
@@ -35,7 +34,8 @@ export default function AiChatBot({ plans }) {
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-            Transform your digital strategy<br/> with our No-Code Flow Design platforms <br />
+            Transform your digital strategy
+            <br /> with our No-Code Flow Design platforms <br />
             tailored for businesses of every size
           </Typography>
         </m.div>
@@ -49,26 +49,32 @@ export default function AiChatBot({ plans }) {
           </Typography>
         </m.div>
       </Box>
-
-     
-      <Image 
-  src={sample1} 
-  alt="" 
-  layout="responsive" 
-  width={175} 
-  height={100} 
-  style={{ borderRadius: '3%', boxShadow: '8px 8px 18px 0 #e56aaf',marginBottom:"100px" }}
-/>
-     
-<Image 
-  src={sample2} 
-  alt="" 
-  layout="responsive" 
-  width={175} 
-  height={100} 
-  style={{ borderRadius: '3%', boxShadow: '8px 8px 18px 0 #e56aaf' }}
-/>
-    
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Image
+          src={sample1}
+          alt=""
+          width={900}
+          height={600}
+          style={{ boxShadow: '8px 8px 18px 0 #e56aaf', marginBottom: '100px' }}
+        />
+      </Box>
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Image
+          src={sample2}
+          alt=""
+          width={900}
+          height={600}
+          style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
+        />
+      </Box>
     </Container>
   );
 }
