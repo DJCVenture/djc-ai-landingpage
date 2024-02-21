@@ -35,6 +35,10 @@ const CONTENTS = [
   },
   {
     question: 'If I have questions, is there someone I can talk to?',
+    answer: `Upon signing up, you will receive an invitation to join our committees group, where you can engage with us at any time via group chat.`,
+  },
+  {
+    question: 'Who owns the data /content / subscribers?',
     answer: `You do! Any content (including your users) is 100% owned by you. DJC System doesn't have permission to use that content or contact your users for any reason.`,
   },
   {

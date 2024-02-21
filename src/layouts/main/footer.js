@@ -61,7 +61,7 @@ export default function Footer() {
       <Logo single />
 
       <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
-        © 2023. All rights reserved
+        © {new Date().getFullYear()}. All rights reserved
       </Typography>
 
       <Box>
