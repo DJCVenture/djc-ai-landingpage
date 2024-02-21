@@ -34,18 +34,15 @@ export default function AiChatBot({ plans }) {
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-            Transform your digital strategy
-            <br /> with our No-Code Flow Design platforms <br />
-            tailored for businesses of every size
+          无需编码的轻松流程设计
+            <br /> 通过我们的无代码流程设计平台，转变您的数字战略 <br />
+            专为各种规模的企业量身定制
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography sx={{ color: 'text.secondary' }}>
-            No matter you're a newcomer to digital transformation or seeking to enhance your
-            existing processes, our versatile plans ensure you have the tools to succeed. Designed
-            for growth and ease-of-use, our solutions empower you to build, innovate, and scale
-            without limits.
+          无论您是数字转型的新手，还是希望增强您现有的流程，我们的多功能方案确保您拥有成功所需的工具。我们的解决方案旨在促进增长和易用性，赋予您无限制地构建、创新和扩展的能力。
           </Typography>
         </m.div>
       </Box>

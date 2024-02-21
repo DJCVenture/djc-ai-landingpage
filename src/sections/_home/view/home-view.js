@@ -8,14 +8,10 @@ import ScrollProgress from 'src/components/scroll-progress';
 import { m } from 'framer-motion';
 import HomeHero from '../home-hero';
 import HomeFAQs from '../home-faqs';
-import HomeNewStart from '../home-new-start';
-import HomeCombination from '../home-combination';
-import HomeForDesigner from '../home-for-designer';
 import HomeAdvertisement from '../home-advertisement';
-import AICHATBOT from '../../pricing/home/pricing-home';
 import PricingHome from '../../pricing/home/pricing-home';
 import HomeFeatureHighlights from '../home-feature-highlights';
-import HomeFlexibleComponents from '../home-flexible-components';
+import HomeAiSupport from '../home-aisupport';
 import HomeComparison from '../home-comparison';
 import { Box, Fab, Tooltip } from '@mui/material';
 import Iconify from 'src/components/iconify';
@@ -68,7 +64,7 @@ export default function HomeView() {
       <Box
         sx={{
           position: 'fixed',
-          top: 550,
+          top: 450,
           right: 20,
           zIndex: 9999,
           '& > :not(style)': { m: 1 },
@@ -97,6 +93,7 @@ export default function HomeView() {
 
       <HomeHero />
       <HomeAiChatBot />
+      <HomeAiSupport />
       <HomeFlowDesign />
       <HomeFeatureHighlights />
       <HomeComparison />

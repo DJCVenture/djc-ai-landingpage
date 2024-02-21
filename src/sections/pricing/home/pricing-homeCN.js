@@ -12,17 +12,15 @@ import PricingHomeCard from './pricing-home-cardCN';
 // ----------------------------------------------------------------------
 
 export default function PricingHome({ plans }) {
+
+  const arrFunctionList = ['DJC AI 助手', 'DJC 客户管理', 'DJC Whatsapp 广播', 'DJC Whatsapp 流程', 'DJC Whatsapp 营销漏斗', 'DJC 电子邮件营销', '着陆页生成器', '定期培训课程', 'Telegram 社区', '持续性功能优化', '持续性功能扩展', '高效系统支援', ]
+
   const allPlans = [
     {
       license: '专业计划-个人版（每月）',
       price: '199.00',
       icons: [],
-      commons: [
-        'DJC 客户线索管理',
-        'DJC WhatsApp广播',
-        'DJC WhatsApp流程',
-        'DJC Whatsapp 营销漏斗',
-      ],
+      commons: arrFunctionList,
       options: [
         { title: '* 可添加多达5名成员', disabled: true },
         { title: '* 附文件上传功能', disabled: true },
@@ -32,12 +30,7 @@ export default function PricingHome({ plans }) {
       license: '专业计划-企业版（每月）',
       price: '299.00',
       icons: [],
-      commons: [
-        'DJC 客户线索管理',
-        'DJC WhatsApp广播',
-        'DJC WhatsApp流程',
-        'DJC Whatsapp 营销漏斗',
-      ],
+      commons: arrFunctionList,
       options: [
         { title: '* 可添加多达5名成员', disabled: false },
         { title: '* 附文件上传功能', disabled: false },
@@ -47,12 +40,7 @@ export default function PricingHome({ plans }) {
       license: '专业计划-个人版（年度订阅每月）',
       price: '159.20',
       icons: [],
-      commons: [
-        'DJC 客户线索管理',
-        'DJC WhatsApp广播',
-        'DJC WhatsApp流程',
-        'DJC Whatsapp 营销漏斗',
-      ],
+      commons: arrFunctionList,
       options: [
         { title: '* 可添加多达5名成员', disabled: true },
         { title: '* 附文件上传功能', disabled: true },
@@ -62,12 +50,7 @@ export default function PricingHome({ plans }) {
       license: '专业计划-企业版（年度订阅每月）',
       price: '239.20',
       icons: [],
-      commons: [
-        'DJC 客户线索管理',
-        'DJC WhatsApp广播',
-        'DJC WhatsApp流程',
-        'DJC Whatsapp 营销漏斗',
-      ],
+      commons:arrFunctionList,
       options: [
         { title: '* 可添加多达5名成员', disabled: false },
         { title: '* 附文件上传功能', disabled: false },

@@ -28,21 +28,20 @@ export default function AiChatBot({ plans }) {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-            AI Automation Solutions Tailored to Your Needs
+          AI 自动化解决方案量身定制以满足您的需求
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-            Unlock the full potential of your business <br />
-            with our AI Automation offerings.
+          利用我们的 AI 自动化产品 <br />
+          释放您业务的全部潜能。
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography sx={{ color: 'text.secondary' }}>
-            Whether you're just starting on your automation journey or looking to scale existing
-            capabilities, we have the right solution for you.
+          无论您是刚开始自动化之旅，还是希望扩大现有能力，我们都能为您提供正确的解决方案。
           </Typography>
         </m.div>
       </Box>
@@ -52,7 +51,7 @@ export default function AiChatBot({ plans }) {
         }}
       >
         <Typography sx={{ color: 'text.secondary' }} variant="caption">
-          *Sample Conversation Between AI assistant and Customer
+        *AI 助手与客户之间的示例对话
         </Typography>
       </Box>
 

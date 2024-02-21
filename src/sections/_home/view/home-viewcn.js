@@ -8,16 +8,15 @@ import ScrollProgress from 'src/components/scroll-progress';
 import { m } from 'framer-motion';
 import HomeHero from '../home-heroCN';
 import HomeFAQs from '../home-faqsCN';
-import HomeNewStart from '../home-new-start';
-import HomeCombination from '../home-combination';
-import HomeForDesigner from '../home-for-designer';
+import HomeAiChatBot from '../home-aichatbotcn';
 import HomeAdvertisement from '../home-advertisementCN';
 import PricingHome from '../../pricing/home/pricing-homeCN';
 import HomeFeatureHighlights from '../home-feature-highlightsCN';
-import HomeFlexibleComponents from '../home-flexible-components';
 import HomeComparison from '../home-comparisonCN';
+import HomeAiSupport from '../home-aisupportcn';
 import { Box, Fab, Tooltip } from '@mui/material';
 import Iconify from 'src/components/iconify';
+import HomeFlowDesign from '../home-flowdesigncn';
 
 // ----------------------------------------------------------------------
 
@@ -65,7 +64,7 @@ export default function HomeViewCN() {
       <Box
         sx={{
           position: 'fixed',
-          top: 550,
+          top: 450,
           right: 20,
           zIndex: 9999,
           '& > :not(style)': { m: 1 },
@@ -93,17 +92,13 @@ export default function HomeViewCN() {
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
-
-      {/* <HomeNewStart />
-
-      <HomeFlexibleComponents /> */}
-
+      <HomeAiChatBot />
+      <HomeAiSupport />
+      <HomeFlowDesign />
       <HomeFeatureHighlights />
       <HomeComparison />
-      {/* <HomeForDesigner /> */}
       <PricingHome plans={_pricingHome} />
       <HomeFAQs />
-      {/* <HomeCombination /> */}
       <HomeAdvertisement />
     </>
   );

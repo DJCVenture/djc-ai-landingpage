@@ -5,13 +5,14 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
-import sample3 from '../../../public/assets/chat1.png';
-import sample4 from '../../../public/assets/chat2.png';
+import sample3 from '../../../public/assets/malay.png';
+import sample4 from '../../../public/assets/eng.png';
+import sample5 from '../../../public/assets/cn.png';
 import { varFade, MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 
-export default function AiChatBot({ plans }) {
+export default function AiSupport({ plans }) {
   return (
     <Container
       component={MotionViewport}
@@ -28,21 +29,20 @@ export default function AiChatBot({ plans }) {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-            AI Automation Solutions Tailored to Your Needs
+          YOUR 24/7 BUSINESS POWERHOUSE
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-            Unlock the full potential of your business <br />
-            with our AI Automation offerings.
+          Elevate Your Enterprise Day and Night <br />
+            with our AI Assistant/Chat bot feature.
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography sx={{ color: 'text.secondary' }}>
-            Whether you're just starting on your automation journey or looking to scale existing
-            capabilities, we have the right solution for you.
+          Our AI Assistants solutions work tirelessly, 24/7, ignoring holidays to keep your business ahead. Designed for Malaysia's diverse market, our AI assistants seamlessly cater to various languages and cultural nuances, ensuring your enterprise connects effectively with every customer. Experience uninterrupted efficiency and unlock your full potential with technology tailored for your success.
           </Typography>
         </m.div>
       </Box>
@@ -89,11 +89,20 @@ export default function AiChatBot({ plans }) {
           height={800} // Adjusted height for consistency
           style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
         />
+
+        <Image
+          src={sample5}
+          alt=""
+          layout="responsive"
+          width={400} // Adjusted width for side-by-side layout
+          height={800} // Adjusted height for consistency
+          style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
+        />
       </Box>
     </Container>
   );
 }
 
-AiChatBot.propTypes = {
+AiSupport.propTypes = {
   plans: PropTypes.array,
 };

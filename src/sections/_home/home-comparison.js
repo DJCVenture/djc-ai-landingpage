@@ -45,77 +45,38 @@ export default function HomeComparison() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      {/* <Grid container spacing={{ xs: 8, md: 3 }} justifyContent={{ md: 'space-between' }}>
-        <Grid
-          xs={12}
-          md={4}
-          sx={{
-            textAlign: { xs: 'center', md: 'left' },
-          }}
-        >
-          <m.div variants={varFade().inUp}>
-            <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-              Feature Highlights
-            </Typography>
-          </m.div>
+      <Box
+        sx={{
+          mb: { xs: 8, md: 10 },
+          textAlign: 'center',
+        }}
+      >
+        <m.div variants={varFade().inDown}>
+          <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+          OPTIMIZE YOUR SALES STRATEGY WITH OUR INTEGRATED WEB APP SOLUTION
+          </Typography>
+        </m.div>
 
-          <m.div variants={varFade().inUp}>
-            <Typography variant="h2" sx={{ my: 3 }}>
-              Have Everything You Need
-            </Typography>
-          </m.div>
+        <m.div variants={varFade().inDown}>
+          <Typography variant="h2" sx={{ my: 3 }}>
+            Streamline Your Operations 
+            <br /> with Our Cost-Effective, Unified System Platform <br />     
+          </Typography>
+        </m.div>
 
-          <m.div variants={varFade().inUp}>
-            <Typography sx={{ color: 'text.secondary' }}>
-              {`Let's see what makes our DJC system super powerful and user-friendly!`}
-            </Typography>
-          </m.div>
-        </Grid>
-
-        <Grid xs={12} md={7}>
-          <Box
-            sx={{
-              rowGap: 6,
-              columnGap: 3,
-              display: 'grid',
-              gridTemplateColumns: {
-                xs: 'repeat(2, 1fr)',
-                sm: 'repeat(3, 1fr)',
-              },
-            }}
-          >
-            {FEATURE_HIGHLIGHTS.map((feature) => (
-              <m.div key={feature.title} variants={varFade({ distance: 40 }).in}>
-                <Box sx={{ textAlign: 'center' }}>
-                  <Iconify icon={feature.icon} width={32} />
-
-                  <Typography variant="subtitle2" component="div" sx={{ mt: 2 }}>
-                    {feature.title}
-                  </Typography>
-                </Box>
-              </m.div>
-            ))}
-          </Box>
-        </Grid>
-      </Grid> */}
-      <Image 
-      src={pink} 
-      alt="" 
-      layout="responsive" 
-      width={175} 
-      height={100} 
-    />
-    
-    {/* <Image 
-      src={bnw} 
-      alt="" 
-      layout="responsive" 
-      width={175} 
-      height={100} 
-    /> */}
-      {/* <Image src={comparisonImg} alt="" layout="fill" objectFit="cover" /> */}
-      {/* <Image src={bnw} alt="" layout="fill" objectFit="cover" /> */}
-      {/* <Image src={bnw} alt='' width={100%} height={} /> */}
+        <m.div variants={varFade().inDown}>
+          <Typography sx={{ color: 'text.secondary' }}>
+          Whether you're stepping into the world of digital sales or aiming to consolidate your sales processes, our integrated web app solution brings together multiple sales functions into a single, unified platform. This comprehensive approach not only simplifies management but also significantly reduces costs compared to the cumulative expense of adopting multiple disparate systems. 
+          </Typography>
+        </m.div>
+      </Box>
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Image src={pink} alt="" layout="responsive" width={175} height={100} />
+      </Box>
     </Container>
   );
 }

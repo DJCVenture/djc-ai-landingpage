@@ -45,59 +45,31 @@ export default function HomeComparison() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      {/* <Grid container spacing={{ xs: 8, md: 3 }} justifyContent={{ md: 'space-between' }}>
-        <Grid
-          xs={12}
-          md={4}
-          sx={{
-            textAlign: { xs: 'center', md: 'left' },
-          }}
-        >
-          <m.div variants={varFade().inUp}>
-            <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-              Feature Highlights
-            </Typography>
-          </m.div>
+   <Box
+        sx={{
+          mb: { xs: 8, md: 10 },
+          textAlign: 'center',
+        }}
+      >
+        <m.div variants={varFade().inDown}>
+          <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+          通过我们的集成网页应用解决方案优化您的销售策略
+          </Typography>
+        </m.div>
 
-          <m.div variants={varFade().inUp}>
-            <Typography variant="h2" sx={{ my: 3 }}>
-              Have Everything You Need
-            </Typography>
-          </m.div>
+        <m.div variants={varFade().inDown}>
+          <Typography variant="h2" sx={{ my: 3 }}>
+          使用我们成本效益高,
+            <br /> 统一的系统平台简化您的运营 <br />     
+          </Typography>
+        </m.div>
 
-          <m.div variants={varFade().inUp}>
-            <Typography sx={{ color: 'text.secondary' }}>
-              {`Let's see what makes our DJC system super powerful and user-friendly!`}
-            </Typography>
-          </m.div>
-        </Grid>
-
-        <Grid xs={12} md={7}>
-          <Box
-            sx={{
-              rowGap: 6,
-              columnGap: 3,
-              display: 'grid',
-              gridTemplateColumns: {
-                xs: 'repeat(2, 1fr)',
-                sm: 'repeat(3, 1fr)',
-              },
-            }}
-          >
-            {FEATURE_HIGHLIGHTS.map((feature) => (
-              <m.div key={feature.title} variants={varFade({ distance: 40 }).in}>
-                <Box sx={{ textAlign: 'center' }}>
-                  <Iconify icon={feature.icon} width={32} />
-
-                  <Typography variant="subtitle2" component="div" sx={{ mt: 2 }}>
-                    {feature.title}
-                  </Typography>
-                </Box>
-              </m.div>
-            ))}
-          </Box>
-        </Grid>
-      </Grid> */}
+        <m.div variants={varFade().inDown}>
+          <Typography sx={{ color: 'text.secondary' }}>
+          无论您是初步进入数字销售领域，还是希望整合您的销售流程，我们的集成网页应用解决方案将多个销售功能汇集到一个统一的平台中。这种全面的方法不仅简化了管理，而且与采用多个不同系统的累计费用相比，还能显著降低成本。
+          </Typography>
+        </m.div>
+      </Box>
       <Image 
       src={pink} 
       alt="" 
@@ -106,16 +78,7 @@ export default function HomeComparison() {
       height={100} 
     />
     
-    {/* <Image 
-      src={bnw} 
-      alt="" 
-      layout="responsive" 
-      width={175} 
-      height={100} 
-    /> */}
-      {/* <Image src={comparisonImg} alt="" layout="fill" objectFit="cover" /> */}
-      {/* <Image src={bnw} alt="" layout="fill" objectFit="cover" /> */}
-      {/* <Image src={bnw} alt='' width={100%} height={} /> */}
+    
     </Container>
   );
 }

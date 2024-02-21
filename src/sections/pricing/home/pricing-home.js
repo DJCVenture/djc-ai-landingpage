@@ -13,12 +13,14 @@ import PricingHomeCard from './pricing-home-card';
 
 export default function PricingHome({ plans }) {
 
+  const arrFunctionList = ['DJC AI Assistant','DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels','DJC Email Marketing', 'Landing Page Builder','Periodic Training Courses','Telegram Community','Continuous Enhancements','Continuous Expansion','Rapid System Support', ]
+
   const allPlans = [
     {
       license: 'Professional Plan- Personal (Monthly)',
       price: '199.00',
       icons: [],
-      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: true },
         { title: '* Upload files', disabled: true },       
@@ -28,7 +30,7 @@ export default function PricingHome({ plans }) {
       license: 'Professional Plan- Company (Monthly)',
       price: '299.00',
       icons: [],
-      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: false },
         { title: '* Upload files', disabled: false },       
@@ -38,7 +40,7 @@ export default function PricingHome({ plans }) {
       license: 'Professional Plan- Personal (Yearly)',
       price: '159.20',
       icons: [],
-      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: true },
         { title: '* Upload files', disabled: true },       
@@ -48,7 +50,7 @@ export default function PricingHome({ plans }) {
       license: 'Professional Plan- Company (Yearly)',
       price: '239.20',
       icons: [],
-      commons: ['DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels'],
+      commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: false },
         { title: '* Upload files', disabled: false },       
