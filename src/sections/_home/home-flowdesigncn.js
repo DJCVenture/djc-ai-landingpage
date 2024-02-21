@@ -28,14 +28,14 @@ export default function AiChatBot({ plans }) {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-            Effortless Flow Design with Our No-Code Solutions
+          无需编码的轻松流程设计
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-          无需编码的轻松流程设计
-            <br /> 通过我们的无代码流程设计平台，转变您的数字战略 <br />
+          
+            通过我们的无代码流程设计平台，转变您的数字战略 <br />
             专为各种规模的企业量身定制
           </Typography>
         </m.div>
