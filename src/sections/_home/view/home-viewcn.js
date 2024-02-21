@@ -17,6 +17,7 @@ import HomeAiSupport from '../home-aisupportcn';
 import { Box, Fab, Tooltip } from '@mui/material';
 import Iconify from 'src/components/iconify';
 import HomeFlowDesign from '../home-flowdesigncn';
+import HomeCountUp from '../home-count-upcn';
 
 // ----------------------------------------------------------------------
 
@@ -98,6 +99,7 @@ export default function HomeViewCN() {
       <HomeFeatureHighlights />
       <HomeComparison />
       <PricingHome plans={_pricingHome} />
+      <HomeCountUp/>
       <HomeFAQs />
       <HomeAdvertisement />
     </>
