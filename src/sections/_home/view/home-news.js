@@ -67,7 +67,14 @@ export default function HomeNews() {
                 maxWidth: { xs: 300, sm: 350, md: 400 }, // Reduces card size on desktop view
                 m: 'auto', // Centers the card on all screen sizes
                 boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
+                '&:hover': {
+                  cursor: 'pointer', // Changes the cursor to pointer on hover to indicate clickability
+                  // Optionally, you can add more styles here to visually indicate hover, like changing the boxShadow or background color slightly
+                  boxShadow: '5px 5px 20px rgba(0,0,0,0.4)', // Example: slightly intensify the shadow on hover
+                },
               }}
+              onClick={handleClick}
+              
             >
               <CardMedia
                 component="img"
@@ -89,7 +96,7 @@ export default function HomeNews() {
               </CardContent>
               <CardActions sx={{ justifyContent: 'center' }}>
                 {index===0?
-                <Button size="small" onClick={handleClick}>REGISTER NOW</Button>:<Typography variant="body2" color="text.secondary">
+                <Button size="small" >REGISTER NOW</Button>:<Typography variant="body2" color="text.secondary">
                 Event Concluded
               </Typography>}
               </CardActions>
