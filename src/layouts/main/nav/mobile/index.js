@@ -63,6 +63,26 @@ export default function NavMobile({ data }) {
               fullWidth
               variant="contained"
               color="inherit"
+              href="/whatsnew"
+              
+              rel="noopener"
+            >
+              What's New
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="https://djcsystem.com"
+              target="_blank"
+              rel="noopener"
+            >
+              Login
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
               href="https://djcsystem.com/sign-up"
               target="_blank"
               rel="noopener"

@@ -16,7 +16,7 @@ import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 const SUMMARY = [
   { name: 'Subscribers', number: 1031 },
-  { name: '"Industries and Sectors Involved', number: 30 },
+  { name: 'Industries and Sectors Involved', number: 30 },
   { name: 'Daily Active Users', number: 150 },
   { name: 'Monthly Read and Write Operations', number: 8000000 },
 ];

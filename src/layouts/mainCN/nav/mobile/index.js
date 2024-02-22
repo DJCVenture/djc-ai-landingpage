@@ -58,7 +58,27 @@ export default function NavMobile({ data }) {
             ))}
           </List> */}
 
-          <Stack spacing={1.5} sx={{ p: 3 }}>
+<Stack spacing={1.5} sx={{ p: 3 }}>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="/whatsnew"
+              
+              rel="noopener"
+            >
+              最新动态
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="https://djcsystem.com"
+              target="_blank"
+              rel="noopener"
+            >
+              登录
+            </Button>
             <Button
               fullWidth
               variant="contained"
