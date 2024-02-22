@@ -3,15 +3,15 @@ import HomeView from 'src/sections/_home/view/home-view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-    title: 'DJC System',
+    title: 'DJC AI',
     description: 'With powerful AI capabilities, DJC System empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
     robots: 'index,follow',
     googlebot: 'index,follow',
-    keywords: ['whatsapp','blasting','lead','lead management','find lead','ai','ai chatbot','ai assistant','whatsapp blasting'], 
+    keywords: ['whatsapp','blasting','lead','lead management','find lead','AI','ai chatbot','ai assistant','whatsapp blasting',"email marketing",'sales funnel','funnel','landing page','landing page builder','AI automation','automation'], 
     category: 'sales',
     alternates: {
      
-      canonical:'https://djc-ai-landingpage.vercel.app/',
+      canonical:'https://djc.ai',
       languages: {
         'en-US': '/en-US',
       },
@@ -19,7 +19,7 @@ export const metadata = {
     openGraph: {
       type: 'website',
       // url: arrListing.domain+'/agent/'+arrListing.userId.replace(/[^\w\s]/gi, '') +'/listing/'+params.listId+"/",
-      url:'https://djc-ai-landingpage.vercel.app/',
+      url:'https://djc.ai',
       title: 'DJC System',
       description: 'With powerful AI capabilities, DJC System empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
       images: [
