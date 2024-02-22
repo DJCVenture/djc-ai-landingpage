@@ -61,21 +61,22 @@ export default function HomeNews() {
         >
           {news.map((item, index) => (
             <Card
-              key={index}
-              sx={{
-                width: '100%', // Allows the card to grow
-                maxWidth: { xs: 300, sm: 350, md: 400 }, // Reduces card size on desktop view
-                m: 'auto', // Centers the card on all screen sizes
-                boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
-                '&:hover': {
+            key={index}
+            sx={{
+              width: '100%', // Allows the card to grow
+              maxWidth: { xs: 300, sm: 350, md: 400 }, // Reduces card size on desktop view
+              m: 'auto', // Centers the card on all screen sizes
+              boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
+              '&:hover': {
+                ...(index === 0 && {
                   cursor: 'pointer', // Changes the cursor to pointer on hover to indicate clickability
-                  // Optionally, you can add more styles here to visually indicate hover, like changing the boxShadow or background color slightly
-                  boxShadow: '5px 5px 20px rgba(0,0,0,0.4)', // Example: slightly intensify the shadow on hover
-                },
-              }}
-              onClick={handleClick}
-              
-            >
+                  boxShadow: '5px 5px 20px rgba(0,0,0,0.4)', // Slightly intensify the shadow on hover
+                }),
+              },
+            }}
+            onClick={index === 0 ? handleClick : undefined}
+          >
+          
               <CardMedia
                 component="img"
                 height="auto" // Adjusts height automatically
