@@ -21,7 +21,7 @@ export default function HomeNews() {
    
   const news = [
     {
-      title: 'Dive Into AI Strategy',
+      title: 'Dive Into AI Strategies',
       desc: 'Webinar on 28 FEB 2024 8-10PM',
          image:
         'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-02-22_11-08-32.jpg?alt=media&token=aa711e38-0bad-4b63-92c9-0735dd9b296f',
