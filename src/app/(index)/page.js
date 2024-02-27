@@ -60,17 +60,7 @@ export const metadata = {
       },
     ],
   },
-  schemaOrgJSONLD: [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      url: 'https://djc.ai',
-      name: 'DJC System',
-      alternateName: 'DJC AI',
-      description:
-        'With powerful AI capabilities, DJC System empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
-    },
-  ],
+ 
 };
 
 export default function HomePage() {
