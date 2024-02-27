@@ -23,7 +23,7 @@ export default function PricingHome({ plans }) {
       commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: true },
-        { title: '* Upload files', disabled: true },       
+        { title: '* Property Listing Portal Access', disabled: true },       
       ],
     },
     {
@@ -33,7 +33,7 @@ export default function PricingHome({ plans }) {
       commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: false },
-        { title: '* Upload files', disabled: false },       
+        { title: '* Property Listing Portal Access', disabled: false },       
       ],
     },  
     {
@@ -43,7 +43,7 @@ export default function PricingHome({ plans }) {
       commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: true },
-        { title: '* Upload files', disabled: true },       
+        { title: '* Property Listing Portal Access', disabled: true },       
       ],
     },   
     {
@@ -53,7 +53,7 @@ export default function PricingHome({ plans }) {
       commons: arrFunctionList,
       options: [
         { title: '* Add up to 5 team members', disabled: false },
-        { title: '* Upload files', disabled: false },       
+        { title: '* Property Listing Portal Access', disabled: false },       
       ],
     },    
   ];
