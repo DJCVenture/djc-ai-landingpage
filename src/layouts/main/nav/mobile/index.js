@@ -95,7 +95,7 @@ export default function NavMobile({ data }) {
                 width={28}
                 icon="ic:baseline-facebook"
                 style={{
-                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
+                  color: settings.themeMode === 'dark' ? 'black' : 'white', // Make asleep-filled icon yellow
                 }}
               />
             </Button>
