@@ -1,6 +1,5 @@
 import HomeView from 'src/sections/_home/view/home-view';
 
-// ----------------------------------------------------------------------
 
 export const metadata = {
   title: 'DJC AI',
@@ -30,20 +29,11 @@ export const metadata = {
   alternates: {
     canonical: 'https://djc.ai',
     languages: {
-      'en': {
-        href: 'https://djc.ai/', // English Global
-        hreflang: 'en',
-      },
-      'zh': {
-        href: 'https://djc.ai/cn', // Chinese Global
-        hreflang: 'zh',
-      },
-      'x-default': {
-        href: 'https://djc.ai/', // Default English Global
-        hreflang: 'x-default',
-      },
+      'en-US': '/en-US',
+      'zh-CN':'zh-CN',
+      'x-default':'x-default',
     },
-  },
+      },
   openGraph: {
     type: 'website',
     // url: arrListing.domain+'/agent/'+arrListing.userId.replace(/[^\w\s]/gi, '') +'/listing/'+params.listId+"/",
@@ -60,7 +50,17 @@ export const metadata = {
       },
     ],
   },
- 
+  schemaOrgJSONLD: [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      url: 'https://djc.ai',
+      name: 'DJC System',
+      alternateName: 'DJC AI',
+      description:
+        'With powerful AI capabilities, DJC System empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
+    },
+  ],
 };
 
 export default function HomePage() {
