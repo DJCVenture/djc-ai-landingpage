@@ -82,7 +82,7 @@ export default function NavMobile({ data }) {
             >
               Sign Up
             </Button>
-            <Button
+            {/* <Button
               fullWidth
               variant="contained"
               color="inherit"
@@ -97,7 +97,7 @@ export default function NavMobile({ data }) {
                   color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
                 }}
               />
-            </Button>
+            </Button> */}
             <Button
               fullWidth
               variant="contained"
