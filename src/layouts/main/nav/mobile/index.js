@@ -15,7 +15,7 @@ import { useBoolean } from 'src/hooks/use-boolean';
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 import Scrollbar from 'src/components/scrollbar';
-
+import { useSettingsContext } from 'src/components/settings';
 import NavList from './nav-list';
 import { NAV } from '../../../config-layout';
 
@@ -23,7 +23,7 @@ import { NAV } from '../../../config-layout';
 
 export default function NavMobile({ data }) {
   const pathname = usePathname();
-
+  const settings = useSettingsContext();
   const mobileOpen = useBoolean();
 
   useEffect(() => {
@@ -59,14 +59,7 @@ export default function NavMobile({ data }) {
           </List> */}
 
           <Stack spacing={1.5} sx={{ p: 3 }}>
-            <Button
-              fullWidth
-              variant="contained"
-              color="inherit"
-              href="/whatsnew"
-              
-              rel="noopener"
-            >
+            <Button fullWidth variant="contained" color="inherit" href="/whatsnew" rel="noopener">
               What's New
             </Button>
             <Button
@@ -88,6 +81,38 @@ export default function NavMobile({ data }) {
               rel="noopener"
             >
               Sign Up
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="https://www.instagram.com/djc_ai/"
+              target="_blank"
+              rel="noopener"
+            >
+              <Iconify
+                width={28}
+                icon="mdi:instagram"
+                style={{
+                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
+                }}
+              />
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="https://www.facebook.com/djc.flow"
+              target="_blank"
+              rel="noopener"
+            >
+              <Iconify
+                width={28}
+                icon="ic:baseline-facebook"
+                style={{
+                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
+                }}
+              />
             </Button>
           </Stack>
         </Scrollbar>

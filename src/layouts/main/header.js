@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import { useOffSetTop } from 'src/hooks/use-off-set-top';
 import { useResponsive } from 'src/hooks/use-responsive';
 
+import Iconify from 'src/components/iconify';
 import { bgBlur } from 'src/theme/css';
 
 import Logo from 'src/components/logo';
@@ -26,7 +27,7 @@ import { navConfig } from './config-navigation';
 import NavDesktop from './nav/desktop';
 import NavMobile from './nav/mobile';
 import { useSettingsContext } from 'src/components/settings';
-import Iconify from 'src/components/iconify';
+
 import Link from 'next/link';
 
 // ----------------------------------------------------------------------
@@ -54,7 +55,6 @@ export default function Header({ headerOnDark }) {
           }}
         >
           <NavDesktop data={navConfig} />
-         
         </Stack>
 
         <Box sx={{ flexGrow: { xs: 1, md: 'unset' } }} />
@@ -64,6 +64,7 @@ export default function Header({ headerOnDark }) {
         <Stack spacing={1} direction="row" alignItems="center">
           {/* <Searchbar /> */}
           <Box sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          
             <Box component={Link} href="/" sx={{ textDecoration: 'none' }}>
               <Typography
                 variant="button"
@@ -80,9 +81,7 @@ export default function Header({ headerOnDark }) {
                 ENG
               </Typography>
             </Box>
-            <Typography variant="button" sx={{ mx: 1 }}>
-               
-            </Typography>
+            <Typography variant="button" sx={{ mx: 1 }}></Typography>
             <Box component={Link} href="/cn" sx={{ textDecoration: 'none' }}>
               <Typography
                 variant="button"
@@ -99,9 +98,7 @@ export default function Header({ headerOnDark }) {
                 华语
               </Typography>
             </Box>
-            <Typography variant="button" sx={{ mx: 1 }}>
-               
-            </Typography>
+            <Typography variant="button" sx={{ mx: 1 }}></Typography>
           </Box>
           <Box
             component={m.div}

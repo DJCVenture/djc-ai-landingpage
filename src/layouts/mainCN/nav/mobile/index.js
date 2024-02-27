@@ -18,12 +18,12 @@ import Scrollbar from 'src/components/scrollbar';
 
 import NavList from './nav-list';
 import { NAV } from '../../../config-layout';
-
+import { useSettingsContext } from 'src/components/settings';
 // ----------------------------------------------------------------------
 
 export default function NavMobile({ data }) {
   const pathname = usePathname();
-
+  const settings = useSettingsContext();
   const mobileOpen = useBoolean();
 
   useEffect(() => {
@@ -88,6 +88,38 @@ export default function NavMobile({ data }) {
               rel="noopener"
             >
               注册
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="https://www.instagram.com/djc_ai/"
+              target="_blank"
+              rel="noopener"
+            >
+              <Iconify
+                width={28}
+                icon="mdi:instagram"
+                style={{
+                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
+                }}
+              />
+            </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              color="inherit"
+              href="https://www.facebook.com/djc.flow"
+              target="_blank"
+              rel="noopener"
+            >
+              <Iconify
+                width={28}
+                icon="ic:baseline-facebook"
+                style={{
+                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
+                }}
+              />
             </Button>
           </Stack>
         </Scrollbar>
