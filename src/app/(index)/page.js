@@ -30,31 +30,18 @@ export const metadata = {
   alternates: {
     canonical: 'https://djc.ai',
     languages: {
-      'en-US': {
-        href: 'https://djc.ai/',
-        hreflang: 'en-US',
+      'en': {
+        href: 'https://djc.ai/', // English Global
+        hreflang: 'en',
       },
-      'zh-CN': {
-        href: 'https://djc.ai/cn', // Chinese (China)
-        hreflang: 'zh-CN',
+      'zh': {
+        href: 'https://djc.ai/cn', // Chinese Global
+        hreflang: 'zh',
       },
-      'vi-VN': {
-        href: 'https://djc.ai/', // Vietnamese (Vietnam)
-        hreflang: 'vi-VN',
+      'x-default': {
+        href: 'https://djc.ai/', // Default English Global
+        hreflang: 'x-default',
       },
-      'en-SG': {
-        href: 'https://djc.ai/', // English (Singapore), assuming English version for Singapore
-        hreflang: 'en-SG',
-      },
-      'th-TH': {
-        href: 'https://djc.ai/', // Thai (Thailand)
-        hreflang: 'th-TH',
-      },
-      'id-ID': {
-        href: 'https://djc.ai/', // Indonesian (Indonesia)
-        hreflang: 'id-ID',
-      },
-      // Add more languages and regions as needed
     },
   },
   openGraph: {
