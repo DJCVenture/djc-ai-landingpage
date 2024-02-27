@@ -29,19 +29,7 @@ export default function NavDesktop({ data, sx, ...other }) {
           <NavList data={list} />
         </Box>
       ))}
-      <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <Link
-          href="https://www.instagram.com/djc_ai/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: 'none' }}
-        >
-          <Iconify width={28} icon="mdi:instagram" 
-          style={{
-            color: settings.themeMode === 'dark' ? 'yellow' : 'red', // Make asleep-filled icon yellow
-          }}/>
-        </Link>
-      </Box>
+     
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <Link
           href="https://www.facebook.com/djc.flow"

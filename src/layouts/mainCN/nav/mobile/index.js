@@ -89,22 +89,7 @@ export default function NavMobile({ data }) {
             >
               注册
             </Button>
-            <Button
-              fullWidth
-              variant="contained"
-              color="inherit"
-              href="https://www.instagram.com/djc_ai/"
-              target="_blank"
-              rel="noopener"
-            >
-              <Iconify
-                width={28}
-                icon="mdi:instagram"
-                style={{
-                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
-                }}
-              />
-            </Button>
+            
             <Button
               fullWidth
               variant="contained"
@@ -117,7 +102,7 @@ export default function NavMobile({ data }) {
                 width={28}
                 icon="ic:baseline-facebook"
                 style={{
-                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
+                  color: settings.themeMode === 'dark' ? 'dark' : 'white', // Make asleep-filled icon yellow
                 }}
               />
             </Button>

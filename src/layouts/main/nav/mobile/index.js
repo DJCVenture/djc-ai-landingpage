@@ -82,22 +82,7 @@ export default function NavMobile({ data }) {
             >
               Sign Up
             </Button>
-            <Button
-              fullWidth
-              variant="contained"
-              color="inherit"
-              href="https://www.instagram.com/djc_ai/"
-              target="_blank"
-              rel="noopener"
-            >
-              <Iconify
-                width={28}
-                icon="mdi:instagram"
-                style={{
-                  color: settings.themeMode === 'dark' ? 'black' : 'black', // Make asleep-filled icon yellow
-                }}
-              />
-            </Button>
+           
             <Button
               fullWidth
               variant="contained"
