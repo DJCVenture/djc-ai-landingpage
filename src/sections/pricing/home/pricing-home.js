@@ -22,7 +22,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* Add up to 5 team members', disabled: true },
+        { title: '* Team Inbox up to 5 members', disabled: true },
         { title: '* Property Listing Portal Access', disabled: true },       
       ],
     },
@@ -32,7 +32,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* Add up to 5 team members', disabled: false },
+        { title: '* Team Inbox up to 5 members', disabled: false },
         { title: '* Property Listing Portal Access', disabled: false },       
       ],
     },  
@@ -42,7 +42,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* Add up to 5 team members', disabled: true },
+        { title: '* Team Inbox up to 5 members', disabled: true },
         { title: '* Property Listing Portal Access', disabled: true },       
       ],
     },   
@@ -52,7 +52,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* Add up to 5 team members', disabled: false },
+        { title: '* Team Inbox up to 5 members', disabled: false },
         { title: '* Property Listing Portal Access', disabled: false },       
       ],
     },    

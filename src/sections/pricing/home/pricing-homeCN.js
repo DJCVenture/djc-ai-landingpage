@@ -22,7 +22,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* 可添加多达5名成员', disabled: true },
+        { title: '* 团队收件箱最多可容纳5名成员', disabled: true },
         { title: '* 物业网站访问权限', disabled: true },
       ],
     },
@@ -32,7 +32,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* 可添加多达5名成员', disabled: false },
+        { title: '* 团队收件箱最多可容纳5名成员', disabled: false },
         { title: '* 物业网站访问权限', disabled: false },
       ],
     },
@@ -42,7 +42,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons: arrFunctionList,
       options: [
-        { title: '* 可添加多达5名成员', disabled: true },
+        { title: '* 团队收件箱最多可容纳5名成员', disabled: true },
         { title: '* 物业网站访问权限', disabled: true },
       ],
     },
@@ -52,7 +52,7 @@ export default function PricingHome({ plans }) {
       icons: [],
       commons:arrFunctionList,
       options: [
-        { title: '* 可添加多达5名成员', disabled: false },
+        { title: '* 团队收件箱最多可容纳5名成员', disabled: false },
         { title: '* 物业网站访问权限', disabled: false },
       ],
     },

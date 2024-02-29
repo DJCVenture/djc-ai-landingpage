@@ -17,28 +17,33 @@ import Typography from '@mui/material/Typography';
 export default function HomeNews() {
   const handleClick = () => {
     window.open('https://hello.djc.ai/', '_blank');
-  }
-   
+  };
+
   const news = [
+    // {
+    //   title: 'Dive Into AI Strategies',
+    //   desc: 'Webinar on 1 MARCH 2024 8-10PM',
+    //   image:
+    //     'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-02-22_11-08-32.jpg?alt=media&token=aa711e38-0bad-4b63-92c9-0735dd9b296f',
+    // },
     {
       title: 'Dive Into AI Strategies',
       desc: 'Webinar on 28 FEB 2024 8-10PM',
-         image:
+      image:
         'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-02-22_11-08-32.jpg?alt=media&token=aa711e38-0bad-4b63-92c9-0735dd9b296f',
     },
     {
       title: '人工智能 - 营销策略',
       desc: 'Webinar on 5 Sep 2023 8-10PM',
-         image:
+      image:
         'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2F372837293_10101802910486955_373867870370727689_n.jpg?alt=media&token=32cd5172-a442-4c72-a4ba-4bdb45bef8a3',
     },
     {
       title: '营销网络研讨会',
       desc: 'Webinar on 29 Aug 2023 8-9PM',
-         image:
+      image:
         'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2F369967621_10101800214220295_4564387497702791132_n.jpg?alt=media&token=060f7734-2e66-47e7-b502-e2479467365e',
     },
-  
   ];
 
   return (
@@ -61,22 +66,21 @@ export default function HomeNews() {
         >
           {news.map((item, index) => (
             <Card
-            key={index}
-            sx={{
-              width: '100%', // Allows the card to grow
-              maxWidth: { xs: 300, sm: 350, md: 400 }, // Reduces card size on desktop view
-              m: 'auto', // Centers the card on all screen sizes
-              boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
-              '&:hover': {
-                ...(index === 0 && {
-                  cursor: 'pointer', // Changes the cursor to pointer on hover to indicate clickability
-                  boxShadow: '5px 5px 20px rgba(0,0,0,0.4)', // Slightly intensify the shadow on hover
-                }),
-              },
-            }}
-            onClick={index === 0 ? handleClick : undefined}
-          >
-          
+              key={index}
+              sx={{
+                width: '100%', // Allows the card to grow
+                maxWidth: { xs: 300, sm: 350, md: 400 }, // Reduces card size on desktop view
+                m: 'auto', // Centers the card on all screen sizes
+                boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
+                '&:hover': {
+                  ...(index === 0 && {
+                    cursor: 'pointer', // Changes the cursor to pointer on hover to indicate clickability
+                    boxShadow: '5px 5px 20px rgba(0,0,0,0.4)', // Slightly intensify the shadow on hover
+                  }),
+                },
+              }}
+              onClick={index === 0 ? handleClick : undefined}
+            >
               <CardMedia
                 component="img"
                 height="auto" // Adjusts height automatically
@@ -96,10 +100,13 @@ export default function HomeNews() {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: 'center' }}>
-                {index===0?
-                <Button size="small" >REGISTER NOW</Button>:<Typography variant="body2" color="text.secondary">
-                Event Concluded
-              </Typography>}
+                {index === 0 ? (
+                  <Button size="small">REGISTER NOW</Button>
+                ) : (
+                  <Typography variant="body2" color="text.secondary">
+                    Event Concluded
+                  </Typography>
+                )}
               </CardActions>
             </Card>
           ))}
