@@ -17,7 +17,7 @@ import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 const SUMMARY = [
   { name: '订阅者', number: 1031 },
   { name: '涉及行业', number: 30 },
-  { name: '每日活跃用户', number: 150 },
+  { name: '每日处理信息量', number: 20000 },
   { name: '每月读写操作次数', number: 8000000 },
 ];
 
