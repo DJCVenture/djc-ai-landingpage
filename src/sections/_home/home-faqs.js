@@ -139,14 +139,19 @@ export default function HomeFAQs() {
             </m.div>
 
             <m.div variants={varFade().inUp}>
-              <Button
-                size="large"
-                color="inherit"
-                variant="contained"
-                href="mailto:admin@djc.ai?subject=[Feedback] from Customer"
-              >
-                Contact us
-              </Button>
+         
+                <Button
+                  size="large"
+                  color="inherit"
+                  variant="contained"
+                  component="a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://link.djcsystem.com/widget/form/F2HolSV0taWZ6aDfLDc5"
+                >
+                  Contact us
+                </Button>
+      
             </m.div>
           </Box>
         </Grid>

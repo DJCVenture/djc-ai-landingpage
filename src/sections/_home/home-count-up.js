@@ -5,12 +5,6 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { varFade, MotionViewport } from 'src/components/animate';
-import { paths } from 'src/routes/paths';
-
-import { fShortenNumber } from 'src/utils/format-number';
-
-import CountUp from 'src/components/count-up';
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 // ----------------------------------------------------------------------
 
