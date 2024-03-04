@@ -28,20 +28,20 @@ export default function AiChatBot({ plans }) {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          AI 自动化解决方案量身定制以满足您的需求
+            AI 自动化解决方案量身定制以满足您的需求
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-          利用我们的 AI 自动化产品 <br />
-          释放您业务的全部潜能。
+            利用我们的 AI 自动化产品 <br />
+            释放您业务的全部潜能。
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography sx={{ color: 'text.secondary' }}>
-          无论您是刚开始自动化之旅，还是希望扩大现有能力，我们都能为您提供正确的解决方案。
+            无论您是刚开始自动化之旅，还是希望扩大现有能力，我们都能为您提供正确的解决方案。
           </Typography>
         </m.div>
       </Box>
@@ -51,7 +51,7 @@ export default function AiChatBot({ plans }) {
         }}
       >
         <Typography sx={{ color: 'text.secondary' }} variant="caption">
-        *AI 助手与客户之间的示例对话
+          *AI 助手与客户之间的示例对话
         </Typography>
       </Box>
 
@@ -74,7 +74,6 @@ export default function AiChatBot({ plans }) {
         <Image
           src={sample3}
           alt=""
-          layout="responsive"
           width={400} // Adjusted width for side-by-side layout
           height={800} // Adjusted height for consistency
           style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
@@ -83,7 +82,6 @@ export default function AiChatBot({ plans }) {
         <Image
           src={sample4}
           alt=""
-          layout="responsive"
           width={400} // Adjusted width for side-by-side layout
           height={800} // Adjusted height for consistency
           style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}

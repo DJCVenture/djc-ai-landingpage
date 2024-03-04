@@ -1,6 +1,5 @@
 import { m } from 'framer-motion';
 import PropTypes from 'prop-types';
-
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -8,10 +7,13 @@ import Image from 'next/image';
 import sample3 from '../../../public/assets/chat1.png';
 import sample4 from '../../../public/assets/chat2.png';
 import { varFade, MotionViewport } from 'src/components/animate';
-
+import { useEffect } from 'react';
+import { getAgentListings } from 'src/utils/firebaseCall';
 // ----------------------------------------------------------------------
-
-export default function AiChatBot({ plans }) {
+export default async function AiChatBot({ plans }) {
+  const arr = await getAgentListings();
+  console.log(arr);
+  
   return (
     <Container
       component={MotionViewport}
@@ -75,7 +77,7 @@ export default function AiChatBot({ plans }) {
         <Image
           src={sample3}
           alt=""
-          layout="responsive"
+          
           width={400} // Adjusted width for side-by-side layout
           height={800} // Adjusted height for consistency
           style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
@@ -84,7 +86,7 @@ export default function AiChatBot({ plans }) {
         <Image
           src={sample4}
           alt=""
-          layout="responsive"
+         
           width={400} // Adjusted width for side-by-side layout
           height={800} // Adjusted height for consistency
           style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}

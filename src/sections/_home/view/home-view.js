@@ -18,7 +18,7 @@ import Iconify from 'src/components/iconify';
 import HomeAiChatBot from '../home-aichatbot';
 import HomeFlowDesign from '../home-flowdesign';
 import HomeCountUp from '../home-count-up';
-
+import HomeFreeTrial from '../home-freetrial';
 // ----------------------------------------------------------------------
 
 export default function HomeView() {
@@ -93,13 +93,21 @@ export default function HomeView() {
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
+      <HomeFreeTrial/>
       <HomeAiChatBot />
+      <HomeFreeTrial/>
       <HomeAiSupport />
+      <HomeFreeTrial/>
       <HomeFlowDesign />
+      <HomeFreeTrial/>
       <HomeFeatureHighlights />
+      <HomeFreeTrial/>
       <HomeComparison />
+      <HomeFreeTrial/>
       <PricingHome plans={_pricingHome} />
+      <HomeFreeTrial/>
       <HomeCountUp/>
+      <HomeFreeTrial/>
       <HomeFAQs />
       <HomeAdvertisement />
     </>
