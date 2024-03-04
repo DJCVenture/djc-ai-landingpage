@@ -30,9 +30,10 @@ export default function HomeNews() {
   const [email, setEmail] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogContent, setDialogContent] = useState('');
-  const router = useRouter();
+
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
   const validateName = (name) => name.trim().length > 0;
+  const router = useRouter();
   const pulseAnimation = keyframes`
   0%, 100% {
     opacity: 1;
@@ -56,18 +57,15 @@ export default function HomeNews() {
   const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 10,
     borderRadius: 5,
-    overflow: 'hidden', // Ensure the scaling does not exceed the component bounds
     [`&.${linearProgressClasses.colorPrimary}`]: {
       backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 300 : 900],
-      animation: `${pulseAnimation} 2s infinite ease-in-out`, // Apply pulse animation to the entire component
     },
     [`& .${linearProgressClasses.bar}`]: {
       borderRadius: 5,
       backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
-      animation: `${breathingAnimation} 2s infinite ease-in-out, ${pulseAnimation} 2s infinite ease-in-out`, // Apply both animations to the bar
-      transformOrigin: 'left', // Anchor transformation to the left
     },
   }));
+  
 
   const handleSubmit =async () => {
     if (!validateName(name)) {
@@ -83,7 +81,6 @@ export default function HomeNews() {
     // Add your submit logic here
     const result = await createUserRecord(name,email);
     console.log(result);
-    router.push('/stripepage');
   };
 
   const handleCloseDialog = () => {
@@ -114,11 +111,11 @@ export default function HomeNews() {
             <CardContent>
               <Box>
                 <Typography variant="h2" gutterBottom>
-                  Start Your 7-Days Free Trial Now!
+                  Strip Page Under Construction
                 </Typography>
-                <BorderLinearProgress variant="determinate" value={50} />
+                <BorderLinearProgress variant="determinate" value={100} />
                 <Box sx={{ mb: '20px' }}>
-                  <Typography variant="caption">Create account : Step 1 of 2</Typography>
+                  <Typography variant="caption">Create account : Step 2 of 2</Typography>
                 </Box>
                 <TextField
                   fullWidth
@@ -147,11 +144,11 @@ export default function HomeNews() {
                 mt: 2,
               }}
             >
-              <Button size="large" variant="contained" sx={{ mb: 2 }} onClick={handleSubmit}>
-                CONTINUE
+              <Button size="large" variant="contained" sx={{ mb: 2 }} >
+                START YOUR FREE TRIAL NOW !!
                 <Iconify icon={'maki:arrow'} width={15} sx={{ ml: 1 }} />
               </Button>
-              <Box
+              {/* <Box
                 sx={{ display: 'flex', alignItems: 'start', textAlign: 'center', padding: '15px' }}
               >
                 <Iconify icon={'material-symbols:lock'} width={35} sx={{ mt: '5px' }} />
@@ -175,7 +172,7 @@ export default function HomeNews() {
                   </a>
                   .
                 </Typography>
-              </Box>
+              </Box> */}
             </CardActions>
           </Card>
         </Box>

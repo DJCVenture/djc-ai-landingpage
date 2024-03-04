@@ -35,7 +35,7 @@ export default function HomeAdvertisement() {
           target="_blank"
           rel="noopener"
           sx={{backgroundColor:'#c3015a'}}
-          href="https://djcsystem.com/sign-up"
+          href="/freetrial"
         >
           START YOUR FREE TRIAL TODAY!!
         </Button>

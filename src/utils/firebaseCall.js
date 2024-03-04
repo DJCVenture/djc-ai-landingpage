@@ -24,7 +24,8 @@ export const createUserRecord = async (name, email) => {
         clientId:email.replace(/[@.]/g, ''),
         displayName:email,
         email:email,
-        referralCode:'trial'
+        referralCode:'trial',
+        createdDate: new Date(),
       });
       console.log("Document written with ID: ", docRef.id);
       return docRef.id;
