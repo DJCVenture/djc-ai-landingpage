@@ -2,13 +2,12 @@ import { useRef } from 'react';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
-
-import { paths } from 'src/routes/paths';
+import Iconify from 'src/components/iconify';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 import { useBoundingClientRect } from 'src/hooks/use-bounding-client-rect';
@@ -17,7 +16,6 @@ import { bgGradient } from 'src/theme/css';
 import { HEADER } from 'src/layouts/config-layout';
 
 import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
@@ -69,21 +67,21 @@ export default function HomeHero() {
                 with customers and accelerate your success.
               </Typography>
               <Grid xs={12} md={7}>
-            <Image
-              visibleByDefault
-              disabledEffect
-              alt="home hero"
-              src="/assets/images/home/home_hero.png"
-              sx={{
-                width: 'auto', // Adjusts width automatically based on the height or specific value
-                height: 'auto', // Adjusts height automatically based on the width or specific value
-                maxWidth: '120%', // Increase size by setting maxWidth greater than 100%
-                maxHeight: '120%', // Increase size by setting maxHeight greater than 100%
-                transform: 'scale(1.2)', // Alternatively, use scale to enlarge the image by 20%
-                display: { xs: 'block', sm: 'none' }, // Display nothing on xs screens, and block on sm and above
-              }}
-            />
-          </Grid>
+                <Image
+                  visibleByDefault
+                  disabledEffect
+                  alt="home hero"
+                  src="/assets/images/home/home_hero.png"
+                  sx={{
+                    width: 'auto', // Adjusts width automatically based on the height or specific value
+                    height: 'auto', // Adjusts height automatically based on the width or specific value
+                    maxWidth: '120%', // Increase size by setting maxWidth greater than 100%
+                    maxHeight: '120%', // Increase size by setting maxHeight greater than 100%
+                    transform: 'scale(1.2)', // Alternatively, use scale to enlarge the image by 20%
+                    display: { xs: 'block', sm: 'none' }, // Display nothing on xs screens, and block on sm and above
+                  }}
+                />
+              </Grid>
               {/* <Button
                 color="inherit"
                 size="large"
@@ -131,27 +129,10 @@ export default function HomeHero() {
               }}
             />
           </Grid>
+
+         
         </Grid>
       </Container>
-
-      {/* {mdUp && (
-        <Box
-          sx={{
-            maxWidth: 1280,
-            position: 'absolute',
-            bottom: { md: '20%', lg: 40 },
-            right: { md: -110, xl: 0 },
-            width: { md: `calc(100% - ${offsetLeft}px)` },
-          }}
-        >
-          <Image
-            visibleByDefault
-            disabledEffect
-            alt="home hero"
-            src="/assets/images/home/home_hero.png"
-          />
-        </Box>
-      )} */}
     </Box>
   );
 }

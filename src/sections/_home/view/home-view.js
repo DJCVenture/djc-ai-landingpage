@@ -19,6 +19,7 @@ import HomeAiChatBot from '../home-aichatbot';
 import HomeFlowDesign from '../home-flowdesign';
 import HomeCountUp from '../home-count-up';
 import HomeFreeTrial from '../home-freetrial';
+// import HomeKeyPoint from '../home-keypoint';
 // ----------------------------------------------------------------------
 
 export default function HomeView() {
@@ -93,6 +94,7 @@ export default function HomeView() {
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
+      {/* <HomeKeyPoint /> */}
       <HomeFreeTrial/>
       <HomeAiChatBot />
       <HomeFreeTrial/>

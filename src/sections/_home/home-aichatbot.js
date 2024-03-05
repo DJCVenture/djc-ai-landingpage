@@ -8,11 +8,9 @@ import sample3 from '../../../public/assets/chat1.png';
 import sample4 from '../../../public/assets/chat2.png';
 import { varFade, MotionViewport } from 'src/components/animate';
 import { useEffect } from 'react';
-import { getAgentListings } from 'src/utils/firebaseCall';
+
 // ----------------------------------------------------------------------
 export default async function AiChatBot({ plans }) {
-  const arr = await getAgentListings();
-  console.log(arr);
   
   return (
     <Container

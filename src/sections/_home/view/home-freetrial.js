@@ -23,16 +23,22 @@ import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgr
 import { keyframes } from '@mui/system';
 import { createUserRecord } from 'src/utils/firebaseCall';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import Logo from '../../../../public/assets/logo/DJCLogo.png';
+import Divider from '@mui/material/Divider';
+import { signInWithGoogle, signUp } from 'src/utils/firebaseCall';
 // ----------------------------------------------------------------------
 
-export default function HomeNews() {
+export default function HomeFreeTrial() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogContent, setDialogContent] = useState('');
   const router = useRouter();
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
   const validateName = (name) => name.trim().length > 0;
+  const validatePassword = (password) => password.trim().length > 0;
   const pulseAnimation = keyframes`
   0%, 100% {
     opacity: 1;
@@ -69,7 +75,7 @@ export default function HomeNews() {
     },
   }));
 
-  const handleSubmit =async () => {
+  const handleSubmit = async () => {
     if (!validateName(name)) {
       setDialogContent('Please enter a valid name.');
       setOpenDialog(true);
@@ -80,19 +86,63 @@ export default function HomeNews() {
       setOpenDialog(true);
       return;
     }
+    if (!validatePassword(password)) {
+      setDialogContent('Please enter a password.');
+      setOpenDialog(true);
+      return;
+    }
     // Add your submit logic here
-    const result = await createUserRecord(name,email);
-    console.log(result);
-    router.push('/stripepage');
+    let userObj = {
+      name: name,
+      email: email,
+      password: password,
+      addOn: 'trial',
+      clientId: email.replace(/[^\w\s]/gi, ''),
+      displayName: name,
+      // referralCode: 'trial',
+      date: new Date(),
+      id: email,
+      referral: 'trial',
+    };
+
+    const signUpResult = await signUp(userObj);
+    if (signUpResult) {
+      router.push('/stripepage');
+    } else {
+      setDialogContent('Sign in unsuccessful.');
+      setOpenDialog(true);
+    }
   };
 
   const handleCloseDialog = () => {
     setOpenDialog(false);
   };
 
+  const handleSignIn = async () => {
+    try {
+      const result = await signInWithGoogle();
+     
+    } catch (error) {
+      // Handle or display the error message
+      console.error(error.message);
+    }
+  };
+
   return (
     <>
       <Container sx={{ pt: { xs: 10, md: 15 }, pb: { xs: 5, md: 10 } }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            justifyContent: 'center',
+            gap: { xs: 4, md: 4 },
+            mb: { xs: 2, md: 2 },
+            textAlign: 'center',
+          }}
+        >
+          <Image src={Logo} alt="" width={150} height={150} />
+        </Box>
         <Box
           sx={{
             display: 'flex',
@@ -120,10 +170,11 @@ export default function HomeNews() {
                 <Box sx={{ mb: '20px' }}>
                   <Typography variant="caption">Create account : Step 1 of 2</Typography>
                 </Box>
+
                 <TextField
                   fullWidth
                   id="name"
-                  label="Full Name"
+                  label="Full Name*"
                   variant="outlined"
                   sx={{ mb: 3 }}
                   value={name}
@@ -132,11 +183,44 @@ export default function HomeNews() {
                 <TextField
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Email Address*"
                   variant="outlined"
+                  sx={{ mb: 3 }}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+                <TextField
+                  fullWidth
+                  id="password"
+                  label="Password*"
+                  type="password"
+                  variant="outlined"
+                  sx={{ mb: 3 }}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </Box>
+              <Button fullWidth variant="contained" sx={{ mb: 2 }} onClick={handleSubmit} sx={{height: '50px'}}>
+                CONTINUE
+                <Iconify icon={'maki:arrow'} width={15} sx={{ ml: 1 }} />
+              </Button>
+              <Divider sx={{ mt: 2, mb: 2 }}>or</Divider>
+              <Box>
+                <Button
+                  fullWidth
+                  startIcon={<Iconify icon="devicon:google" />}
+                  sx={{
+                    backgroundColor: '#4285F4', // Google's brand color
+                    '&:hover': {
+                      backgroundColor: '#357ae8',
+                    },
+                    color: 'white',
+                    height: '50px',
+                  }}
+                  onClick={handleSignIn}
+                >
+                  SIGN IN WITH GOOGLE
+                </Button>
               </Box>
             </CardContent>
             <CardActions
@@ -147,10 +231,6 @@ export default function HomeNews() {
                 mt: 2,
               }}
             >
-              <Button size="large" variant="contained" sx={{ mb: 2 }} onClick={handleSubmit}>
-                CONTINUE
-                <Iconify icon={'maki:arrow'} width={15} sx={{ ml: 1 }} />
-              </Button>
               <Box
                 sx={{ display: 'flex', alignItems: 'start', textAlign: 'center', padding: '15px' }}
               >
@@ -181,7 +261,7 @@ export default function HomeNews() {
         </Box>
       </Container>
       <Dialog open={openDialog} onClose={handleCloseDialog}>
-        <DialogTitle>Input Validation Error</DialogTitle>
+        <DialogTitle>Notification</DialogTitle>
         <DialogContent>
           <DialogContentText>{dialogContent}</DialogContentText>
         </DialogContent>

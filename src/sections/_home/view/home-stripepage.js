@@ -23,14 +23,15 @@ import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgr
 import { keyframes } from '@mui/system';
 import { createUserRecord } from 'src/utils/firebaseCall';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import Logo from '../../../../public/assets/logo/DJCLogo.png';
 // ----------------------------------------------------------------------
 
-export default function HomeNews() {
+export default function HomeStripePage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogContent, setDialogContent] = useState('');
-
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
   const validateName = (name) => name.trim().length > 0;
   const router = useRouter();
@@ -40,16 +41,6 @@ export default function HomeNews() {
   }
   50% {
     opacity: 0.5;
-  }
-`;
-
-  // Define the breathing animation keyframes
-  const breathingAnimation = keyframes`
-  0%, 100% {
-    transform: scaleX(0.55);
-  }
-  50% {
-    transform: scaleX(0.5);
   }
 `;
 
@@ -63,11 +54,11 @@ export default function HomeNews() {
     [`& .${linearProgressClasses.bar}`]: {
       borderRadius: 5,
       backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
+      animation: `${pulseAnimation} 2s ease-in-out infinite`, // Apply the breathing animation here
     },
   }));
-  
 
-  const handleSubmit =async () => {
+  const handleSubmit = async () => {
     if (!validateName(name)) {
       setDialogContent('Please enter a valid name.');
       setOpenDialog(true);
@@ -79,7 +70,7 @@ export default function HomeNews() {
       return;
     }
     // Add your submit logic here
-    const result = await createUserRecord(name,email);
+    const result = await createUserRecord(name, email);
     console.log(result);
   };
 
@@ -90,6 +81,18 @@ export default function HomeNews() {
   return (
     <>
       <Container sx={{ pt: { xs: 10, md: 15 }, pb: { xs: 5, md: 10 } }}>
+      <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            justifyContent: 'center',
+            gap: { xs: 4, md: 4 },
+            mb: { xs: 2, md: 2 },
+            textAlign: 'center',
+          }}
+        >
+          <Image src={Logo} alt="" width={150} height={150} />
+        </Box>
         <Box
           sx={{
             display: 'flex',
@@ -144,7 +147,7 @@ export default function HomeNews() {
                 mt: 2,
               }}
             >
-              <Button size="large" variant="contained" sx={{ mb: 2 }} >
+              <Button size="large" variant="contained" sx={{ mb: 2 }}>
                 START YOUR FREE TRIAL NOW !!
                 <Iconify icon={'maki:arrow'} width={15} sx={{ ml: 1 }} />
               </Button>
