@@ -27,6 +27,8 @@ import Image from 'next/image';
 import Logo from '../../../../public/assets/logo/DJCLogo.png';
 import Divider from '@mui/material/Divider';
 import { signInWithGoogle, signUp } from 'src/utils/firebaseCall';
+import { Backdrop, CircularProgress } from '@mui/material';
+
 // ----------------------------------------------------------------------
 
 export default function HomeFreeTrial() {
@@ -39,6 +41,7 @@ export default function HomeFreeTrial() {
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
   const validateName = (name) => name.trim().length > 0;
   const validatePassword = (password) => password.trim().length > 0;
+  const [backdropOpen, setBackdropOpen] = useState(false);
   const pulseAnimation = keyframes`
   0%, 100% {
     opacity: 1;
@@ -91,26 +94,29 @@ export default function HomeFreeTrial() {
       setOpenDialog(true);
       return;
     }
+    setBackdropOpen(true);
     // Add your submit logic here
     let userObj = {
       name: name,
       email: email,
       password: password,
-      addOn: 'trial',
+      addOn: 'trial-step1',
       clientId: email.replace(/[^\w\s]/gi, ''),
       displayName: name,
       // referralCode: 'trial',
       date: new Date(),
       id: email,
-      referral: 'trial',
+      referral: 'trial-step1',
     };
 
-    const signUpResult = await signUp(userObj);
-    if (signUpResult) {
-      router.push('/stripepage');
+    const newUID = await signUp(userObj);
+    if (newUID) {
+      router.push(`/stripepage?uid=${newUID}`);
+      setBackdropOpen(false);
     } else {
       setDialogContent('Sign in unsuccessful.');
       setOpenDialog(true);
+      setBackdropOpen(false);
     }
   };
 
@@ -120,10 +126,22 @@ export default function HomeFreeTrial() {
 
   const handleSignIn = async () => {
     try {
-      const result = await signInWithGoogle();
+      setBackdropOpen(true); // Show backdrop
+      const resultObj = await signInWithGoogle();
+      if (resultObj.status === 'registered') {
+        router.push('https://djcsystem.com/');
+      } else {
+        if (resultObj.status === 'new') {
+          router.push(`/stripepage?uid=${resultObj.uid}`);
+        } else {
+          setDialogContent('Sign in unsuccessful.');
+          setOpenDialog(true);
+        }
+      }
     } catch (error) {
-      // Handle or display the error message
       console.error(error.message);
+    } finally {
+      setBackdropOpen(false); // Hide backdrop
     }
   };
 
@@ -273,6 +291,12 @@ export default function HomeFreeTrial() {
           <Button onClick={handleCloseDialog}>Ok</Button>
         </DialogActions>
       </Dialog>
+      <Backdrop
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={backdropOpen}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
     </>
   );
 }

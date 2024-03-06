@@ -50,13 +50,14 @@ export const signUp = async (userObj) => {
     // Create a new user record in Firestore
     await createUserRecord(finalUserObj);
     console.log(finalUserObj, ' is created');
-    return true;
+    return userCredential.user.uid;
   } catch (err) {
     console.log(err);
     let message = err.message;
 
     if (err.code === 'auth/email-already-in-use') {
-      message = 'This email is already in use with Firebase Authentication. Please use another email.';
+      message =
+        'This email is already in use with Firebase Authentication. Please use another email.';
     }
     notification('Error', message, 'warning');
     return false;
@@ -77,29 +78,29 @@ export const signInWithGoogle = async () => {
     if (!querySnapshot.empty) {
       // User already exists, do not create a new record
       console.log('User already exists. Skipping createUserRecord.');
-      return false;
+      return {status:"registered"}
+    } else {
+      // User does not exist, proceed to create a new user record
+      let userObj = {
+        name: result.user.displayName,
+        email: result.user.email,
+        addOn: 'trial-step1',
+        clientId: result.user.email.replace(/[^\w\s]/gi, ''),
+        displayName: result.user.displayName,
+        referralCode: 'trial-step1',
+        createdDate: new Date(),
+        phoneNumber: result.user.phoneNumber,
+        uid: result.user.uid,
+        type: 'Google',
+      };
+      await createUserRecord(userObj);
+      return {status:"new",uid:result.user.uid};
     }
-    // User does not exist, proceed to create a new user record
-    let userObj = {
-      name: result.user.displayName,
-      email: result.user.email,
-      addOn: 'trial',
-      clientId: result.user.email.replace(/[^\w\s]/gi, ''),
-      displayName: result.user.displayName,
-      referralCode: 'trial',
-      createdDate: new Date(),
-      phoneNumber: result.user.phoneNumber,
-      uid: result.user.uid,
-      type: 'Google',
-    };
-    await createUserRecord(userObj);
-    return true;
   } catch (error) {
     console.error('Error during Google sign-in:', error);
-    return false;
+    return {status:"error"};;
   }
 };
-
 
 // export const signInWithGoogle = async () => {
 //   const provider = new GoogleAuthProvider();
