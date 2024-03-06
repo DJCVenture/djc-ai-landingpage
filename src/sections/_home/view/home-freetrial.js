@@ -121,7 +121,6 @@ export default function HomeFreeTrial() {
   const handleSignIn = async () => {
     try {
       const result = await signInWithGoogle();
-     
     } catch (error) {
       // Handle or display the error message
       console.error(error.message);
@@ -200,7 +199,12 @@ export default function HomeFreeTrial() {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </Box>
-              <Button fullWidth variant="contained" sx={{ mb: 2 }} onClick={handleSubmit} sx={{height: '50px'}}>
+              <Button
+                fullWidth
+                variant="contained"
+                sx={{ mb: 2, height: '50px' }}
+                onClick={handleSubmit}
+              >
                 CONTINUE
                 <Iconify icon={'maki:arrow'} width={15} sx={{ ml: 1 }} />
               </Button>

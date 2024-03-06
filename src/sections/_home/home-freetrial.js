@@ -44,7 +44,7 @@ export default function HomeAdvertisement() {
         >
           START YOUR FREE TRIAL TODAY!!
         </Button>
-        <Typography variant="button" display="block" gutterBottom sx={{marginTop:'10px'}}>
+        <Typography variant="button" display="block" gutterBottom sx={{marginTop:'10px', color: theme.palette.mode === 'dark' ? 'white' : 'black' }}>
         Get Started In Less Than 60 Seconds • Cancel Anytime</Typography>
       </Stack>
     </Box>
