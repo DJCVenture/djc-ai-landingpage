@@ -342,6 +342,7 @@ function SelectablePlan({ name, selected, price, onSelect }) {
           <Typography
             variant="caption"
             gutterBottom
+            color="text.secondary"
             sx={{
               fontWeight: selected ? 'bold' : 'normal', // Make text bold if selected
             }}
@@ -350,6 +351,7 @@ function SelectablePlan({ name, selected, price, onSelect }) {
           </Typography>
           <Typography
             variant="body2"
+            color="text.secondary"
             sx={{
               marginTop: '10px',
               fontWeight: selected ? 'bold' : 'normal', // Make text bold if selected
