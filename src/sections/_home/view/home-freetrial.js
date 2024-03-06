@@ -153,6 +153,7 @@ export default function HomeFreeTrial() {
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
             justifyContent: 'center',
+            alignItems: 'center',
             gap: { xs: 4, md: 4 },
             mb: { xs: 2, md: 2 },
             textAlign: 'center',
