@@ -20,12 +20,18 @@ export default function HomeNews() {
   };
 
   const news = [
-    // {
-    //   title: 'Dive Into AI Strategies',
-    //   desc: 'Webinar on 1 MARCH 2024 8-10PM',
-    //   image:
-    //     'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-02-22_11-08-32.jpg?alt=media&token=aa711e38-0bad-4b63-92c9-0735dd9b296f',
-    // },
+    {
+      title: 'AI Setup Training',
+      desc: 'Webinar on 8 MARCH 2024 8-10PM',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-03-07_10-52-26.jpg?alt=media&token=9ba86af0-0e4c-4ba5-8597-0b69f2177dc9',
+    },
+    {
+      title: 'AI Strategy for Propery Agents',
+      desc: 'Webinar on 6 MARCH 2024 8-10PM',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2F430051981_120207257044520588_6955960700238061655_n.jpg?alt=media&token=3d526b6f-59ff-404f-ab75-6c80eec279ec',
+    },
     {
       title: 'Dive Into AI Strategies',
       desc: 'Webinar on 28 FEB 2024 8-10PM',
@@ -48,70 +54,57 @@ export default function HomeNews() {
 
   return (
     <>
-      <Container
-        sx={{
-          pt: { xs: 10, md: 15 },
-          pb: { xs: 5, md: 10 },
-        }}
-      >
-        <Box
+  <Container>
+    <Box
+      sx={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', // Adjust minmax for your card's minimum width
+        gap: '16px',
+        justifyContent: 'flex-start',
+        marginTop:'100px'
+      }}
+    >
+      {news.map((item, index) => (
+        <Card
+          key={index}
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', md: 'row' },
-            justifyContent: 'center',
-            gap: { xs: 4, md: 4 },
-            mb: { xs: 8, md: 10 },
-            textAlign: 'center',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            height: '100%', // Ensures cards in the same row align vertically
           }}
         >
-          {news.map((item, index) => (
-            <Card
-              key={index}
-              sx={{
-                width: '100%', // Allows the card to grow
-                maxWidth: { xs: 300, sm: 350, md: 400 }, // Reduces card size on desktop view
-                m: 'auto', // Centers the card on all screen sizes
-                boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
-                '&:hover': {
-                  ...(index === 0 && {
-                    cursor: 'pointer', // Changes the cursor to pointer on hover to indicate clickability
-                    boxShadow: '5px 5px 20px rgba(0,0,0,0.4)', // Slightly intensify the shadow on hover
-                  }),
-                },
-              }}
-              onClick={index === 0 ? handleClick : undefined}
-            >
-              <CardMedia
-                component="img"
-                height="auto" // Adjusts height automatically
-                image={item.image || '/static/images/cards/contemplative-reptile.jpg'}
-                alt={item.title || 'Default Title'}
-                sx={{
-                  width: '100%', // Ensures image width is responsive
-                  objectFit: 'cover', // Adjusts how the image fits within its box
-                }}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.title || 'Default Title'}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {item.desc || 'No description available.'}
-                </Typography>
-              </CardContent>
-              <CardActions sx={{ justifyContent: 'center' }}>
-                {index === 0 ? (
-                  <Button size="small">REGISTER NOW</Button>
-                ) : (
-                  <Typography variant="body2" color="text.secondary">
-                    Event Concluded
-                  </Typography>
-                )}
-              </CardActions>
-            </Card>
-          ))}
-        </Box>
-      </Container>
-    </>
+          <CardMedia
+            component="img"
+            image={item.image || '/static/images/cards/contemplative-reptile.jpg'}
+            alt={item.title || 'Default Title'}
+            sx={{
+              height: 350,
+              objectFit: 'cover',
+            }}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {item.title || 'Default Title'}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {item.desc || 'No description available.'}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            {index === 0 ? (
+              <Button size="small" onClick={handleClick}>COMING SOON</Button>
+            ) : (
+              <Typography variant="body2" color="text.secondary">
+                Event Concluded
+              </Typography>
+            )}
+          </CardActions>
+        </Card>
+      ))}
+    </Box>
+  </Container>
+</>
+
   );
 }
