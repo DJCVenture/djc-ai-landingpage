@@ -140,12 +140,14 @@ export default function HomeStripePage() {
       }
     } catch (err) {
       console.log(err);
-    } finally {
-      setBackdropOpen(false);
-    }
+    } 
+    // finally {
+    //   setBackdropOpen(false);
+    // }
   };
 
   const handleSubmit = async () => {
+    setBackdropOpen(true);
     if (selectedPlanId === null) {
       setDialogContent('Please select a package plan.');
       setOpenDialog(true);

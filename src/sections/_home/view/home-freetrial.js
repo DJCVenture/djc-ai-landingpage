@@ -112,7 +112,7 @@ export default function HomeFreeTrial() {
     const newUID = await signUp(userObj);
     if (newUID) {
       router.push(`/stripepage?uid=${newUID}`);
-      setBackdropOpen(false);
+      // setBackdropOpen(false);
     } else {
       setDialogContent('Sign in unsuccessful.');
       setOpenDialog(true);
