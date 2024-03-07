@@ -26,7 +26,7 @@ import Image from 'next/image';
 import Logo from '../../../../public/assets/logo/DJCLogo.png';
 import { Grid, Paper } from '@mui/material';
 import { Backdrop, CircularProgress } from '@mui/material';
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation';
 import { db } from 'src/utils/firebase-utils';
 // ----------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ export default function HomeStripePage() {
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
   const validateName = (name) => name.trim().length > 0;
   const [docId, setDocId] = useState('');
-  const [userUid,setUserUid] = useState('');
+  const [userUid, setUserUid] = useState('');
   const [url, setUrl] = useState('');
   const router = useRouter();
   const [backdropOpen, setBackdropOpen] = useState(false);
@@ -66,7 +66,7 @@ export default function HomeStripePage() {
       animation: `${pulseAnimation} 2s ease-in-out infinite`, // Apply the breathing animation here
     },
   }));
-  
+
   const [selectedPlanId, setSelectedPlanId] = useState(null);
 
   const handleSelectPlan = (price) => {
@@ -88,9 +88,9 @@ export default function HomeStripePage() {
 
   useEffect(() => {
     console.log('UID:', uid);
-    if(uid){
+    if (uid) {
       setUserUid(uid);
-    }else{
+    } else {
       router.push(`/freetrial`);
     }
   }, []);
@@ -151,21 +151,25 @@ export default function HomeStripePage() {
       setOpenDialog(true);
     }
 
-    if (selectedPlanId === '199') {
+    if (selectedPlanId === '199.00') {
       console.log(selectedPlanId);
-      loadStripe('price_1NQRFWLWoLTwDp2IVS8m1438');
+      // loadStripe('price_1NQRFWLWoLTwDp2IVS8m1438');
+      console.log('price_1NQRFWLWoLTwDp2IVS8m1438');
     }
-    if (selectedPlanId === '299') {
+    if (selectedPlanId === '299.00') {
       console.log(selectedPlanId);
-      loadStripe('price_1NgJ7QLWoLTwDp2I3731eiBo');
+      // loadStripe('price_1NgJ7QLWoLTwDp2I3731eiBo');
+      console.log('price_1NgJ7QLWoLTwDp2I3731eiBo');
     }
     if (selectedPlanId === '159.20') {
       console.log(selectedPlanId);
-      loadStripe('price_1NgjsGLWoLTwDp2IQxv8ckPq');
+      // loadStripe('price_1NgjsGLWoLTwDp2IQxv8ckPq');
+      console.log('price_1NgjsGLWoLTwDp2IQxv8ckPq');
     }
     if (selectedPlanId === '239.20') {
       console.log(selectedPlanId);
-      loadStripe('price_1NgjtGLWoLTwDp2IR0yVTxa2');
+      // loadStripe('price_1NgjtGLWoLTwDp2IR0yVTxa2');
+      console.log('price_1NgjtGLWoLTwDp2IR0yVTxa2');
     }
   };
 
