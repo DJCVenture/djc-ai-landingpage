@@ -31,7 +31,7 @@ import { Backdrop, CircularProgress } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
-export default function HomeFreeTrial() {
+export default function HomeFreeTrialCN() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -98,7 +98,7 @@ export default function HomeFreeTrial() {
     // Add your submit logic here
     let userObj = {
       name: name,
-      email: email.toLowerCase(),
+      email: email,
       password: password,
       addOn: 'trial-step1',
       clientId: email.replace(/[^\w\s]/gi, ''),
@@ -129,7 +129,7 @@ export default function HomeFreeTrial() {
       setBackdropOpen(true); // Show backdrop
       const resultObj = await signInWithGoogle();
       if (resultObj.status === 'registered') {
-        router.push('https://djcsystem.com/?');
+        router.push('https://djcsystem.com/');
       } else {
         if (resultObj.status === 'new') {
           router.push(`/stripepage?uid=${resultObj.uid}`);
@@ -182,17 +182,17 @@ export default function HomeFreeTrial() {
             <CardContent>
               <Box>
                 <Typography variant="h2" gutterBottom>
-                  Start Your 7-Days Free Trial Now!
+                立即开始您的7天免费试用！
                 </Typography>
                 <BorderLinearProgress variant="determinate" value={50} />
                 <Box sx={{ mb: '20px' }}>
-                  <Typography variant="caption">Create account : Step 1 of 2</Typography>
+                  <Typography variant="caption">注册户口 : 步骤 1 of 2</Typography>
                 </Box>
 
                 <TextField
                   fullWidth
                   id="name"
-                  label="Full Name*"
+                  label="名字*"
                   variant="outlined"
                   sx={{ mb: 3 }}
                   value={name}
@@ -201,7 +201,7 @@ export default function HomeFreeTrial() {
                 <TextField
                   fullWidth
                   id="email"
-                  label="Email Address*"
+                  label="电邮*"
                   variant="outlined"
                   sx={{ mb: 3 }}
                   value={email}
@@ -227,7 +227,7 @@ export default function HomeFreeTrial() {
                 CONTINUE
                 <Iconify icon={'maki:arrow'} width={15} sx={{ ml: 1 }} />
               </Button>
-              {/* <Divider sx={{ mt: 2, mb: 2 }}>or</Divider>
+              <Divider sx={{ mt: 2, mb: 2 }}>or</Divider>
               <Box>
                 <Button
                   fullWidth
@@ -244,7 +244,7 @@ export default function HomeFreeTrial() {
                 >
                   SIGN IN WITH GOOGLE
                 </Button>
-              </Box> */}
+              </Box>
             </CardContent>
             <CardActions
               sx={{

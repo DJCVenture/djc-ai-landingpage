@@ -133,14 +133,14 @@ export default function Header({ headerOnDark }) {
         <Button
           variant="contained"
           color="inherit"
-          href="https://djcsystem.com/sign-up"
+          href="https://djcsystem.com/sign-up-trial"
           target="_blank"
           rel="noopener"
           sx={{
             display: { xs: 'none', md: 'inline-flex' },
           }}
         >
-          Sign Up
+          FREE TRIAL
         </Button>
       </Stack>
 

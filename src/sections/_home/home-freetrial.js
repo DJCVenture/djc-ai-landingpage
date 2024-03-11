@@ -40,7 +40,7 @@ export default function HomeAdvertisement() {
               transform: 'scale(1.05)', // Grow effect
             }
           }}
-          href="/freetrial"
+          href="https://djcsystem.com/sign-up-trial"
         >
           START YOUR FREE TRIAL TODAY!!
         </Button>

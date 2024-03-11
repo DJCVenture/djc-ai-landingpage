@@ -36,7 +36,7 @@ export default function HomeView() {
   };
   return (
     <>
-      <Box
+      {/* <Box
         sx={{
           position: 'fixed',
           top: 550,
@@ -89,7 +89,7 @@ export default function HomeView() {
             Try our AI Assistant!
           </Fab>
         </Tooltip>
-      </Box>
+      </Box> */}
 
       <ScrollProgress scrollYProgress={scrollYProgress} />
 

@@ -21,6 +21,18 @@ export default function HomeNews() {
 
   const news = [
     {
+      title: 'AI MASTERY 2024 Setup Training',
+      desc: 'Webinar on 16 MARCH 2024 8-10PM',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-03-10_10-38-36.jpg?alt=media&token=e0ecdd11-9868-4c65-a902-d6e24f7c01d6',
+    },
+    {
+      title: '2024 SET-UP AI CHATBOT FOR YOUR BUSINESS',
+      desc: 'Webinar on 13 MARCH 2024 8-10PM',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-03-11_17-41-22.jpg?alt=media&token=57523487-f2d0-4714-91f6-ba428f7faadf',
+    },
+    {
       title: 'AI Setup Training',
       desc: 'Webinar on 8 MARCH 2024 8-10PM',
       image:
@@ -54,57 +66,61 @@ export default function HomeNews() {
 
   return (
     <>
-  <Container>
-    <Box
-      sx={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', // Adjust minmax for your card's minimum width
-        gap: '16px',
-        justifyContent: 'flex-start',
-        marginTop:'100px'
-      }}
-    >
-      {news.map((item, index) => (
-        <Card
-          key={index}
+      <Container>
+        <Box
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            height: '100%', // Ensures cards in the same row align vertically
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', // Adjust minmax for your card's minimum width
+            gap: '16px',
+            justifyContent: 'flex-start',
+            marginTop: '100px',
           }}
         >
-          <CardMedia
-            component="img"
-            image={item.image || '/static/images/cards/contemplative-reptile.jpg'}
-            alt={item.title || 'Default Title'}
-            sx={{
-              height: 350,
-              objectFit: 'cover',
-            }}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.title || 'Default Title'}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {item.desc || 'No description available.'}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            {index === 0 ? (
-              <Button size="small" onClick={handleClick}>COMING SOON</Button>
-            ) : (
-              <Typography variant="body2" color="text.secondary">
-                Event Concluded
-              </Typography>
-            )}
-          </CardActions>
-        </Card>
-      ))}
-    </Box>
-  </Container>
-</>
-
+          {news.map((item, index) => (
+            <Card
+              key={index}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                height: '100%', // Ensures cards in the same row align vertically
+                cursor: index === 0 || index === 1 ? 'pointer' : 'default', // Change cursor on hover for specific cards
+                '&:hover': {
+                  backgroundColor: index === 0 || index === 1 ? 'rgba(0, 0, 0, 0.04)' : '', // Show hover effect only for clickable cards
+                },
+              }}
+              onClick={index === 0 || index === 1 ? handleClick : undefined}
+            >
+              <CardMedia
+                component="img"
+                image={item.image || '/static/images/cards/contemplative-reptile.jpg'}
+                alt={item.title || 'Default Title'}
+                sx={{
+                  height: 350,
+                  objectFit: 'cover',
+                }}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {item.title || 'Default Title'}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {item.desc || 'No description available.'}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                {index === 0 || index === 1 ? (
+                  <Button size="small">COMING SOON</Button>
+                ) : (
+                  <Typography variant="body2" color="text.secondary">
+                    Event Concluded
+                  </Typography>
+                )}
+              </CardActions>
+            </Card>
+          ))}
+        </Box>
+      </Container>
+    </>
   );
 }

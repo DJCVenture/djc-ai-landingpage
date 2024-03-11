@@ -2,11 +2,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { alpha, useTheme } from '@mui/material/styles';
-
-import { paths } from 'src/routes/paths';
-
-import { bgGradient } from 'src/theme/css';
+import { useTheme } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 
@@ -15,13 +11,7 @@ export default function HomeAdvertisement() {
 
   return (
     <Box
-      sx={{
-        ...bgGradient({
-          imgUrl: '/assets/images/home/advertisement.jpg',
-          color: alpha(theme.palette.grey[900], 0.8),
-        }),
-        py: { xs: 10, md: 35 },
-      }}
+     
     >
       <Stack
         alignItems="center"
@@ -34,25 +24,28 @@ export default function HomeAdvertisement() {
           color: 'common.white',
         }}
       >
-        <Typography variant="h1" component="h2" sx={{ opacity: 0.48 }}>
-          现在就开始
-        </Typography>
-
-        <Typography variant="h1" component="h2" sx={{ mb: 8 }}>
-          创建您的
-          <br /> 人工智能个人助理
-        </Typography>
-
-        <Button
-          size="large"
+       
+       <Button
           variant="contained"
           target="_blank"
           rel="noopener"
-          sx={{backgroundColor:'#c3015a'}}
+          sx={{ 
+            backgroundColor: '#c3015a', 
+            width: '500px', 
+            height: '60px', 
+            fontSize: '20px',
+            transition: 'all 0.3s ease',
+            '&:hover': {
+              backgroundColor: '#bf1650', // Slightly darker shade for hover state
+              transform: 'scale(1.05)', // Grow effect
+            }
+          }}
           href="https://djcsystem.com/sign-up-trial"
         >
-          立即开始免费试用
+          立即开始您的免费试用!!
         </Button>
+        <Typography variant="button" display="block" gutterBottom sx={{marginTop:'10px', color: theme.palette.mode === 'dark' ? 'white' : 'black' }}>
+        在60秒内迅速启动 • 随时可取消订阅</Typography>
       </Stack>
     </Box>
   );

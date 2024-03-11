@@ -18,6 +18,7 @@ import { Box, Fab, Tooltip } from '@mui/material';
 import Iconify from 'src/components/iconify';
 import HomeFlowDesign from '../home-flowdesigncn';
 import HomeCountUp from '../home-count-upcn';
+import HomeFreeTrialCN from '../home-freetrialcn'
 
 // ----------------------------------------------------------------------
 
@@ -35,7 +36,7 @@ export default function HomeViewCN() {
   };
   return (
     <>
-      <Box
+      {/* <Box
         sx={{
           position: 'fixed',
           top: 550,
@@ -88,19 +89,28 @@ export default function HomeViewCN() {
             试试我们的人工智能客服！
           </Fab>
         </Tooltip>
-      </Box>
+      </Box> */}
 
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
+      <HomeFreeTrialCN/>
       <HomeAiChatBot />
+      <HomeFreeTrialCN/>
       <HomeAiSupport />
+      <HomeFreeTrialCN/>
       <HomeFlowDesign />
+      <HomeFreeTrialCN/>
       <HomeFeatureHighlights />
+      <HomeFreeTrialCN/>
       <HomeComparison />
+      <HomeFreeTrialCN/>
       <PricingHome plans={_pricingHome} />
+      <HomeFreeTrialCN/>
       <HomeCountUp/>
+      <HomeFreeTrialCN/>
       <HomeFAQs />
+      <HomeFreeTrialCN/>
       <HomeAdvertisement />
     </>
   );

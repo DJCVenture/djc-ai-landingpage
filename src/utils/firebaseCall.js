@@ -1,4 +1,4 @@
-import { collection, getDocs, query, where, addDoc } from 'firebase/firestore';
+import { collection, getDocs, query, where, addDoc,doc } from 'firebase/firestore';
 import {
   getAuth,
   signInWithPopup,
@@ -11,58 +11,39 @@ import { db, auth } from './firebase-utils';
 
 export const createUserRecord = async (userObj) => {
   try {
-    const docRef = await addDoc(collection(db, 'trialUsers'), userObj);
-    console.log('Document written with ID: ', docRef.id);
-    return docRef.id;
+    const userRef = doc(db, "users", userObj.email);
+    // const docRef = await addDoc(collection(db, 'users'), userObj);
+    // console.log('Document written with ID: ', docRef.id);
+    // return docRef.id;
   } catch (e) {
     console.error('Error adding document: ', e);
   }
 };
 
-export const signUp = async (userObj) => {
-  // First, check if the email already exists in Firestore
-  const usersRef = collection(db, 'trialUsers');
-  const q = query(usersRef, where('email', '==', userObj.email));
-  const querySnapshot = await getDocs(q);
-
-  if (!querySnapshot.empty) {
-    // Email already exists in Firestore, do not proceed with account creation
-    console.log('This email is already in use. Please use another email.');
-    return false;
-  }
-
-  // Email does not exist in Firestore, proceed with creating a new Firebase Auth user
+export const signUp=async (fullName, email, phone, password, setUser, setAuthUser, signupReferral)=> {
   try {
-    const userCredential = await createUserWithEmailAndPassword(
-      auth,
-      userObj.email,
-      userObj.password
-    );
-    const displayName = userObj.name;
-    await updateProfile(userCredential.user, { displayName: displayName });
-    console.log('Updated displayName', displayName);
-    console.log('uid:', userCredential.user.uid);
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const displayName = capitalizeFirstLetter(fullName);
+      await updateProfile(auth.currentUser, { displayName: displayName });
+      console.log("Updated displayName");
+      // const authUser = userCredential.user;
+      // console.log(authUser);
 
-    // Remove the password from the user object and add the uid
-    const { password, ...newUserObj } = userObj;
-    const finalUserObj = { ...newUserObj, uid: userCredential.user.uid };
-
-    // Create a new user record in Firestore
-    await createUserRecord(finalUserObj);
-    console.log(finalUserObj, ' is created');
-    return userCredential.user.uid;
+      const user = await createNewUser(displayName, email, phone, setUser, authUser, signupReferral);
+      // setAuthUser(authUser);
+      console.log(user, " is created");
+      return true;
   } catch (err) {
-    console.log(err);
-    let message = err.message;
+      console.log(err);
+      let message = err.message;
 
-    if (err.code === 'auth/email-already-in-use') {
-      message =
-        'This email is already in use with Firebase Authentication. Please use another email.';
-    }
-    notification('Error', message, 'warning');
-    return false;
+      if (err.code === "auth/email-already-in-use") {
+          message = "This email is already in use. Please use another email";
+      }
+      notification("Error", message, "warning");
+      return false;
   }
-};
+}
 
 export const signInWithGoogle = async () => {
   const provider = new GoogleAuthProvider();
@@ -71,7 +52,7 @@ export const signInWithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);
     // Now that we have the result, we can check the user's email against Firestore
     const email = result.user.email;
-    const usersRef = collection(db, 'trialUsers');
+    const usersRef = collection(db, 'users');
     const q = query(usersRef, where('email', '==', email));
     const querySnapshot = await getDocs(q);
 

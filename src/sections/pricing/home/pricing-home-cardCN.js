@@ -142,7 +142,7 @@ export default function PricingHomeCard({ plan }) {
             sx={{color:'#c3015a'}}
             target="_blank"
             rel="noopener"
-            href="https://djcsystem.com/sign-up"
+            href="https://djcsystem.com/sign-up-trial"
           >
             选择配套
           </Button>
