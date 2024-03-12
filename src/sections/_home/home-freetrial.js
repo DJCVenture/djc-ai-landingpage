@@ -31,9 +31,9 @@ export default function HomeAdvertisement() {
           rel="noopener"
           sx={{ 
             backgroundColor: '#c3015a', 
-            width: '500px', 
+            width: '350px', 
             height: '60px', 
-            fontSize: '20px',
+            fontSize: '16px',
             transition: 'all 0.3s ease',
             '&:hover': {
               backgroundColor: '#bf1650', // Slightly darker shade for hover state
