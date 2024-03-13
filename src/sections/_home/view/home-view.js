@@ -106,7 +106,7 @@ export default function HomeView() {
       <HomeFreeTrial/>
       <HomeComparison />
       <HomeFreeTrial/>
-      <PricingHome plans={_pricingHome} />
+      {/* <PricingHome plans={_pricingHome} /> */}
       <HomeFreeTrial/>
       <HomeCountUp/>
       <HomeFreeTrial/>

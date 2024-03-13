@@ -105,7 +105,7 @@ export default function HomeViewCN() {
       <HomeFreeTrialCN/>
       <HomeComparison />
       <HomeFreeTrialCN/>
-      <PricingHome plans={_pricingHome} />
+      {/* <PricingHome plans={_pricingHome} /> */}
       <HomeFreeTrialCN/>
       <HomeCountUp/>
       <HomeFreeTrialCN/>
