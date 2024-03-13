@@ -107,7 +107,7 @@ export default function HomeView() {
       <HomeComparison />
       <HomeFreeTrial/>
       {/* <PricingHome plans={_pricingHome} /> */}
-      <HomeFreeTrial/>
+      {/* <HomeFreeTrial/> */}
       <HomeCountUp/>
       <HomeFreeTrial/>
       <HomeFAQs />
