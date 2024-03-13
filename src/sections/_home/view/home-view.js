@@ -19,6 +19,13 @@ import HomeAiChatBot from '../home-aichatbot';
 import HomeFlowDesign from '../home-flowdesign';
 import HomeCountUp from '../home-count-up';
 import HomeFreeTrial from '../home-freetrial';
+import HomeLead from '../home-lead'
+import HomeWhatsapp from '../home-whatsapp'
+import HomeFunnel from '../home-funnel'
+import HomeLanding from '../home-landing';
+import HomeListing from '../home-propertylisting';
+import HomeTraining from '../home-training';
+import HomeCross from '../home-cross';
 // import HomeKeyPoint from '../home-keypoint';
 // ----------------------------------------------------------------------
 
@@ -102,6 +109,26 @@ export default function HomeView() {
       <HomeFreeTrial/>
       <HomeFlowDesign />
       <HomeFreeTrial/>
+      <HomeLead/>
+      <HomeFreeTrial/>
+      <HomeWhatsapp/>
+      <HomeFreeTrial/>
+
+      <HomeFunnel/>
+      <HomeFreeTrial/>
+
+      <HomeLanding/>
+      <HomeFreeTrial/>
+
+      <HomeListing/>
+      <HomeFreeTrial/>
+
+      <HomeTraining/>
+      <HomeFreeTrial/>
+
+      <HomeCross/>
+      <HomeFreeTrial/>
+
       <HomeFeatureHighlights />
       <HomeFreeTrial/>
       <HomeComparison />

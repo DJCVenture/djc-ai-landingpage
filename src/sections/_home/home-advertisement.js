@@ -34,13 +34,26 @@ export default function HomeAdvertisement() {
           color: 'common.white',
         }}
       >
-        <Typography variant="h1" component="h2" sx={{ opacity: 0.48 }}>
+        {/* <Typography variant="h1" component="h2" sx={{ opacity: 0.48 }}>
           Start Now
         </Typography>
 
         <Typography variant="h1" component="h2" sx={{ mb: 8 }}>
           Create Your
           <br /> AI Personal Assistant
+        </Typography> */}
+
+        <Typography variant="h1" component="h2" sx={{ opacity: 0.48 }}>
+        Transform Your Business Today
+        </Typography>
+
+        <Typography variant="h1" component="h2" sx={{ opacity: 0.78 }}>
+        Seamless Integration
+       
+        </Typography>
+
+        <Typography variant="h1" component="h2" sx={{ mb: 8 }}>
+        Limitless Possibilities
         </Typography>
 
         <Button
