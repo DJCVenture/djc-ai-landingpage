@@ -20,6 +20,14 @@ import HomeFlowDesign from '../home-flowdesigncn';
 import HomeCountUp from '../home-count-upcn';
 import HomeFreeTrialCN from '../home-freetrialcn'
 
+import HomeLeadCN from '../home-leadcn'
+import HomeWhatsappCN from '../home-whatsappcn'
+import HomeFunnelCN from '../home-funnelcn'
+import HomeLandingCN from '../home-landingcn';
+import HomeListingCN from '../home-propertylistingcn';
+import HomeTrainingCN from '../home-trainingcn';
+import HomeCrossCN from '../home-crosscn';
+
 // ----------------------------------------------------------------------
 
 export default function HomeViewCN() {
@@ -101,6 +109,28 @@ export default function HomeViewCN() {
       <HomeFreeTrialCN/>
       <HomeFlowDesign />
       <HomeFreeTrialCN/>
+
+      <HomeLeadCN/>
+      <HomeFreeTrialCN/>
+      <HomeWhatsappCN/>
+      <HomeFreeTrialCN/>
+
+      <HomeFunnelCN/>
+      <HomeFreeTrialCN/>
+
+      <HomeLandingCN/>
+      <HomeFreeTrialCN/>
+
+      <HomeListingCN/>
+      <HomeFreeTrialCN/>
+
+      <HomeTrainingCN/>
+      <HomeFreeTrialCN/>
+
+      <HomeCrossCN/>
+      <HomeFreeTrialCN/>
+
+
       <HomeFeatureHighlights />
       <HomeFreeTrialCN/>
       <HomeComparison />

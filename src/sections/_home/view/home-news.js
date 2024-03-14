@@ -21,6 +21,12 @@ export default function HomeNews() {
 
   const news = [
     {
+      title: '2024掌握人工智能',
+      desc: 'Webinar on 20 MARCH 2024 8-10PM',
+      image:
+        'https://firebasestorage.googleapis.com/v0/b/facebook-api-59e5c.appspot.com/o/files%2Fdjcventure6%40gmail.com%2Fphoto_2024-03-14_11-59-37.jpg?alt=media&token=c7a3a66d-a21a-43c8-8cfc-46a56a569cbc',
+    },
+    {
       title: 'AI MASTERY 2024 Setup Training',
       desc: 'Webinar on 16 MARCH 2024 8-10PM',
       image:
