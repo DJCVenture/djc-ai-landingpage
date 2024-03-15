@@ -129,8 +129,7 @@ export default function HomeHero() {
               }}
             />
           </Grid>
-
-         
+        
         </Grid>
       </Container>
     </Box>

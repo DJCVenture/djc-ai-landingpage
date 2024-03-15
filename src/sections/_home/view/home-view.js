@@ -26,6 +26,8 @@ import HomeLanding from '../home-landing';
 import HomeListing from '../home-propertylisting';
 import HomeTraining from '../home-training';
 import HomeCross from '../home-cross';
+import HomeTestimonial from '../home-testimonial';
+import HomeOtherTestimonial from '../home-othertestimonial';
 // import HomeKeyPoint from '../home-keypoint';
 // ----------------------------------------------------------------------
 
@@ -103,6 +105,8 @@ export default function HomeView() {
       <HomeHero />
       {/* <HomeKeyPoint /> */}
       <HomeFreeTrial/>
+      <HomeTestimonial/>
+      <HomeFreeTrial/>
       <HomeAiChatBot />
       <HomeFreeTrial/>
       <HomeAiSupport />
@@ -136,6 +140,8 @@ export default function HomeView() {
       {/* <PricingHome plans={_pricingHome} /> */}
       {/* <HomeFreeTrial/> */}
       <HomeCountUp/>
+      <HomeFreeTrial/>
+      <HomeOtherTestimonial/>
       <HomeFreeTrial/>
       <HomeFAQs />
       <HomeAdvertisement />

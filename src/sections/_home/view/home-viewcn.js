@@ -28,6 +28,8 @@ import HomeListingCN from '../home-propertylistingcn';
 import HomeTrainingCN from '../home-trainingcn';
 import HomeCrossCN from '../home-crosscn';
 
+import HomeTestimonialCN from '../home-testimonialcn';
+import HomeOtherTestimonialCN from '../home-othertestimonialcn';
 // ----------------------------------------------------------------------
 
 export default function HomeViewCN() {
@@ -102,6 +104,10 @@ export default function HomeViewCN() {
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
+
+      <HomeTestimonialCN/>
+      <HomeFreeTrialCN/>
+
       <HomeFreeTrialCN/>
       <HomeAiChatBot />
       <HomeFreeTrialCN/>
@@ -139,6 +145,10 @@ export default function HomeViewCN() {
       {/* <HomeFreeTrialCN/> */}
       <HomeCountUp/>
       <HomeFreeTrialCN/>
+
+      <HomeOtherTestimonialCN/>
+      <HomeFreeTrialCN/>
+
       <HomeFAQs />
       <HomeFreeTrialCN/>
       <HomeAdvertisement />
