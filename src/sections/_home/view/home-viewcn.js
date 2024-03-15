@@ -104,9 +104,9 @@ export default function HomeViewCN() {
       <ScrollProgress scrollYProgress={scrollYProgress} />
 
       <HomeHero />
-
-      <HomeTestimonialCN/>
       <HomeFreeTrialCN/>
+
+      <HomeTestimonialCN/>    
 
       <HomeFreeTrialCN/>
       <HomeAiChatBot />
