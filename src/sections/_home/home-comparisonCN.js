@@ -75,9 +75,7 @@ export default function HomeComparison() {
           textAlign: 'center',
         }}
       >
-        <Image src={pink} alt="" width={800} height={480} />
-
-
+        <Image src={pink} alt="" width={800}  layout="intrinsic" />
       </Box>
     
     

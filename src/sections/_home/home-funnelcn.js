@@ -56,57 +56,18 @@ export default async function HomeLead({ plans }) {
 
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: ['column', 'row'], // Stack vertically on small screens, side by side on larger screens
-          justifyContent: 'center',
-          alignItems: 'center', // Center items on the cross-axis on large screens
-          gap: '80px', // Adds a little space between images
-          mt: '20px',
-          '@media (max-width: 768px)': {
-            // Adjusts for screens smaller than 768px
-            flexDirection: 'column',
-            gap: '40px', // Less gap when stacked vertically
-            alignItems: 'flex-start', // Align items at the start of the container (top) on small screens
-          },
+          textAlign: 'center',
+          mb: { xs: 8, md: 8 },
         }}
       >
-        <Image
-          src={sample3}
-          alt=""
-          
-          width={900} // Adjusted width for side-by-side layout
-          height={600} // Adjusted height for consistency
-          style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
-        />
-
-      
+        <Image src={sample3} alt="" width={800}  layout="intrinsic" style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }} />
       </Box>
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: ['column', 'row'], // Stack vertically on small screens, side by side on larger screens
-          justifyContent: 'center',
-          alignItems: 'center', // Center items on the cross-axis on large screens
-          gap: '80px', // Adds a little space between images
-          mt: '20px',
-          '@media (max-width: 768px)': {
-            // Adjusts for screens smaller than 768px
-            flexDirection: 'column',
-            gap: '40px', // Less gap when stacked vertically
-            alignItems: 'flex-start', // Align items at the start of the container (top) on small screens
-          },
+          textAlign: 'center',
         }}
       >
-        <Image
-          src={sample4}
-          alt=""
-          
-          width={900} // Adjusted width for side-by-side layout
-          height={600} // Adjusted height for consistency
-          style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
-        />
-
-      
+        <Image src={sample4} alt="" width={800}  layout="intrinsic" style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }} />
       </Box>
     </Container>
   );

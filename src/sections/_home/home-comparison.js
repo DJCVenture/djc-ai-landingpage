@@ -53,20 +53,24 @@ export default function HomeComparison() {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          OPTIMIZE YOUR SALES STRATEGY WITH OUR INTEGRATED WEB APP SOLUTION
+            OPTIMIZE YOUR SALES STRATEGY WITH OUR INTEGRATED WEB APP SOLUTION
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography variant="h2" sx={{ my: 3 }}>
-            Streamline Your Operations 
-            <br /> with Our Cost-Effective, Unified System Platform <br />     
+            Streamline Your Operations
+            <br /> with Our Cost-Effective, Unified System Platform <br />
           </Typography>
         </m.div>
 
         <m.div variants={varFade().inDown}>
           <Typography sx={{ color: 'text.secondary' }}>
-          Whether you're stepping into the world of digital sales or aiming to consolidate your sales processes, our integrated web app solution brings together multiple sales functions into a single, unified platform. This comprehensive approach not only simplifies management but also significantly reduces costs compared to the cumulative expense of adopting multiple disparate systems. 
+            Whether you're stepping into the world of digital sales or aiming to consolidate your
+            sales processes, our integrated web app solution brings together multiple sales
+            functions into a single, unified platform. This comprehensive approach not only
+            simplifies management but also significantly reduces costs compared to the cumulative
+            expense of adopting multiple disparate systems.
           </Typography>
         </m.div>
       </Box>
@@ -75,9 +79,7 @@ export default function HomeComparison() {
           textAlign: 'center',
         }}
       >
-        <Image src={pink} alt="" width={800} height={480} />
-
-
+        <Image src={pink} alt="" width={800}  layout="intrinsic" />
       </Box>
     </Container>
   );
