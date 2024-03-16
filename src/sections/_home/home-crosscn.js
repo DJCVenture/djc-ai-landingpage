@@ -73,9 +73,9 @@ export default async function HomeLead({ plans }) {
         <Image
           src={sample3}
           alt=""
-          
-          width={900} // Adjusted width for side-by-side layout
-          height={600} // Adjusted height for consistency
+          layout='responsive'
+          width={850} // Adjusted width for side-by-side layout
+          height={500} // Adjusted height for consistency
           style={{ boxShadow: '8px 8px 18px 0 #e56aaf' }}
         />
 

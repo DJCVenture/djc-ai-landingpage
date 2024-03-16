@@ -70,13 +70,15 @@ export default function HomeComparison() {
           </Typography>
         </m.div>
       </Box>
-      <Image 
-      src={pink} 
-      alt="" 
-      layout="responsive" 
-      width={175} 
-      height={100} 
-    />
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Image src={pink} alt="" width={800} height={480} />
+
+
+      </Box>
     
     
     </Container>
