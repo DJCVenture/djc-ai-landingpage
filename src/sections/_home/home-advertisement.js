@@ -44,16 +44,15 @@ export default function HomeAdvertisement() {
         </Typography> */}
 
         <Typography variant="h1" component="h2" sx={{ opacity: 0.48 }}>
-        Transform Your Business Today
+          Transform Your Business Today
         </Typography>
 
         <Typography variant="h1" component="h2" sx={{ opacity: 0.78 }}>
-        Seamless Integration
-       
+          Seamless Integration
         </Typography>
 
         <Typography variant="h1" component="h2" sx={{ mb: 8 }}>
-        Limitless Possibilities
+          Limitless Possibilities
         </Typography>
 
         <Button
@@ -61,10 +60,11 @@ export default function HomeAdvertisement() {
           variant="contained"
           target="_blank"
           rel="noopener"
-          sx={{backgroundColor:'#c3015a'}}
-          href="https://djcsystem.com/sign-up-trial"
+          sx={{ backgroundColor: '#c3015a' }}
+          href="https://djcsystem.com/sign-up"
         >
-          START YOUR FREE TRIAL NOW
+          {/* START YOUR FREE TRIAL NOW */}
+          SIGN UP NOW
         </Button>
       </Stack>
     </Box>

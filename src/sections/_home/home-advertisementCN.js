@@ -48,10 +48,10 @@ export default function HomeAdvertisement() {
           variant="contained"
           target="_blank"
           rel="noopener"
-          sx={{backgroundColor:'#c3015a'}}
-          href="https://djcsystem.com/sign-up-trial"
+          sx={{ backgroundColor: '#c3015a' }}
+          href="https://djcsystem.com/sign-up"
         >
-          立即开始免费试用
+          立即注册
         </Button>
       </Stack>
     </Box>

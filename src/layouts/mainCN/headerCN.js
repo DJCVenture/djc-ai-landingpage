@@ -79,9 +79,7 @@ export default function Header({ headerOnDark }) {
                 ENG
               </Typography>
             </Box>
-            <Typography variant="button" sx={{ mx: 1 }}>
-               
-            </Typography>
+            <Typography variant="button" sx={{ mx: 1 }}></Typography>
             <Box component={Link} href="/cn" sx={{ textDecoration: 'none' }}>
               <Typography
                 variant="button"
@@ -132,14 +130,14 @@ export default function Header({ headerOnDark }) {
         <Button
           variant="contained"
           color="inherit"
-          href="https://djcsystem.com/sign-up-trial"
+          href="https://djcsystem.com/sign-up"
           target="_blank"
           rel="noopener"
           sx={{
             display: { xs: 'none', md: 'inline-flex' },
           }}
         >
-          免费试用
+          立即注册
         </Button>
       </Stack>
 

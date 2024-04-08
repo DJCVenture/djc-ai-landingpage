@@ -10,9 +10,7 @@ export default function HomeAdvertisement() {
   const theme = useTheme();
 
   return (
-    <Box
-     
-    >
+    <Box>
       <Stack
         alignItems="center"
         justifyContent="center"
@@ -24,28 +22,35 @@ export default function HomeAdvertisement() {
           color: 'common.white',
         }}
       >
-       
-       <Button
+        <Button
           variant="contained"
           target="_blank"
           rel="noopener"
-          sx={{ 
-            backgroundColor: '#c3015a', 
-            width: '350px', 
-            height: '60px', 
+          sx={{
+            backgroundColor: '#c3015a',
+            width: '350px',
+            height: '60px',
             fontSize: '16px',
             transition: 'all 0.3s ease',
             '&:hover': {
               backgroundColor: '#bf1650', // Slightly darker shade for hover state
               transform: 'scale(1.05)', // Grow effect
-            }
+            },
           }}
-          href="https://djcsystem.com/sign-up-trial"
+       
+          href="https://djcsystem.com/sign-up"
         >
-          START YOUR FREE TRIAL TODAY!!
+          {/* START YOUR FREE TRIAL TODAY!! */}
+          SIGN UP NOW !!
         </Button>
-        <Typography variant="button" display="block" gutterBottom sx={{marginTop:'10px', color: theme.palette.mode === 'dark' ? 'white' : 'black' }}>
-        Get Started In Less Than 60 Seconds • Cancel Anytime</Typography>
+        <Typography
+          variant="button"
+          display="block"
+          gutterBottom
+          sx={{ marginTop: '10px', color: theme.palette.mode === 'dark' ? 'white' : 'black' }}
+        >
+          Get Started In Less Than 60 Seconds • Cancel Anytime
+        </Typography>
       </Stack>
     </Box>
   );

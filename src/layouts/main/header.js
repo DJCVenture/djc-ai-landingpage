@@ -64,7 +64,6 @@ export default function Header({ headerOnDark }) {
         <Stack spacing={1} direction="row" alignItems="center">
           {/* <Searchbar /> */}
           <Box sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-          
             <Box component={Link} href="/" sx={{ textDecoration: 'none' }}>
               <Typography
                 variant="button"
@@ -132,15 +131,16 @@ export default function Header({ headerOnDark }) {
 
         <Button
           variant="contained"
-          color="inherit"
-          href="https://djcsystem.com/sign-up-trial"
+          color="inherit"    
+          href="https://djcsystem.com/sign-up"
           target="_blank"
           rel="noopener"
           sx={{
             display: { xs: 'none', md: 'inline-flex' },
           }}
         >
-          FREE TRIAL
+          {/* FREE TRIAL */}
+          SIGN UP
         </Button>
       </Stack>
 

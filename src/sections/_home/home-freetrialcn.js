@@ -10,9 +10,7 @@ export default function HomeAdvertisement() {
   const theme = useTheme();
 
   return (
-    <Box
-     
-    >
+    <Box>
       <Stack
         alignItems="center"
         justifyContent="center"
@@ -24,28 +22,33 @@ export default function HomeAdvertisement() {
           color: 'common.white',
         }}
       >
-       
-       <Button
+        <Button
           variant="contained"
           target="_blank"
           rel="noopener"
-          sx={{ 
-            backgroundColor: '#c3015a', 
-            width: '300px', 
-            height: '60px', 
+          sx={{
+            backgroundColor: '#c3015a',
+            width: '300px',
+            height: '60px',
             fontSize: '16px',
             transition: 'all 0.3s ease',
             '&:hover': {
               backgroundColor: '#bf1650', // Slightly darker shade for hover state
               transform: 'scale(1.05)', // Grow effect
-            }
+            },
           }}
-          href="https://djcsystem.com/sign-up-trial"
+          href="https://djcsystem.com/sign-up"
         >
-          立即开始您的免费试用!!
+          立即注册!!
         </Button>
-        <Typography variant="button" display="block" gutterBottom sx={{marginTop:'10px', color: theme.palette.mode === 'dark' ? 'white' : 'black' }}>
-        在60秒内迅速启动 • 随时可取消订阅</Typography>
+        <Typography
+          variant="button"
+          display="block"
+          gutterBottom
+          sx={{ marginTop: '10px', color: theme.palette.mode === 'dark' ? 'white' : 'black' }}
+        >
+          在60秒内迅速启动 • 随时可取消订阅
+        </Typography>
       </Stack>
     </Box>
   );

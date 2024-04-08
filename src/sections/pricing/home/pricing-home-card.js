@@ -166,7 +166,7 @@ export default function PricingHomeCard({ plan }) {
             variant='outlined'
             target="_blank"
             rel="noopener"
-            href="https://djcsystem.com/sign-up-trial"
+            href="https://djcsystem.com/sign-up"
             sx={{color:'#c3015a'}}
           >
             Choose Package

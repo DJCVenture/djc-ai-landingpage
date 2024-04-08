@@ -42,11 +42,11 @@ export default function PricingHomeCard({ plan }) {
             },
           }}
         >
-         热销配套
+          热销配套
         </Label>
       )}
 
-{plan.price === '239.20' && (
+      {plan.price === '239.20' && (
         <Label
           color="error"
           sx={{
@@ -77,14 +77,14 @@ export default function PricingHomeCard({ plan }) {
               </Typography>
             </Stack>
             <Typography variant="caption" component="span">
-                每月
-              </Typography>
+              每月
+            </Typography>
             <Typography
               variant="subtitle2"
               component="div"
               sx={{
                 textTransform: 'uppercase',
-                pt:3,
+                pt: 3,
                 display: 'flex', // Add display flex
                 justifyContent: 'center', // Horizontally center the content
                 alignItems: 'center', // Vertically center the content
@@ -134,15 +134,14 @@ export default function PricingHomeCard({ plan }) {
         </Stack>
 
         <Stack alignItems="flex-end" spacing={3}>
-
           <Button
             size="large"
             fullWidth
-            variant='outlined'
-            sx={{color:'#c3015a'}}
+            variant="outlined"
+            sx={{ color: '#c3015a' }}
             target="_blank"
             rel="noopener"
-            href="https://djcsystem.com/sign-up-trial"
+            href="https://djcsystem.com/sign-up"
           >
             选择配套
           </Button>

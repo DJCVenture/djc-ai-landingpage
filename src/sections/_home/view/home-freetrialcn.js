@@ -182,7 +182,7 @@ export default function HomeFreeTrialCN() {
             <CardContent>
               <Box>
                 <Typography variant="h2" gutterBottom>
-                立即开始您的7天免费试用！
+                立即注册！
                 </Typography>
                 <BorderLinearProgress variant="determinate" value={50} />
                 <Box sx={{ mb: '20px' }}>

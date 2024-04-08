@@ -83,7 +83,7 @@ export default function NavMobile({ data }) {
               fullWidth
               variant="contained"
               color="inherit"
-              href="https://djcsystem.com/sign-up-trial"
+              href="https://djcsystem.com/sign-up"
               target="_blank"
               rel="noopener"
             >
