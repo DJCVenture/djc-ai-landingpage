@@ -64,81 +64,217 @@ export default function PrivaryPolicy() {
       }}
     >
       <Typography variant="h5" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  PRIVACY POLICY
-</Typography>
+        PRIVACY POLICY
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Your Privacy
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Your Privacy
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  At DJC System, we respect the privacy of your personal information and are committed to maintaining its confidentiality. The primary purpose of collecting your personal data is to provide our services, enhance your user experience, and for future marketing initiatives. Only authorized DJC System employees have access to your personal information. We will not disclose information about our customers to third parties except as part of providing a service to you or where we have your express permission. This may include arrangements for providing services, conducting credit and security checks, and for customer research and profiling. Disclosure may also occur to regulators, lawyers, auditors, other companies in the same group, third-party service providers, and appointed marketing agencies.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        At DJC System, we respect the privacy of your personal information and are committed to
+        maintaining its confidentiality. The primary purpose of collecting your personal data is to
+        provide our services, enhance your user experience, and for future marketing initiatives.
+        Only authorized DJC System employees have access to your personal information. We will not
+        disclose information about our customers to third parties except as part of providing a
+        service to you or where we have your express permission. This may include arrangements for
+        providing services, conducting credit and security checks, and for customer research and
+        profiling. Disclosure may also occur to regulators, lawyers, auditors, other companies in
+        the same group, third-party service providers, and appointed marketing agencies.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Your Consent
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Information We Collect
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  We will not sell your name, address, email address, credit card information, or personal information to any third party without your permission, except for partners linked to our site.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We collect information you provide directly to us. For example, we collect information when
+        you create an account, use the service, or communicate with us. This information may
+        include:
+        <ul>
+          <li>Your name</li>
+          <li>Email address</li>
+          <li>Any other information you choose to provide such as calendar information</li>
+          <li>
+            If you use Google OAuth for login, we collect your Google user ID, name, email address
+            and profile picture.
+          </li>
+        </ul>
+        We also collect certain information automatically when you use the service, such as your IP
+        address, browser type, and operating system.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Communication & Marketing
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        How We Use Your Information
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  If you have subscribed to DJC System, we may occasionally update you on our latest services, news, and special offers via email, post, & telephone. Upon becoming a member, you will have the option to receive such communications from us and selected third parties. All DJC System members can opt out of receiving marketing communications from us and/or selected third parties. To opt-out, visit 'Your Details' in 'Your Account' on the DJC System website, register, and login. Alternatively, click on the 'unsubscribe' link in any email communications we send you.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We use your information to:
+        <ul>
+          <li>Provide, maintain, and improve the service</li>
+          <li>Communicate with you</li>
+          <li>Personalize your experience</li>
+          <li>Detect, investigate, and prevent fraudulent or illegal activities</li>
+          <li>
+            Provide our services, enhance your user experience, and for future marketing
+            initiatives.
+          </li>
+        </ul>
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Cookies
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Your Consent
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  A cookie is a small file stored on your computer to enhance your experience. If you are registered with us, your computer will store an identifying cookie, saving you time each visit. You can modify your browser settings to prevent automatic cookie storage.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We will not sell your name, address, email address, credit card information, or personal
+        information to any third party without your permission, except for partners linked to our
+        site.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Site Statistics
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Communication & Marketing
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  We may disclose aggregated, anonymized statistics about visitors and usage as required by our investors. We gather data using independent measurement and research companies, employing cookies and embedded code. This information helps us improve our services. For more details, contact us.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        If you have subscribed to DJC System, we may occasionally update you on our latest services,
+        news, and special offers via email, post, & telephone. Upon becoming a member, you will have
+        the option to receive such communications from us and selected third parties. All DJC System
+        members can opt out of receiving marketing communications from us and/or selected third
+        parties. To opt-out, visit 'Your Details' in 'Your Account' on the DJC System website,
+        register, and login. Alternatively, click on the 'unsubscribe' link in any email
+        communications we send you.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Disclosures of Your Information
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Cookies
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Your personal information may be disclosed to our group companies. We may also disclose your information to third parties in the following scenarios: if DJC System sells or buys any business or assets; if DJC System or substantially all of its assets are acquired by a third party, in which case customer data may be transferred; to comply with legal obligations, enforce our terms, or protect the rights, property, or safety of DJC System, our customers, or others. This includes exchanging information for fraud protection and credit risk reduction.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        A cookie is a small file stored on your computer to enhance your experience. If you are
+        registered with us, your computer will store an identifying cookie, saving you time each
+        visit. You can modify your browser settings to prevent automatic cookie storage.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Third-Party Sites
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Site Statistics
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Our site may contain links to other websites. We are not responsible for their privacy policies. Please review these policies before submitting personal data to these sites.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We may disclose aggregated, anonymized statistics about visitors and usage as required by
+        our investors. We gather data using independent measurement and research companies,
+        employing cookies and embedded code. This information helps us improve our services. For
+        more details, contact us.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Checking Your Details
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Disclosures of Your Information
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  To verify details submitted to DJC System, contact us via the provided email address. For security, we may request proof of identity. We recommend not using your browser's password memory function to protect your personal information.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Your personal information may be disclosed to our group companies. We may also disclose your
+        information to third parties in the following scenarios: if DJC System sells or buys any
+        business or assets; if DJC System or substantially all of its assets are acquired by a third
+        party, in which case customer data may be transferred; to comply with legal obligations,
+        enforce our terms, or protect the rights, property, or safety of DJC System, our customers,
+        or others. This includes exchanging information for fraud protection and credit risk
+        reduction.
+      </Typography>
 
-<Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Contacting Us
-</Typography>
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Data Protection Mechanisms for Sensitive Data
+      </Typography>
 
-<Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  We value feedback from our customers. If you have questions or feedback about this statement, or if you wish us to stop processing your information, please contact a member of the DJC System team, who will be happy to assist you.
-</Typography>
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We implement robust security measures to protect your sensitive data, including but not
+        limited to:
+        <ul>
+          <li>
+            Encryption: We use industry-standard encryption protocols (HTTPS) to protect data in
+            transit. Sensitive data at rest is encrypted using advanced encryption standards (AES).
+          </li>
+          <li>
+            Access Controls: Access to your personal information is restricted to authorized
+            personnel only.
+          </li>
+          <li>
+            Regular Security Audits: We conduct regular security audits to identify and address
+            potential vulnerabilities.
+          </li>
+          <li>
+            Secure Server Infrastructure: Our servers are housed in secure data centers with
+            physical and logical security measures in place.
+          </li>
+          <li>
+            Google OAuth Specific Security: When using Google OAuth, we only store the minimal
+            required information (user ID, name, email, profile picture) and ensure that access
+            tokens are handled securely and not stored longer than necessary.
+          </li>
+        </ul>
+      </Typography>
 
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Google User Data Retention and Deletion
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We retain Google user data only for as long as necessary to provide the services you
+        requested or as required by law. Specifically:
+        <ul>
+          <li>
+            Retention Period: Google user data is retained as long as your account is active. If
+            your account is inactive for 12 months, we may delete your data.
+          </li>
+          <li>
+            Deletion Request: You can request the deletion of your Google user data at any time by
+            contacting us. Upon receiving your request, we will take
+            reasonable steps to delete your data unless we are required to retain it for legal or
+            legitimate business purposes.
+          </li>
+          <li>
+            Data Purging: When you delete your account, or when your inactive account is purged, we
+            will securely delete your Google user data from our systems.
+          </li>
+        </ul>
+      </Typography>
+
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Third-Party Sites
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Our site may contain links to other websites. We are not responsible for their privacy
+        policies. Please review these policies before submitting personal data to these sites.
+      </Typography>
+
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Checking Your Details
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        To verify details submitted to DJC System, contact us via the provided email address. For
+        security, we may request proof of identity. We recommend not using your browser's password
+        memory function to protect your personal information.
+      </Typography>
+
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Changes to This Policy
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We may update this Privacy Policy from time to time. We will notify you of any changes by
+        posting the new policy on this page.
+      </Typography>
+
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Contacting Us
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        We value feedback from our customers. If you have questions or feedback about this
+        statement, or if you wish us to stop processing your information, please contact a member of
+        the DJC System team, who will be happy to assist you.
+      </Typography>
     </Container>
   );
 }
