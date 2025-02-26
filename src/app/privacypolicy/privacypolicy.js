@@ -94,14 +94,19 @@ export default function PrivaryPolicy() {
         <ul>
           <li>Your name</li>
           <li>Email address</li>
-          <li>Any other information you choose to provide such as calendar information</li>
+          <li>
+            Any other information you choose to provide such as calendar
+            information,images,videos,voice clip and others.
+          </li>
           <li>
             If you use Google OAuth for login, we collect your Google user ID, name, email address
-            and profile picture.
+            ,profile picture and calendar information.
           </li>
         </ul>
         We also collect certain information automatically when you use the service, such as your IP
-        address, browser type, and operating system.
+        address, browser type, and operating system. We may collect, or process on behalf of our
+        customers, the mentioned categories of personal data when you use or interact with our
+        products and services.
       </Typography>
 
       <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
@@ -120,6 +125,8 @@ export default function PrivaryPolicy() {
             initiatives.
           </li>
         </ul>
+        We will use your data to provide you with the services you requested, such as email
+        notification and newsletter,calendar integration and other services.
       </Typography>
 
       <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
@@ -128,8 +135,8 @@ export default function PrivaryPolicy() {
 
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
         We will not sell your name, address, email address, credit card information, or personal
-        information to any third party without your permission, except for partners linked to our
-        site.
+        information to any third party without your permission.We will not sell your data to third
+        parties, but we may share it with our partners who help us provide our services.
       </Typography>
 
       <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
@@ -227,9 +234,8 @@ export default function PrivaryPolicy() {
           </li>
           <li>
             Deletion Request: You can request the deletion of your Google user data at any time by
-            contacting us. Upon receiving your request, we will take
-            reasonable steps to delete your data unless we are required to retain it for legal or
-            legitimate business purposes.
+            contacting us. Upon receiving your request, we will take reasonable steps to delete your
+            data unless we are required to retain it for legal or legitimate business purposes.
           </li>
           <li>
             Data Purging: When you delete your account, or when your inactive account is purged, we
