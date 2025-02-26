@@ -191,7 +191,7 @@ export default function PrivaryPolicy() {
         <ul>
           <li>
             Encryption: We use industry-standard encryption protocols (HTTPS) to protect data in
-            transit. Sensitive data at rest is encrypted using advanced encryption standards (AES).
+            transit.
           </li>
           <li>
             Access Controls: Access to your personal information is restricted to authorized
