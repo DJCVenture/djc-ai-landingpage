@@ -117,7 +117,7 @@ export default function HomeFAQs() {
             ))}
           </Box>
 
-          <Box
+          {/* <Box
             sx={{
               borderWidth: 1,
               borderRadius: 3,
@@ -153,7 +153,7 @@ export default function HomeFAQs() {
                 </Button>
       
             </m.div>
-          </Box>
+          </Box> */}
         </Grid>
       </Grid>
 

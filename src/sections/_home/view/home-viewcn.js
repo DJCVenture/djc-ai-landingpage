@@ -36,7 +36,7 @@ export default function HomeViewCN() {
   const { scrollYProgress } = useScroll();
   const openWhatsApp = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
-    const defaultMessage = '嗨，我想了解更多关于DJC系统的信息';
+    const defaultMessage = '嗨，我想了解更多关于SimplyNice系统的信息';
     const encodedMessage = encodeURIComponent(defaultMessage);
 
     // Append the message to the URL

@@ -8,8 +8,8 @@ import { useTheme } from '@mui/material/styles';
 import { RouterLink } from 'src/routes/components';
 
 import Image from 'next/image';
-import LogoGrey from 'src/assets/DJC-Logo-Grey.png';
-import LogoWhite from 'src/assets/DJC-Logo-White.png';
+import LogoGrey from 'src/assets/SimplyNiceLogoWhite.png';
+import LogoWhite from 'src/assets/SimplyNiceLogoWhite.png';
 
 // ----------------------------------------------------------------------
 

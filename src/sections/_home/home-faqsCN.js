@@ -26,7 +26,7 @@ const CONTENTS = [
     answer: `是的，您可以随时更改您的计划。这意味着您可以随时升级。`,
   },
   {
-    question: 'DJC系统会从我的销售中抽取一定比例的费用吗？',
+    question: 'SimplyNice系统会从我的销售中抽取一定比例的费用吗？',
     answer: `不，您将保留您赚取的每一分钱。`,
   },
   {
@@ -117,7 +117,7 @@ export default function HomeFAQsCN() {
             ))}
           </Box>
 
-          <Box
+          {/* <Box
             sx={{
               borderWidth: 1,
               borderRadius: 3,
@@ -152,7 +152,7 @@ export default function HomeFAQsCN() {
                 联系我们
               </Button>
             </m.div>
-          </Box>
+          </Box> */}
         </Grid>
       </Grid>
 

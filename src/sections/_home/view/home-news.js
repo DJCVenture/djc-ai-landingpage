@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 
 export default function HomeNews() {
   const handleClick = () => {
-    window.open('https://hello.djc.ai/', '_blank');
+    window.open('https://hello.simplynie.ai/', '_blank');
   };
 
   const news = [

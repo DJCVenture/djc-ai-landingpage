@@ -96,7 +96,7 @@ export default function RefundPolicy() {
 </Typography>
 
 <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Since SimplyNice is an online application, there is no physical product shipping. All services and products are delivered electronically via the web application. Ensure that your email and contact details are correct during subscription to receive all necessary information and updates. Change in Service Details: For changes in subscription details, please contact us at admin@djc.ai within 24 hours of your order. Changes requested after this period may not be possible or could incur additional charges. This policy is subject to change as necessary, without prior notice or approval from the customer.
+  Since SimplyNice is an online application, there is no physical product shipping. All services and products are delivered electronically via the web application. Ensure that your email and contact details are correct during subscription to receive all necessary information and updates. Change in Service Details: For changes in subscription details, please contact us at admin@simplynice.ai within 24 hours of your order. Changes requested after this period may not be possible or could incur additional charges. This policy is subject to change as necessary, without prior notice or approval from the customer.
 </Typography>
 
     </Container>

@@ -30,19 +30,7 @@ export default function NavDesktop({ data, sx, ...other }) {
         </Box>
       ))}
      
-      <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <Link
-          href="https://www.facebook.com/djc.flow"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: 'none' }}
-        >
-          <Iconify width={28} icon="ic:baseline-facebook" 
-          style={{
-                color: settings.themeMode === 'dark' ? 'yellow' : 'red', // Make asleep-filled icon yellow
-              }} />
-        </Link>
-      </Box>
+     
     </Stack>
   );
 }

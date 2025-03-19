@@ -230,7 +230,7 @@ export default function HomeStripePage() {
                 </Button>
                 <Box sx={{ textAlign: 'center', padding: '15px' }}>
                   <Typography variant="caption">
-                    7 days free from today. Cancel by e-mail to admin@djc.ai. I also agree to the{' '}
+                    7 days free from today. Cancel by e-mail to admin@simplynice.ai. I also agree to the{' '}
                     <a
                       href="/termsandservices"
                       target="_blank"

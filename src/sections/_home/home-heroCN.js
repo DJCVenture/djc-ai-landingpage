@@ -59,12 +59,12 @@ export default function HomeHero() {
               <Typography variant="h2">
                 提升您的企业业务 <br /> 今天就选择
                 <Box component="span" sx={{ color: '#c3015a' }}>
-                  {` DJC`}
+                  {` SimplyNice`}
                 </Box>
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-              凭借强大的人工智能能力<br/>DJC系统赋能您的企业充分利用自动化和数据分析的全部潜力，<br/>改变您与客户连接的方式，并加速您的成功 ！
+              凭借强大的人工智能能力<br/>SimplyNice系统赋能您的企业充分利用自动化和数据分析的全部潜力，<br/>改变您与客户连接的方式，并加速您的成功 ！
               </Typography>
               <Grid xs={12} md={7}>
             <Image

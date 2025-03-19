@@ -67,7 +67,7 @@ export default function HomeFeatureHighlightsCN() {
 
           <m.div variants={varFade().inUp}>
             <Typography sx={{ color: 'text.secondary' }}>
-              {`让我们来看看是什么让我们的DJC系统如此强大且用户友好！`}
+              {`让我们来看看是什么让我们的SimplyNice系统如此强大且用户友好！`}
             </Typography>
           </m.div>
         </Grid>
