@@ -13,7 +13,7 @@ import PricingHomeCard from './pricing-home-card';
 
 export default function PricingHome({ plans }) {
 
-  const arrFunctionList = ['DJC AI Assistant','DJC Leads Management', 'DJC Whatsapp Broadcast', 'DJC Whatsapp Flows','DJC Whatsapp Funnels','DJC Email Marketing', 'Landing Page Builder','Periodic Training Courses','Telegram Community','Continuous Enhancements','Continuous Expansion','Rapid System Support', ]
+  const arrFunctionList = ['SimplyNice AI Assistant','SimplyNice Leads Management', 'SimplyNice Whatsapp Broadcast', 'SimplyNice Whatsapp Flows','SimplyNice Whatsapp Funnels','SimplyNice Email Marketing', 'Landing Page Builder','Periodic Training Courses','Telegram Community','Continuous Enhancements','Continuous Expansion','Rapid System Support', ]
 
   const allPlans = [
     {

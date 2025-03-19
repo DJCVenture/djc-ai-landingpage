@@ -67,7 +67,7 @@ export default function HomeFeatureHighlights() {
 
           <m.div variants={varFade().inUp}>
             <Typography sx={{ color: 'text.secondary' }}>
-              {`Let's see what makes our DJC system super powerful and user-friendly!`}
+              {`Let's see what makes our SimplyNice super powerful and user-friendly!`}
             </Typography>
           </m.div>
         </Grid>

@@ -62,7 +62,7 @@ export default function HomeHero() {
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-                With powerful AI capabilities, DJC System empowers your businesses to harness the
+                With powerful AI capabilities, SimplyNice empowers your businesses to harness the
                 full potential of automation and data analytics, transforming the way you connect
                 with customers and accelerate your success.
               </Typography>

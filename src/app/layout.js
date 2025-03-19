@@ -23,9 +23,9 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'DJC SYSTEM',
+  title: 'SimplyNice',
   description:
-    'With powerful AI capabilities, DJC System empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
+    'With powerful AI capabilities, SimplyNice empowers your businesses to harness the full potential of automation and data analytics, transforming the way you connect with customers and accelerate your success.',
   keywords: 'whatsapp,ai,chatbot,ai assistant,ai chatbot,lead management,lead.',
   manifest: '/manifest.json',
   icons: [

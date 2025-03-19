@@ -74,7 +74,7 @@ export default function TermsAndServices() {
       Terms & Conditions
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Welcome to DJC System. These terms and conditions apply to all subscribers and users of DJC System. By subscribing to and using DJC System, you are bound by these terms and conditions.
+      Welcome to SimplyNice. These terms and conditions apply to all subscribers and users of SimplyNice. By subscribing to and using SimplyNice, you are bound by these terms and conditions.
       </Typography>
 
       
@@ -82,7 +82,7 @@ export default function TermsAndServices() {
       General
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      The content of these terms and conditions may be changed, moved, or deleted at any time. DJC System reserves the right to modify the contents of the terms and conditions without prior notice. Any violation of the rules and regulations of these terms and conditions will result in immediate action against the offender(s).
+      The content of these terms and conditions may be changed, moved, or deleted at any time. SimplyNice reserves the right to modify the contents of the terms and conditions without prior notice. Any violation of the rules and regulations of these terms and conditions will result in immediate action against the offender(s).
       </Typography>
 
 
@@ -90,7 +90,7 @@ export default function TermsAndServices() {
       Site Contents & Copyrights
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Unless otherwise noted, all materials, including images, illustrations, designs, icons, photographs, video clips, and written and other materials that appear as part of DJC System, are the intellectual properties owned, controlled, or licensed by DJC System.
+      Unless otherwise noted, all materials, including images, illustrations, designs, icons, photographs, video clips, and written and other materials that appear as part of SimplyNice, are the intellectual properties owned, controlled, or licensed by SimplyNice.
       </Typography>
 
 
@@ -98,7 +98,7 @@ export default function TermsAndServices() {
       Comments and Feedback
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      All comments and feedback regarding DJC System will be addressed to admin@djc.ai. Users must not submit any comments that violate the rights of any third party, including copyrights, trademarks, privacy, or other personal or proprietary rights. Users agree not to submit unlawful, abusive, or obscene content. Users are solely responsible for the content of their comments.
+      All comments and feedback regarding SimplyNice will be addressed to admin@simplynice.ai. Users must not submit any comments that violate the rights of any third party, including copyrights, trademarks, privacy, or other personal or proprietary rights. Users agree not to submit unlawful, abusive, or obscene content. Users are solely responsible for the content of their comments.
       </Typography>
 
 
@@ -114,21 +114,21 @@ export default function TermsAndServices() {
       Newsletter
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Subscribers agree that DJC System may send newsletters about the latest news, products, promotions, etc., through email.
+      Subscribers agree that SimplyNice may send newsletters about the latest news, products, promotions, etc., through email.
       </Typography>
 
       <Typography variant="h5" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
       Indemnification
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Subscribers agree to defend, indemnify, and hold DJC System harmless from any claims, damages, costs, and expenses, including attorney's fees, arising from or related to their use of DJC System.
+      Subscribers agree to defend, indemnify, and hold SimplyNice harmless from any claims, damages, costs, and expenses, including attorney's fees, arising from or related to their use of SimplyNice.
       </Typography>
 
       <Typography variant="h5" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
       Links to Other Sites
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Links to third-party sites are at the user's own risk. DJC System is not responsible for any damages or losses incurred from the use of third-party sites.
+      Links to third-party sites are at the user's own risk. SimplyNice is not responsible for any damages or losses incurred from the use of third-party sites.
       </Typography>
 
 
@@ -136,7 +136,7 @@ export default function TermsAndServices() {
       Inaccurate Information
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      DJC System reserves the right to correct any errors, inaccuracies, or change information without prior notice. Dissatisfied customers may return products in accordance with the return policy.
+      SimplyNice reserves the right to correct any errors, inaccuracies, or change information without prior notice. Dissatisfied customers may return products in accordance with the return policy.
       </Typography>
 
 
@@ -144,14 +144,14 @@ export default function TermsAndServices() {
       Termination
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      This agreement is effective until terminated by either the customer or DJC System. Customers may terminate this agreement at any time. DJC System may also terminate the agreement without notice to customers who do not comply with these terms and conditions.
+      This agreement is effective until terminated by either the customer or SimplyNice. Customers may terminate this agreement at any time. SimplyNice may also terminate the agreement without notice to customers who do not comply with these terms and conditions.
       </Typography>
 
       <Typography variant="h5" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
       Shipping and Delivery Policy
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Delivery times vary based on stock availability. For items out of stock, customers are advised to contact DJC System for assistance.
+      Delivery times vary based on stock availability. For items out of stock, customers are advised to contact SimplyNice for assistance.
       </Typography>
 
 
@@ -159,7 +159,7 @@ export default function TermsAndServices() {
       Payments
       </Typography>
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-      Subscriptions to DJC System are subject to a recurring monthly or yearly payment. Payment can be made through various methods, such as Visa, MasterCard, or online payment methods. Payment cards are subject to validation checks by the card issuer. DJC System is not liable for any delay or non-delivery due to lack of authorization.
+      Subscriptions to SimplyNice are subject to a recurring monthly or yearly payment. Payment can be made through various methods, such as Visa, MasterCard, or online payment methods. Payment cards are subject to validation checks by the card issuer. SimplyNice is not liable for any delay or non-delivery due to lack of authorization.
       </Typography>
 
 

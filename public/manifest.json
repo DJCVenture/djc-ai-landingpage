@@ -1,6 +1,6 @@
 {
-  "name": "DJC System",
-  "short_name": "DJC System",
+  "name": "SimplyNice",
+  "short_name": "SimplyNice",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#000000",

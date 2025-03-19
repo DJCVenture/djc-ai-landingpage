@@ -104,7 +104,7 @@ export const pageLinks = [
 
 export const navConfig = [
   { title: "最新动态", path: '/whatsnew' },
-  { title: "登录", path: 'https://djcsystem.com/' }
+  { title: "登录", path: 'https://simplynice.ai/' }
   // { title: 'Pricing', path: '/' },
   // { title: 'Terms and Condition', path: '/',children: [pageLinks[0]] },
   // { title: 'Components', path: paths.components.root },

@@ -24,7 +24,7 @@ export default function AiChatBot({ plans }) {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="h5">
-            Let's review the feedback from our subscribers regarding our DJC system.
+            Let's review the feedback from our subscribers regarding our SimplyNice.
           </Typography>
         </m.div>
       </Box>

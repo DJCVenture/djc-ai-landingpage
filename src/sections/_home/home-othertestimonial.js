@@ -37,7 +37,7 @@ export default function AiChatBot({ plans }) {
       >
         <m.div variants={varFade().inDown}>
           <Typography variant="h5">
-            Keen to learn what fellow entrepreneurs think about DJC system?
+            Keen to learn what fellow entrepreneurs think about SimplyNice?
           </Typography>
         </m.div>
       </Box>

@@ -35,7 +35,7 @@ export default function HomeView() {
   const { scrollYProgress } = useScroll();
   const openWhatsApp = () => {
     const phoneNumber = process.env.NEXT_PUBLIC_PHONE;
-    const defaultMessage = 'Hi, i would like to know more about DJC system.';
+    const defaultMessage = 'Hi, i would like to know more about SimplyNice.';
     const encodedMessage = encodeURIComponent(defaultMessage);
 
     // Append the message to the URL

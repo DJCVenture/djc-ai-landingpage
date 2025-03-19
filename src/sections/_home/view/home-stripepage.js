@@ -274,9 +274,9 @@ export default function HomeStripePage() {
             >
               {/* Add your right block content here */}
               <Typography variant="h3">
-                Transform Your Digital Outreach with DJC System: The Ultimate Toolset for
+                Transform Your Digital Outreach with SimplyNice: The Ultimate Toolset for
                 Progressive Entrepreneurs! Join the Growing Community of Innovators Elevating Their
-                Digital Game with DJC System!
+                Digital Game with SimplyNice!
               </Typography>
               <Typography variant="h4" sx={{ marginTop: '30px', marginBottom: '30px' }}>
                 Start Your No-Risk Free Trial Today

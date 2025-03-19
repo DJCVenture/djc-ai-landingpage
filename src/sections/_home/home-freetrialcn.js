@@ -37,7 +37,7 @@ export default function HomeAdvertisement() {
               transform: 'scale(1.05)', // Grow effect
             },
           }}
-          href="https://djcsystem.com/sign-up"
+          href="https://simplynice.ai/sign-up"
         >
           立即注册!!
         </Button>

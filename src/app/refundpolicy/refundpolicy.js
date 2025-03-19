@@ -72,7 +72,7 @@ export default function RefundPolicy() {
 </Typography>
 
 <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  For DJC System, an online app using web application, the following cancellation policy applies: Once payment is made, you have 24 hours to cancel your subscription after product activation. To cancel, please send your request to admin@djc.ai. This policy ensures that you have a brief period to reconsider your subscription decision after experiencing the product.
+  For SimplyNice, an online app using web application, the following cancellation policy applies: Once payment is made, you have 24 hours to cancel your subscription after product activation. To cancel, please send your request to admin@simplynice.ai. This policy ensures that you have a brief period to reconsider your subscription decision after experiencing the product.
 </Typography>
 
 <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
@@ -80,7 +80,7 @@ export default function RefundPolicy() {
 </Typography>
 
 <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Given that DJC System is an online service without physical shipping, the return policy is adjusted as follows: All subscriptions to DJC System are non-refundable except in cases of <br/><br/> (i) Failure to Activate Subscription, <br/><br/>(ii) Wrong Subscription Activated, or <br/><br/>(iii) Damaged or Faulty Service. <br/><br/>Only subscriptions activated directly through the DJC System Online Service are eligible for consideration under this policy. Returns or refunds for DJC System subscriptions purchased through other retailers must adhere to the respective retailer's return and refund policy.
+  Given that SimplyNice is an online service without physical shipping, the return policy is adjusted as follows: All subscriptions to SimplyNice are non-refundable except in cases of <br/><br/> (i) Failure to Activate Subscription, <br/><br/>(ii) Wrong Subscription Activated, or <br/><br/>(iii) Damaged or Faulty Service. <br/><br/>Only subscriptions activated directly through the SimplyNice Online Service are eligible for consideration under this policy. Returns or refunds for SimplyNice subscriptions purchased through other retailers must adhere to the respective retailer's return and refund policy.
 </Typography>
 
 <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
@@ -96,7 +96,7 @@ export default function RefundPolicy() {
 </Typography>
 
 <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-  Since DJC System is an online application, there is no physical product shipping. All services and products are delivered electronically via the web application. Ensure that your email and contact details are correct during subscription to receive all necessary information and updates. Change in Service Details: For changes in subscription details, please contact us at admin@djc.ai within 24 hours of your order. Changes requested after this period may not be possible or could incur additional charges. This policy is subject to change as necessary, without prior notice or approval from the customer.
+  Since SimplyNice is an online application, there is no physical product shipping. All services and products are delivered electronically via the web application. Ensure that your email and contact details are correct during subscription to receive all necessary information and updates. Change in Service Details: For changes in subscription details, please contact us at admin@djc.ai within 24 hours of your order. Changes requested after this period may not be possible or could incur additional charges. This policy is subject to change as necessary, without prior notice or approval from the customer.
 </Typography>
 
     </Container>

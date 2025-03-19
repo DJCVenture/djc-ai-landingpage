@@ -66,7 +66,7 @@ export default function NavMobile({ data }) {
               fullWidth
               variant="contained"
               color="inherit"
-              href="https://djcsystem.com"
+              href="https://simplynice.ai"
               target="_blank"
               rel="noopener"
             >
@@ -76,7 +76,7 @@ export default function NavMobile({ data }) {
               fullWidth
               variant="contained"
               color="inherit"
-              href="https://djcsystem.com/sign-up"
+              href="https://simplynice.ai/sign-up"
               target="_blank"
               rel="noopener"
             >

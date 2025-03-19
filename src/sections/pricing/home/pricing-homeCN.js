@@ -13,7 +13,7 @@ import PricingHomeCard from './pricing-home-cardCN';
 
 export default function PricingHome({ plans }) {
 
-  const arrFunctionList = ['DJC AI 助手', 'DJC 客户管理', 'DJC Whatsapp 广播', 'DJC Whatsapp 流程', 'DJC Whatsapp 营销漏斗', 'DJC 电子邮件营销', '着陆页生成器', '定期培训课程', 'Telegram 社区', '持续性功能优化', '持续性功能扩展', '高效系统支援', ]
+  const arrFunctionList = ['SimplyNice AI 助手', 'SimplyNice 客户管理', 'SimplyNice Whatsapp 广播', 'SimplyNice Whatsapp 流程', 'SimplyNice Whatsapp 营销漏斗', 'SimplyNice 电子邮件营销', '着陆页生成器', '定期培训课程', 'Telegram 社区', '持续性功能优化', '持续性功能扩展', '高效系统支援', ]
 
   const allPlans = [
     {

@@ -129,7 +129,7 @@ export default function HomeFreeTrialCN() {
       setBackdropOpen(true); // Show backdrop
       const resultObj = await signInWithGoogle();
       if (resultObj.status === 'registered') {
-        router.push('https://djcsystem.com/');
+        router.push('https://simplynice.ai/');
       } else {
         if (resultObj.status === 'new') {
           router.push(`/stripepage?uid=${resultObj.uid}`);

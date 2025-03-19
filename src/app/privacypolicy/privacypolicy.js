@@ -72,10 +72,10 @@ export default function PrivaryPolicy() {
       </Typography>
 
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-        At DJC System, we respect the privacy of your personal information and are committed to
+        At SimplyNice, we respect the privacy of your personal information and are committed to
         maintaining its confidentiality. The primary purpose of collecting your personal data is to
         provide our services, enhance your user experience, and for future marketing initiatives.
-        Only authorized DJC System employees have access to your personal information. We will not
+        Only authorized SimplyNice employees have access to your personal information. We will not
         disclose information about our customers to third parties except as part of providing a
         service to you or where we have your express permission. This may include arrangements for
         providing services, conducting credit and security checks, and for customer research and
@@ -144,11 +144,11 @@ export default function PrivaryPolicy() {
       </Typography>
 
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-        If you have subscribed to DJC System, we may occasionally update you on our latest services,
+        If you have subscribed to SimplyNice, we may occasionally update you on our latest services,
         news, and special offers via email, post, & telephone. Upon becoming a member, you will have
-        the option to receive such communications from us and selected third parties. All DJC System
+        the option to receive such communications from us and selected third parties. All SimplyNice
         members can opt out of receiving marketing communications from us and/or selected third
-        parties. To opt-out, visit 'Your Details' in 'Your Account' on the DJC System website,
+        parties. To opt-out, visit 'Your Details' in 'Your Account' on the SimplyNice website,
         register, and login. Alternatively, click on the 'unsubscribe' link in any email
         communications we send you.
       </Typography>
@@ -180,10 +180,10 @@ export default function PrivaryPolicy() {
 
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
         Your personal information may be disclosed to our group companies. We may also disclose your
-        information to third parties in the following scenarios: if DJC System sells or buys any
-        business or assets; if DJC System or substantially all of its assets are acquired by a third
+        information to third parties in the following scenarios: if SimplyNice sells or buys any
+        business or assets; if SimplyNice or substantially all of its assets are acquired by a third
         party, in which case customer data may be transferred; to comply with legal obligations,
-        enforce our terms, or protect the rights, property, or safety of DJC System, our customers,
+        enforce our terms, or protect the rights, property, or safety of SimplyNice, our customers,
         or others. This includes exchanging information for fraud protection and credit risk
         reduction.
       </Typography>
@@ -258,7 +258,7 @@ export default function PrivaryPolicy() {
       </Typography>
 
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
-        To verify details submitted to DJC System, contact us via the provided email address. For
+        To verify details submitted to SimplyNice, contact us via the provided email address. For
         security, we may request proof of identity. We recommend not using your browser's password
         memory function to protect your personal information.
       </Typography>
@@ -279,7 +279,7 @@ export default function PrivaryPolicy() {
       <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
         We value feedback from our customers. If you have questions or feedback about this
         statement, or if you wish us to stop processing your information, please contact a member of
-        the DJC System team, who will be happy to assist you.
+        the SimplyNice team, who will be happy to assist you.
       </Typography>
     </Container>
   );

@@ -26,7 +26,7 @@ const CONTENTS = [
     answer: `Yes. You can change your plan anytime. That means you can upgrade anytime you want.`,
   },
   {
-    question: 'Does DJC System take a percentage of my sales?',
+    question: 'Does SimplyNice take a percentage of my sales?',
     answer: `No. You will retain every cent of your earnings`,
   },
   {
@@ -39,7 +39,7 @@ const CONTENTS = [
   },
   {
     question: 'Who owns the data /content / subscribers?',
-    answer: `You do! Any content (including your users) is 100% owned by you. DJC System doesn't have permission to use that content or contact your users for any reason.`,
+    answer: `You do! Any content (including your users) is 100% owned by you. SimplyNice doesn't have permission to use that content or contact your users for any reason.`,
   },
   {
     question: 'How do I get started?',
@@ -147,7 +147,7 @@ export default function HomeFAQs() {
                   component="a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://link.djcsystem.com/widget/form/F2HolSV0taWZ6aDfLDc5"
+                  href="https://link.simplynice.ai/widget/form/F2HolSV0taWZ6aDfLDc5"
                 >
                   Contact us
                 </Button>

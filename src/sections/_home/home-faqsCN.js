@@ -146,7 +146,7 @@ export default function HomeFAQsCN() {
                   component="a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://link.djcsystem.com/widget/form/F2HolSV0taWZ6aDfLDc5"
+                  href="https://link.simplynice.ai/widget/form/F2HolSV0taWZ6aDfLDc5"
                 >
                 
                 联系我们

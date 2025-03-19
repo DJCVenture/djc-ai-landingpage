@@ -38,7 +38,7 @@ export default function HomeAdvertisement() {
             },
           }}
        
-          href="https://djcsystem.com/sign-up"
+          href="https://simplynice.ai/sign-up"
         >
           {/* START YOUR FREE TRIAL TODAY!! */}
           SIGN UP NOW !!

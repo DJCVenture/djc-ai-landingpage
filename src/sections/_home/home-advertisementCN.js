@@ -49,7 +49,7 @@ export default function HomeAdvertisement() {
           target="_blank"
           rel="noopener"
           sx={{ backgroundColor: '#c3015a' }}
-          href="https://djcsystem.com/sign-up"
+          href="https://simplynice.ai/sign-up"
         >
           立即注册
         </Button>
