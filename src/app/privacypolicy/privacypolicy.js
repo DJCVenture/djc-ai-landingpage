@@ -214,8 +214,43 @@ export default function PrivaryPolicy() {
           </li>
           <li>
             Google OAuth Specific Security: When using Google OAuth, we only store the minimal
-            required information (user ID, name, email, profile picture) and ensure that access
-            tokens are handled securely and not stored longer than necessary.
+            required information (user ID, name, email, profile picture, and access tokens needed for requested features) and ensure that access
+            tokens are encrypted and handled securely.
+          </li>
+        </ul>
+      </Typography>
+
+      <Typography variant="h6" sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Google API Services User Data Policy & Limited Use Disclosure
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        DJC AI&apos;s use and transfer to any other app of information received from Google APIs will adhere to the{' '}
+        <a
+          href="https://developers.google.com/terms/api-services-user-data-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#c3015a', fontWeight: 600 }}
+        >
+          Google API Services User Data Policy
+        </a>
+        , including the Limited Use requirements.
+      </Typography>
+
+      <Typography sx={{ mt: 2, mb: 3, color: 'text.secondary' }}>
+        Specifically, regarding Google user data:
+        <ul>
+          <li>
+            <strong>Authentication Scopes:</strong> We access your basic profile information (name, email address, profile photo, and Google user ID) strictly to verify your identity and allow you to log in securely to DJC AI.
+          </li>
+          <li>
+            <strong>Google Calendar Scopes:</strong> If you connect your Google Calendar, our service accesses your calendar data exclusively to read availability and automatically create, reschedule, or update appointments scheduled by you or your leads through the DJC AI assistant.
+          </li>
+          <li>
+            <strong>No Advertising or Sale of Data:</strong> We do not sell, rent, or trade any Google user data to third parties. We do not use or transfer Google user data for serving personalized, retargeted, or interest-based advertisements.
+          </li>
+          <li>
+            <strong>AI Model Training Restriction:</strong> Google user data is not used to train generalized artificial intelligence or machine learning models without your explicit, separate consent.
           </li>
         </ul>
       </Typography>
@@ -233,13 +268,10 @@ export default function PrivaryPolicy() {
             your account is inactive for 12 months, we may delete your data.
           </li>
           <li>
-            Deletion Request: You can request the deletion of your Google user data at any time by
-            contacting us. Upon receiving your request, we will take reasonable steps to delete your
-            data unless we are required to retain it for legal or legitimate business purposes.
+            Revocation & Deletion Request: You can revoke DJC AI&apos;s access to your Google account at any time via your Google Account Security Settings (https://myaccount.google.com/permissions) or directly inside DJC AI. You can also request complete deletion of your stored Google user data at any time by contacting us at support@djc.ai or via our support page.
           </li>
           <li>
-            Data Purging: When you delete your account, or when your inactive account is purged, we
-            will securely delete your Google user data from our systems.
+            Data Purging: When you delete your account or submit a deletion request, we will securely and permanently delete your Google user data from our active databases and servers within 30 days.
           </li>
         </ul>
       </Typography>

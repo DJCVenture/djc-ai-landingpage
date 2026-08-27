@@ -62,9 +62,7 @@ export default function HomeHero() {
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-                With powerful AI capabilities, DJC System empowers your businesses to harness the
-                full potential of automation and data analytics, transforming the way you connect
-                with customers and accelerate your success.
+                DJC AI is an all-in-one AI CRM and workflow automation platform. Automate 24/7 customer engagement with AI chatbots, streamline WhatsApp marketing, manage high-intent sales leads, and effortlessly sync appointment bookings with your Google Calendar.
               </Typography>
               <Grid xs={12} md={7}>
                 <Image

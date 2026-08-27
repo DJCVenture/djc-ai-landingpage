@@ -28,6 +28,7 @@ import HomeTraining from '../home-training';
 import HomeCross from '../home-cross';
 import HomeTestimonial from '../home-testimonial';
 import HomeOtherTestimonial from '../home-othertestimonial';
+import HomeGoogleIntegration from '../home-google-integration';
 // import HomeKeyPoint from '../home-keypoint';
 // ----------------------------------------------------------------------
 
@@ -143,6 +144,7 @@ export default function HomeView() {
       <HomeFreeTrial/>
       <HomeOtherTestimonial/>
       <HomeFreeTrial/>
+      <HomeGoogleIntegration />
       <HomeFAQs />
       <HomeAdvertisement />
     </>

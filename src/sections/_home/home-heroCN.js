@@ -64,7 +64,7 @@ export default function HomeHero() {
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-              凭借强大的人工智能能力<br/>DJC系统赋能您的企业充分利用自动化和数据分析的全部潜力，<br/>改变您与客户连接的方式，并加速您的成功 ！
+                DJC AI 是专为企业打造的一站式 AI CRM 与工作流自动化平台。提供 24/7 全天候 AI 智能客服、WhatsApp 自动化广播营销、高意向潜客线索管理，并无缝集成 Google 日历实现智能预约与会议自动同步。
               </Typography>
               <Grid xs={12} md={7}>
             <Image

@@ -38,6 +38,14 @@ const CONTENTS = [
     answer: `Upon signing up, you will receive an invitation to join our committees group, where you can engage with us at any time via group chat.`,
   },
   {
+    question: 'Why does DJC AI connect with my Google Account?',
+    answer: `DJC AI integrates with Google to provide secure Google Sign-In and Google Calendar synchronization. With Calendar access, our AI chatbot can check your available slots in real time and automatically schedule confirmed client appointments without manual back-and-forth.`,
+  },
+  {
+    question: 'How does DJC AI protect my Google data and privacy?',
+    answer: `We adhere strictly to the Google API Services User Data Policy, including Limited Use requirements. Your Google account and calendar data is used solely to provide authentication and appointment synchronization features. We never sell your personal data, nor do we share it with third parties or advertisers.`,
+  },
+  {
     question: 'Who owns the data /content / subscribers?',
     answer: `You do! Any content (including your users) is 100% owned by you. DJC System doesn't have permission to use that content or contact your users for any reason.`,
   },

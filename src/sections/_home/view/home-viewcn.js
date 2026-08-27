@@ -30,6 +30,7 @@ import HomeCrossCN from '../home-crosscn';
 
 import HomeTestimonialCN from '../home-testimonialcn';
 import HomeOtherTestimonialCN from '../home-othertestimonialcn';
+import HomeGoogleIntegrationCN from '../home-google-integrationcn';
 // ----------------------------------------------------------------------
 
 export default function HomeViewCN() {
@@ -148,6 +149,8 @@ export default function HomeViewCN() {
 
       <HomeOtherTestimonialCN/>
       <HomeFreeTrialCN/>
+
+      <HomeGoogleIntegrationCN />
 
       <HomeFAQs />
       <HomeFreeTrialCN/>
